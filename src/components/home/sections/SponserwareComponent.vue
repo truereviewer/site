@@ -2,7 +2,7 @@
   <section class="text-center">
     <div class="flex items-center justify-center">
       <h2 class="!m-0 !mr-4">Sponserware</h2>
-      <img class="w-8 !m-0" src="../assets/img/give-love.png" alt="sponserware" />
+      <img class="w-8 !m-0" src="/src/assets/img/give-love.png" alt="sponserware" />
     </div>
     <p class="!mb-0">
       This is a sponserware. Only the people who sponser to my github repo can access

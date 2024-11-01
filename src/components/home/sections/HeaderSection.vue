@@ -22,6 +22,6 @@
   </header>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import RatingStars from '@/components/RatingStars.vue'
 </script>

@@ -8,15 +8,21 @@
     <div class="border rounded p-4">
       <picture>
         <source media="(min-width:1024px)" srcset="/src/assets/img/reviewer/lg/4-1.png" />
-        <source media="(min-width:768px)" srcset="../assets/img/reviewer/tablet/component_2.png" />
+        <source
+          media="(min-width:768px)"
+          srcset="/src/assets/img/reviewer/tablet/component_2.png"
+        />
 
-        <img src="../assets/img/reviewer/mobile/component_2.png" alt="Component 2" />
+        <img src="/src/assets/img/reviewer/mobile/component_2.png" alt="Component 2" />
       </picture>
       <picture>
         <source media="(min-width:1024px)" srcset="/src/assets/img/reviewer/lg/4-2.png" />
-        <source media="(min-width:768px)" srcset="../assets/img/reviewer/tablet/component_2.png" />
+        <source
+          media="(min-width:768px)"
+          srcset="/src/assets/img/reviewer/tablet/component_2.png"
+        />
 
-        <img src="../assets/img/reviewer/mobile/component_2.png" alt="Component 2" />
+        <img src="/src/assets/img/reviewer/mobile/component_2.png" alt="Component 2" />
       </picture>
     </div>
     <hr

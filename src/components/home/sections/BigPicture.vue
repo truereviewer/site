@@ -13,10 +13,10 @@
             <source media="(min-width:1024px)" srcset="/src/assets/img/reviewer/lg/1.png" />
             <source
               media="(min-width:768px)"
-              srcset="../assets/img/reviewer/tablet/component_2.png"
+              srcset="/src/assets/img/reviewer/tablet/component_2.png"
             />
 
-            <img src="../assets/img/reviewer/mobile/component_2.png" alt="Component 2" />
+            <img src="/src/assets/img/reviewer/mobile/component_2.png" alt="Component 2" />
           </picture>
         </div>
       </div>
@@ -27,10 +27,10 @@
             <source media="(min-width:1024px)" srcset="/src/assets/img/reviewer/lg/2.png" />
             <source
               media="(min-width:768px)"
-              srcset="../assets/img/reviewer/tablet/component_3.png"
+              srcset="/src/assets/img/reviewer/tablet/component_3.png"
             />
 
-            <img src="../assets/img/reviewer/mobile/component_3.png" alt="Component 3" />
+            <img src="/src/assets/img/reviewer/mobile/component_3.png" alt="Component 3" />
           </picture>
         </div>
       </div>
@@ -40,14 +40,14 @@
           <picture>
             <source
               media="(min-width:1024px)"
-              srcset="../assets/img/reviewer/desktop/component_4.png"
+              srcset="/src/assets/img/reviewer/desktop/component_4.png"
             />
             <source
               media="(min-width:768px)"
-              srcset="../assets/img/reviewer/tablet/component_4.png"
+              srcset="/src//assets/img/reviewer/tablet/component_4.png"
             />
 
-            <img src="../assets/img/reviewer/mobile/component_4.png" alt="Component 4" />
+            <img src="/src/assets/img/reviewer/mobile/component_4.png" alt="Component 4" />
           </picture>
         </div>
       </div>
@@ -58,19 +58,19 @@
           <source media="(min-width:1024px)" srcset="/src/assets/img/reviewer/lg/4-1.png" />
           <source
             media="(min-width:768px)"
-            srcset="../assets/img/reviewer/tablet/component_2.png"
+            srcset="/src/assets/img/reviewer/tablet/component_2.png"
           />
 
-          <img src="../assets/img/reviewer/mobile/component_2.png" alt="Component 2" />
+          <img src="/src/assets/img/reviewer/mobile/component_2.png" alt="Component 2" />
         </picture>
         <picture>
           <source media="(min-width:1024px)" srcset="/src//assets/img/reviewer/lg/4-2.png" />
           <source
             media="(min-width:768px)"
-            srcset="../assets/img/reviewer/tablet/component_2.png"
+            srcset="/src/assets/img/reviewer/tablet/component_2.png"
           />
 
-          <img src="../assets/img/reviewer/mobile/component_2.png" alt="Component 2" />
+          <img src="/src/assets/img/reviewer/mobile/component_2.png" alt="Component 2" />
         </picture>
       </div>
     </div>
