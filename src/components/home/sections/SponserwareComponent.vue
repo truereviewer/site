@@ -1,5 +1,5 @@
 <template>
-  <section class="text-center">
+  <section class="text-center mt-16">
     <div class="flex items-center justify-center">
       <h2 class="!m-0 !mr-4">Sponserware</h2>
       <img class="w-8 !m-0" src="/src/assets/img/give-love.png" alt="sponserware" />
