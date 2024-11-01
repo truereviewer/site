@@ -30,6 +30,6 @@ jobs:
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Build assets
+          commit_message: Build assets [skip actions]
           branch: deploy
           
