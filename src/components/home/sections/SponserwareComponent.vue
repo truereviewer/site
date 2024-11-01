@@ -5,7 +5,7 @@
       <img class="w-8 !m-0" src="/src/assets/img/give-love.png" alt="sponserware" />
     </div>
     <p class="!mb-0">
-      This is a sponserware. Only the people who sponser to my github repo can access
+      This is a sponserware. Only the people who sponser to my github repo can access to this repo.
     </p>
     <p class="text-red-500 font-semibold !mt-0">* Only personnal accounts are allowed</p>
 
