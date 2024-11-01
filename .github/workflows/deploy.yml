@@ -4,9 +4,9 @@ on:
   push:
     branches:
       - main
-   pull:
+  pull:
     branches:
-      - main    
+      - main
 
 jobs:
   deploy:
@@ -32,4 +32,3 @@ jobs:
         with:
           commit_message: Build assets [skip actions]
           branch: deploy
-          
