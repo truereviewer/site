@@ -8,6 +8,7 @@
       <SubRatingDistribution />
       <ReviewList />
       <BigPicture />
+      <TechnologiesComponent />
       <SponserwareComponent />
     </div>
   </div>
@@ -21,6 +22,7 @@ import ReviewerDescription from '@/components/home/sections/ReviewerDescription.
 import ReviewList from '@/components/home/sections/ReviewList.vue'
 import SponserwareComponent from '@/components/home/sections/SponserwareComponent.vue'
 import SubRatingDistribution from '@/components/home/sections/SubRatingDistribution.vue'
+import TechnologiesComponent from '@/components/home/sections/TechnologiesComponent.vue'
 import WidgetComponent from '@/components/home/sections/WidgetComponent.vue'
 
 import { onMounted, reactive } from 'vue'

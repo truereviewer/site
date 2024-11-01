@@ -12,6 +12,7 @@
   --secondary-shadow-color: rgb(30, 240, 30);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 @layer base {

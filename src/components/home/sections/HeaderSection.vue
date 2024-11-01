@@ -2,6 +2,10 @@
   <header
     class="z-10 relative flex flex-col justify-center items-center min-h-svh bgs-[url('../assets/img/bg-3.webp')]"
   >
+    <div class="absolute right-8 top-4">
+      <HeaderNav />
+    </div>
+
     <div
       class="z-20 w-full min-h-svh bg-gradient-to-b from-green-600 via-yellow-700/40 via-[50%] to-green-600 absolute top-0 left-0"
     ></div>
@@ -24,4 +28,5 @@
 
 <script lang="ts" setup>
 import RatingStars from '@/components/RatingStars.vue'
+import HeaderNav from './HeaderNav.vue'
 </script>
