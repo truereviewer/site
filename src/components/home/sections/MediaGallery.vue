@@ -7,9 +7,8 @@
     </p>
     <picture class="border rounded p-4">
       <source media="(min-width:1024px)" srcset="/src/assets/img/reviewer/lg/3.png" />
-      <source media="(min-width:768px)" srcset="../assets/img/reviewer/tablet/component_2.png" />
-
-      <img src="../assets/img/reviewer/mobile/component_2.png" alt="Component 2" />
+      <source media="(min-width:768px)" srcset="/src/assets/img/reviewer/md/3.png" />
+      <img src="/src/assets/img/reviewer/sm/3.png" alt="Media gallery" />
     </picture>
     <hr
       class="mx-auto !my-0 h-px w-full max-w-7xl border-none bg-gradient-to-r from-transparent via-[var(--primary-shadow-color)] to-transparent"

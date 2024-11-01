@@ -7,12 +7,14 @@
       <RatingDistribution />
       <SubRatingDistribution />
       <ReviewList />
+      <BigPicture />
       <SponserwareComponent />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import BigPicture from '@/components/home/sections/BigPicture.vue'
 import HeaderSection from '@/components/home/sections/HeaderSection.vue'
 import RatingDistribution from '@/components/home/sections/RatingDistribution.vue'
 import ReviewerDescription from '@/components/home/sections/ReviewerDescription.vue'
