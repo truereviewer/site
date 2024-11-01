@@ -2,10 +2,8 @@
   <SectionComponent class="flex flex-col items-start justify-center mt-8">
     <template #header>Full Review System - 5 Isolated Componenets</template>
     <template #content>
-      <div>
-        <p class="!mt-0 !mb-4">You can use each elements independently or combined.</p>
-        <p class="!my-0">Each component has follwoing constraints</p>
-      </div>
+      <p class="!mb-4">You can use each elements independently or combined.</p>
+      <p class="!my-0">Each component has follwoing constraints</p>
 
       <ul class="max-w-md text-gray-500 list-inside dark:text-gray-400">
         <li class="flex items-center">
