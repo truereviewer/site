@@ -4,7 +4,7 @@ import SectionComponent from '@/components/SectionComponent.vue'
 </script>
 
 <template>
-  <SectionComponent id="sponserware" class="mt-12" data-aos="fade-up">
+  <SectionComponent id="sponserware" class="mt-12">
     <template #content>
       <div class="text-center w-full">
         <div class="flex items-center justify-center w-full">

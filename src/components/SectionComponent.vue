@@ -1,5 +1,5 @@
 <template>
-  <section data-aos="fade-up" class="flex flex-col items-start justify-center">
+  <section class="flex flex-col items-start justify-center">
     <h2 v-if="$slots.header">
       <slot name="header"></slot>
     </h2>
