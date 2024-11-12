@@ -2,11 +2,7 @@
   <SectionComponent>
     <template #header>Review List</template>
     <template #content>
-      <p>
-        orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-        galley
-      </p>
+      <p>Beautifully paginated list with advanced filtering options.</p>
       <div class="border rounded p-4">
         <picture class="!mb-0">
           <source media="(min-width:1024px)" srcset="/src/assets/img/reviewer/lg/4-1.png" />

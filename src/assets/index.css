@@ -27,11 +27,15 @@
   }
 
   section {
-    @apply !px-8;
+    @apply !px-16;
   }
 }
 
 @layer utilities {
+  .main-text-color {
+    color: var(--main-text-color);
+  }
+
   .primary-bg-color {
     background-color: var(--primary-bg-color);
   }
@@ -44,5 +48,14 @@
   }
   .secondary-border-color {
     border-color: var(--secondary-border-color);
+  }
+
+  picture {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+
+  ul {
+    margin-bottom: 0 !important;
   }
 }

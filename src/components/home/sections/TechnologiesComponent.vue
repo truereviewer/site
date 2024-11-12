@@ -1,8 +1,9 @@
 <template>
   <SectionComponent id="technologies">
     <template #header>Technologies</template>
-    <template #content
-      ><div
+    <template #content>
+      <p class="!mt-0">A combination of Laravel and Vue.js with PrimeVue UI components.</p>
+      <div
         class="inline-flex bg-gradient-to-r from-green-300/10 to-green-400/10 p-4 gap-x-4 justify-start items-center rounded"
       >
         <a class="flex space-x-4 items-center" href="www.laravel.com">
