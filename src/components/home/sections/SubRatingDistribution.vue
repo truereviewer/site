@@ -1,12 +1,8 @@
 <template>
   <SectionComponent>
-    <template #header>Sub Rating Distribution and Recommendations</template>
+    <template #header>{{ rcs.title() }}</template>
     <template #content>
-      <p>Recommendations are an accurate way to get an idea about the overall product quality.</p>
-      <p class="!mt-0">
-        Sub-ratings provide additional value to users. These are dynamic, allowing you to add any
-        characteristics to your product, such as quality, value for money, durability, etc.
-      </p>
+      <div v-html="rcs.description()" class="!mt-0"></div>
 
       <picture class="border rounded p-4">
         <source media="(min-width:1024px)" srcset="/src/assets/img/reviewer/lg/2.png" />
@@ -19,4 +15,9 @@
 
 <script setup lang="ts">
 import SectionComponent from '@/components/SectionComponent.vue'
+
+import { ReviewerComponent } from '@/enums/ReviewerComponent'
+import { ReviewerComponentService } from '@/services/ReviewerComponentService'
+
+const rcs = new ReviewerComponentService(ReviewerComponent.SUB_RATING_DISTRIBUTION)
 </script>

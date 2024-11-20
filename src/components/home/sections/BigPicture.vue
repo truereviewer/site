@@ -1,10 +1,6 @@
-<script setup lang="ts">
-import SectionComponent from '@/components/SectionComponent.vue'
-</script>
-
 <template>
   <SectionComponent>
-    <template #header>Together, they create a complete picture.</template>
+    <template #header>{{ rcs.title() }}</template>
     <template #content>
       <div class="flex flex-flex gap-y-4 not-prose mb-8">
         <div class="shadow border">
@@ -65,3 +61,11 @@ import SectionComponent from '@/components/SectionComponent.vue'
     </template>
   </SectionComponent>
 </template>
+
+<script setup lang="ts">
+import SectionComponent from '@/components/SectionComponent.vue'
+import { ReviewerComponent } from '@/enums/ReviewerComponent'
+import { ReviewerComponentService } from '@/services/ReviewerComponentService'
+
+const rcs = new ReviewerComponentService(ReviewerComponent.BIG_PICTURE)
+</script>

@@ -12,13 +12,13 @@
     </div>
 
     <div class="group">
-      <a class="no-underline text-orange-400 inline-block pb-1" href="#sponserware">Sponserware</a>
+      <a class="no-underline text-orange-400 inline-block pb-1" href="/#sponserware">Sponserware</a>
       <hr
         class="w-0 !my-0 transition-all ease-in-out duration-300 group-hover:w-full mx-auto h-px max-w-7xl border-none bg-gradient-to-r from-transparent via-white to-transparent"
       />
     </div>
     <div class="group">
-      <a class="no-underline text-orange-400 inline-block pb-1" href="#technologies"
+      <a class="no-underline text-orange-400 inline-block pb-1" href="/#technologies"
         >Technologies</a
       >
       <hr

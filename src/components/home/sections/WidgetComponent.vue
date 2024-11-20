@@ -1,10 +1,9 @@
 <template>
   <SectionComponent class="flex flex-col items-start justify-center">
-    <template #header>Widget</template>
+    <template #header>{{ rcs.title() }}</template>
     <template #content>
       <p>
-        The widget provides users with an overall idea about your product. Statistics appear as a
-        popup when hovered over.
+        {{ rcs.description() }}
       </p>
       <picture class="border rounded p-4 inline-block">
         <source media="(min-width:1024px)" srcset="/src/assets/img/reviewer/full-widget.png" />
@@ -15,6 +14,10 @@
   </SectionComponent>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import SectionComponent from '@/components/SectionComponent.vue'
+import { ReviewerComponent } from '@/enums/ReviewerComponent'
+import { ReviewerComponentService } from '@/services/ReviewerComponentService'
+
+const rcs = new ReviewerComponentService(ReviewerComponent.WIDGET)
 </script>

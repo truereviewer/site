@@ -4,111 +4,75 @@
     <template #content>
       <AlertComponent type="notice">
         <p>
-          You should have read-only access to the reviewer repository. Please refer to the
+          You should have read-only access to the reviewer repository. For more information, please
+          refer to the
           <a class="no-underline text-orange-400 inline-block pb-1" href="/#sponserware"
             >Sponserware</a
           >
-          section for more details.
+          section.
         </p>
       </AlertComponent>
 
       <div class="space-y-6">
         <h3 id="installation@step1"><a href="#installation@step1">Step-1</a></h3>
-        <p>Then add repository url in composer.json file</p>
+        <p>Next, add the repository URL to your composer.json file.</p>
 
-        <CodeBlock language="bash">
-          <pre>
-            <!-- prettier-ignore -->
-            "repositories": [
-              {
-                  "type": "path",
-                  "url": "D:\\Packages\\lakm\\laravel-comments-admin-panel",
-                  "options": {
-                      "symlink": true
-                  }
-              }
-          ]
-          </pre>
-        </CodeBlock>
+        <CodeBlock language="bash" :code="addRepo" />
       </div>
 
       <div class="space-y-6">
         <h3 id="installation@step2"><a href="#installation@step2">Step-2</a></h3>
-        <p>Install the reviewer via composer</p>
+        <p>Install the reviewer via composer.</p>
 
-        <CodeBlock language="bash">
-          <pre>
-            <!-- prettier-ignore -->
-            composer require truereviewer/reviewer
-          </pre>
-        </CodeBlock>
+        <CodeBlock
+          language="bash"
+          code="composer require https://github.com/truereviewer/reviewer"
+        />
       </div>
       <div class="space-y-6">
         <h3 id="installation@step3"><a href="#installation@step3">Step-3</a></h3>
-        <p>Run below command to setup package</p>
+        <p>Run below command to setup the package.</p>
 
-        <CodeBlock language="bash">
-          <pre>
-            <!-- prettier-ignore -->
-            php artisan reviewer:setup
-          </pre>
-        </CodeBlock>
+        <CodeBlock language="bash" code="php artisan reviewer:setup" />
       </div>
 
       <div class="space-y-6">
         <h3 id="installation@step4"><a href="#installation@step4">Step-4</a></h3>
-        <p>Run below command to setup package</p>
+        <p>Run below command to setup package.</p>
 
-        <CodeBlock language="bash">
-          <pre>
-            <!-- prettier-ignore -->
-            php artisan reviewer:setup
-          </pre>
-        </CodeBlock>
+        <CodeBlock language="bash" code="php artisan reviewer:setup" />
       </div>
 
       <div class="space-y-6">
         <h3 id="installation@step5"><a href="#installation@step5">Step-5</a></h3>
         <p>
-          Include reviewer assets (@reviewerStyles and @reviewerScripts) in your template as below
+          Include the reviewer assets in your template by adding
+          <code class="code-inline">@reviewerStyles</code> and
+          <code class="code-inline">@reviewerScripts</code> as shown below.
         </p>
 
-        <CodeBlock language="html">
-          <pre>
-            <!-- prettier-ignore -->
-            {{ includeAssets }}
-          </pre>
-        </CodeBlock>
+        <CodeBlock language="html" :code="includeAssets" />
       </div>
 
       <div class="space-y-6">
-        <h3 id="installation@step5"><a href="#installation@step5"></a>Step</h3>
+        <h3 id="installation@step6"><a href="#installation@step6"></a>Step 6</h3>
         <p>
-          Reviewable model must extend the Reviewable class. This model extend
-          <code class="code-inline">Model</code> class so you can use whatever model class provides.
+          The Reviewable model must extend the Reviewable class. Since this class extends the
+          <code class="code-inline">Model</code>
+          class, you can leverage all the features and functionality provided by the base model.
         </p>
 
-        <CodeBlock language="html">
-          <pre>
-            <!-- prettier-ignore -->
-            {{ useComponent }}
-          </pre>
-        </CodeBlock>
+        <CodeBlock language="php" :code="extendClass" />
       </div>
 
       <div class="space-y-6">
-        <h3 id="installation@step6"><a href="#installation@step6">Step-6</a></h3>
+        <h3 id="installation@step7"><a href="#installation@step7">Step-7</a></h3>
         <p>
-          Use components wherever you want. Refer components section for more details. Each
-          components must have <code>id</code> and <code>modelType</code> props
+          Use the components wherever needed. Refer to the Components section for detailed guidance.
+          Each component requires <code>id</code> and <code>modelType</code> props.
         </p>
 
-        <CodeBlock language="php">
-          <pre>
-            <!-- prettier-ignore -->
-            {{ extendClass }}
-          </pre>
-        </CodeBlock>
+        <CodeBlock language="php" :code="useComponent" />
       </div>
     </template>
   </DocumentatonSection>
@@ -119,31 +83,47 @@ import AlertComponent from '../AlertComponent.vue'
 import CodeBlock from '../CodeBlock.vue'
 import DocumentatonSection from './DocumentatonSection.vue'
 
+const addRepo = `
+ "repositories": [
+              {
+                  "type": "path",
+                  "url": "https://github.com/truereviewer/reviewer",
+              }
+          ]
+`
 const includeAssets = `
-                <!doctype html>
-                <html lang="en">
-                  <head>
-                    <meta charset="UTF-8" />
-                    <link rel="icon" href="/favicon.ico" />
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                    <title>Reviewer</title>
+  <!doctype html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <link rel="icon" href="/favicon.ico" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Reviewer</title>
 
-                    @reviewerStyles
-                  </head>
-                  <body>
-                    <div id="app"></div>
-                
-                    @reviewerScripts
-                  </body>
-                </html>
-                `
+      @reviewerStyles
+    </head>
+    <body>
+      <div id="app"></div>
+  
+      @reviewerScripts
+    </body>
+  </html>
+  `
 
 const useComponent = `
-  <reviewer id="{{$product->getKey()}} modelType={{$product->getMorphClass()}}"/>
+  <reviewer id="{{$product->getKey()}}" model-type="{{$product->getMorphClass()}}"></reviewer>
   `
 
 const extendClass = `
-    class product extends Reviewable {
-    }
+  <?php
+
+  namespace App\\Models;
+
+  use LakM\\Reviewer\\Models\\Reviewable;
+
+  class Product extends Reviewable
+  {
+      
+  }
   `
 </script>

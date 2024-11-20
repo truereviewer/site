@@ -15,6 +15,10 @@
   scroll-behavior: smooth;
 }
 
+body {
+  line-height: inherit;
+}
+
 @layer base {
   h2 {
     color: var(--main-text-color) !important;
@@ -58,4 +62,31 @@
   ul {
     margin-bottom: 0 !important;
   }
+}
+
+.documentation h3 {
+  @apply text-xl;
+}
+
+.documentation h3 + * {
+  @apply !mt-4;
+}
+
+.documentation h3 {
+  @apply cursor-pointer;
+}
+
+.documentation h3:hover::before {
+  content: '#';
+  margin-right: 4px;
+}
+
+.documentation p {
+  @apply !mt-2;
+}
+
+.code-inline {
+  @apply bg-gray-200;
+  @apply px-2;
+  @apply rounded;
 }
