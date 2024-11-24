@@ -1,5 +1,5 @@
 <template>
-  <DocumentatonSection id="theming@frontendtech">
+  <DocumentationSection id="theming@frontendtech">
     <template #header><a href="#theming@frontendtech">Frontend Technologies</a></template>
     <template #content>
       <div class="space-y-2">
@@ -24,9 +24,9 @@
         </p>
       </div>
     </template>
-  </DocumentatonSection>
+  </DocumentationSection>
 </template>
 
-<script lang="ts" setup>
-import DocumentatonSection from '@/components/documentation/DocumentationSection.vue'
+<script setup lang="ts">
+import DocumentationSection from '@/components/documentation/DocumentationSection.vue'
 </script>
