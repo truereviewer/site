@@ -28,17 +28,17 @@ jobs:
         run: npm run build-only
 
       - name: Delete branch
-        uses: dawidd6/action-delete-branch@v3
-        with:
-          github_token: ${{secrets.GH_TOKEN}}
-          branches: deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git push origin --delete deploy
 
       - name: Create and push branch
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git checkout -b ${{ github.event.inputs.branch-name }}
-          git push -u origin ${{ github.event.inputs.branch-name }}
+          git checkout -b deploy
+          git push -u origin main
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
