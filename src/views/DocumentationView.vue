@@ -22,7 +22,7 @@
         <ReviewPagination />
 
         <!--Theming-->
-        <FrontendTechnologies />
+        <!-- <FrontendTechnologies /> -->
         <PublishAssets />
         <BuildAssets />
         <CustomizeComponent />
@@ -41,7 +41,7 @@ import InstallationSection from '@/components/documentation/InstallationSection.
 import SideBar from '@/components/documentation/SideBar.vue'
 import BuildAssets from '@/components/documentation/theming/BuildAssets.vue'
 import CustomizeComponent from '@/components/documentation/theming/customzation/CustomizeComponent.vue'
-import FrontendTechnologies from '@/components/documentation/theming/FrontendTechnologies.vue'
+//import FrontendTechnologies from '@/components/documentation/theming/FrontendTechnologies.vue'
 import PublishAssets from '@/components/documentation/theming/PublishAssets.vue'
 import HeaderNav from '@/components/home/sections/HeaderNav.vue'
 import MediaGallery from '@/components/documentation/config/MediaGallery.vue'
