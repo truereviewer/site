@@ -10,7 +10,7 @@ export default defineConfig({
   plugins: [vue(), vueDevTools()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'resources/ts') //fileURLToPath(new URL('./src', import.meta.url))
+      '@': path.resolve(__dirname, './src') //fileURLToPath(new URL('./src', import.meta.url))
     }
   },
   build: {
