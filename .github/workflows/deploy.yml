@@ -22,7 +22,7 @@ jobs:
           node-version: '18.x'
 
       - name: Install dependencies
-        run: npm install -D
+        run: npm install
 
       - name: Build assets
         run: vite build
