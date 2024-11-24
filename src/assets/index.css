@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-family:
+    Inter var,
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    Apple Color Emoji,
+    Segoe UI Emoji,
+    Segoe UI Symbol;
+}
+
 :root {
   --main-text-color: rgb(6, 114, 54);
   --primary-bg-color: rgb(4, 211, 4);
@@ -69,7 +84,7 @@ body {
 }
 
 .documentation h3 + * {
-  @apply !mt-4;
+  @apply mt-4;
 }
 
 .documentation h3 {
@@ -82,7 +97,7 @@ body {
 }
 
 .documentation p {
-  @apply !mt-2;
+  @apply mt-6;
 }
 
 .code-inline {

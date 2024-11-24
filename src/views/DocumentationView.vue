@@ -12,6 +12,16 @@
       <main class="xl:w-[75%] my-4 space-y-8">
         <InstallationSection />
         <ComponentsSection />
+
+        <!--Config-->
+        <PublishConfigs />
+        <ChangeTable />
+        <DecimalRating />
+        <SubRating />
+        <MediaGallery />
+        <ReviewPagination />
+
+        <!--Theming-->
         <FrontendTechnologies />
         <PublishAssets />
         <BuildAssets />
@@ -23,6 +33,10 @@
 
 <script setup lang="ts">
 import ComponentsSection from '@/components/documentation/ComponentsSection.vue'
+import ChangeTable from '@/components/documentation/config/ChangeTable.vue'
+import DecimalRating from '@/components/documentation/config/DecimalRating.vue'
+import PublishConfigs from '@/components/documentation/config/PublishConfigs.vue'
+import SubRating from '@/components/documentation/config/SubRating.vue'
 import InstallationSection from '@/components/documentation/InstallationSection.vue'
 import SideBar from '@/components/documentation/SideBar.vue'
 import BuildAssets from '@/components/documentation/theming/BuildAssets.vue'
@@ -30,6 +44,8 @@ import CustomizeComponent from '@/components/documentation/theming/customzation/
 import FrontendTechnologies from '@/components/documentation/theming/FrontendTechnologies.vue'
 import PublishAssets from '@/components/documentation/theming/PublishAssets.vue'
 import HeaderNav from '@/components/home/sections/HeaderNav.vue'
+import MediaGallery from '@/components/documentation/config/MediaGallery.vue'
+import ReviewPagination from '@/components/documentation/config/ReviewPagination.vue'
 </script>
 
 <style lang="css">

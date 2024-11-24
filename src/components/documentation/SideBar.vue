@@ -116,6 +116,134 @@
                 </ul>
               </div>
             </div>
+
+            <div class="flex flex-col">
+              <a class="no-underline main-text-color font-bold">Config </a>
+              <ul class="mt-2 space-y-2">
+                <li class="ml-2">
+                  <a
+                    :class="{
+                      'text-[var(--main-text-color)]': currentSection === '#config@publish'
+                    }"
+                    href="#config@publish"
+                    ><span v-if="currentSection === '#config@publish'" class="mr-1">#</span
+                    ><span>Publish</span></a
+                  >
+                </li>
+
+                <li class="ml-2">
+                  <a
+                    :class="{
+                      'text-[var(--main-text-color)]': currentSection === '#config@table'
+                    }"
+                    href="#config@table"
+                    ><span v-if="currentSection === '#config@table'" class="mr-1">#</span
+                    ><span>Change table/model</span></a
+                  >
+                </li>
+
+                <li class="ml-2">
+                  <a
+                    :class="{
+                      'text-[var(--main-text-color)]': currentSection === '#config@decimalRating'
+                    }"
+                    href="#config@decimalRating"
+                    ><span v-if="currentSection === '#config@decimalRating'" class="mr-1">#</span
+                    ><span>Decimal Rating</span></a
+                  >
+                </li>
+
+                <li class="ml-2">
+                  <a
+                    :class="{
+                      'text-[var(--main-text-color)]': currentSection === '#config@subRating'
+                    }"
+                    href="#config@subRating"
+                    ><span v-if="currentSection === '#config@subRating'" class="mr-1">#</span
+                    ><span>Sub Rating Types</span></a
+                  >
+                </li>
+
+                <li class="ml-2">
+                  <a
+                    :class="{
+                      'text-[var(--main-text-color)]': currentSection === '#config@media'
+                    }"
+                    href="#config@media"
+                    ><span v-if="currentSection === '#config@media'" class="mr-1">#</span
+                    ><span>Media</span></a
+                  >
+                </li>
+
+                <ul class="ml-4 mt-2 space-y-2 text-sm">
+                  <li>
+                    <a
+                      :class="{
+                        'text-[var(--main-text-color)]': currentSection === '#config@mediaSize'
+                      }"
+                      href="#config@mediaSize"
+                      ><span v-if="currentSection === '#config@mediaSize'" class="mr-1">#</span
+                      ><span>Media Size</span></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      :class="{
+                        'text-[var(--main-text-color)]': currentSection === '#config@mediaType'
+                      }"
+                      href="#config@mediaType"
+                      ><span v-if="currentSection === '#config@mediaType'" class="mr-1">#</span
+                      ><span>Media Types</span></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      :class="{
+                        'text-[var(--main-text-color)]': currentSection === '#config@mediaLimit'
+                      }"
+                      href="#config@mediaLimit"
+                      ><span v-if="currentSection === '#config@mediaLimit'" class="mr-1">#</span
+                      ><span>Media Limit</span></a
+                    >
+                  </li>
+                </ul>
+              </ul>
+
+              <li class="ml-2">
+                <a
+                  :class="{
+                    'text-[var(--main-text-color)]': currentSection === '#config@pagination'
+                  }"
+                  href="#config@pagination"
+                  ><span v-if="currentSection === '#config@pagination'" class="mr-1">#</span
+                  ><span>Pagination</span></a
+                >
+              </li>
+              <ul class="ml-4 mt-2 space-y-2 text-sm">
+                <li>
+                  <a
+                    :class="{
+                      'text-[var(--main-text-color)]': currentSection === '#config@pagePagination'
+                    }"
+                    href="#config@pagePagination"
+                    ><span v-if="currentSection === '#config@pagePagination'" class="mr-1">#</span
+                    ><span>Page Pagination</span></a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    :class="{
+                      'text-[var(--main-text-color)]': currentSection === '#config@scrollPagination'
+                    }"
+                    href="#config@scrollPagination"
+                    ><span v-if="currentSection === '#config@scrollPagination'" class="mr-1">#</span
+                    ><span>Infinite Pagination</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+
             <div class="flex flex-col">
               <a class="no-underline main-text-color font-bold">Theming </a>
               <ul class="mt-2 space-y-2">
