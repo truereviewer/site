@@ -1,5 +1,5 @@
 <template>
-  <DocumentatonSection id="config@pagination">
+  <DocumentationSection id="config@pagination">
     <template #header><a href="#config@pagination">Pagination</a></template>
     <template #content>
       <p>Reviews are paginated by page. Reviewer support both page and infinite pagination.</p>
@@ -29,12 +29,12 @@
         </div>
       </div>
     </template>
-  </DocumentatonSection>
+  </DocumentationSection>
 </template>
 
 <script lang="ts" setup>
 import CodeBlock from '@/components/CodeBlock.vue'
-import DocumentatonSection from '@/components/documentation/DocumentationSection.vue'
+import DocumentationSection from '@/components/documentation/DocumentationSection.vue'
 
 const page = `
     /**

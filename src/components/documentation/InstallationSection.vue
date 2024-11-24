@@ -1,5 +1,5 @@
 <template>
-  <DocumentatonSection id="installation">
+  <DocumentationSection id="installation">
     <template #header><a href="#installation">Installation</a></template>
     <template #content>
       <AlertComponent type="notice">
@@ -75,13 +75,13 @@
         <CodeBlock language="php" :code="useComponent" />
       </div>
     </template>
-  </DocumentatonSection>
+  </DocumentationSection>
 </template>
 
 <script lang="ts" setup>
 import AlertComponent from '../AlertComponent.vue'
 import CodeBlock from '../CodeBlock.vue'
-import DocumentatonSection from './DocumentationSection.vue'
+import DocumentationSection from './DocumentationSection.vue'
 
 const addRepo = `
  "repositories": [

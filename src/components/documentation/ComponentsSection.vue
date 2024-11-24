@@ -1,5 +1,5 @@
 <template>
-  <DocumentatonSection id="components">
+  <DocumentationSection id="components">
     <template #header><a href="#components">Components</a></template>
     <template #content>
       <p>
@@ -81,12 +81,12 @@
         </div>
       </div>
     </template>
-  </DocumentatonSection>
+  </DocumentationSection>
 </template>
 
 <script lang="ts" setup>
 import { ReviewerComponent } from '@/enums/ReviewerComponent'
-import DocumentatonSection from './DocumentationSection.vue'
+import DocumentationSection from './DocumentationSection.vue'
 import { ReviewerComponentService } from '@/services/ReviewerComponentService'
 import CodeBlock from '../CodeBlock.vue'
 

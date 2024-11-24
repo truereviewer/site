@@ -1,5 +1,5 @@
 <template>
-  <DocumentatonSection id="config@media">
+  <DocumentationSection id="config@media">
     <template #header><a href="#config@media">Media</a></template>
     <template #content>
       <p>
@@ -33,12 +33,12 @@
         </div>
       </div>
     </template>
-  </DocumentatonSection>
+  </DocumentationSection>
 </template>
 
 <script lang="ts" setup>
 import CodeBlock from '@/components/CodeBlock.vue'
-import DocumentatonSection from '@/components/documentation/DocumentationSection.vue'
+import DocumentationSection from '@/components/documentation/DocumentationSection.vue'
 
 const enableMedia = `
   /**

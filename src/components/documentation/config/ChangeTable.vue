@@ -1,5 +1,5 @@
 <template>
-  <DocumentatonSection id="config@table">
+  <DocumentationSection id="config@table">
     <template #header><a href="#config@table">Change Table/Model</a></template>
     <template #content>
       <p>Before begin you should publish reviewer configs executing below command. .</p>
@@ -93,12 +93,12 @@
         <CodeBlock language="php" :code="changeTable" />
       </div>
     </template>
-  </DocumentatonSection>
+  </DocumentationSection>
 </template>
 
 <script lang="ts" setup>
 import CodeBlock from '@/components/CodeBlock.vue'
-import DocumentatonSection from '@/components/documentation/DocumentationSection.vue'
+import DocumentationSection from '@/components/documentation/DocumentationSection.vue'
 
 const changeTable = `
   ...

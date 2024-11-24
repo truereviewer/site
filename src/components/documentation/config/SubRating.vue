@@ -1,5 +1,5 @@
 <template>
-  <DocumentatonSection id="config@subRating">
+  <DocumentationSection id="config@subRating">
     <template #header><a href="#config@subRating">Sub Rating Types</a></template>
     <template #content>
       <p>
@@ -19,16 +19,12 @@
         <img class="border" src="/src/assets/img/reviewer/sub_rating.png" alt="sub rating" />
       </div>
     </template>
-  </DocumentatonSection>
+  </DocumentationSection>
 </template>
 
 <script lang="ts" setup>
 import CodeBlock from '@/components/CodeBlock.vue'
-import DocumentatonSection from '@/components/documentation/DocumentationSection.vue'
-import { ReviewerComponent } from '@/enums/ReviewerComponent'
-import { ReviewerComponentService } from '@/services/ReviewerComponentService'
-
-const srcs = new ReviewerComponentService(ReviewerComponent.SUB_RATING_DISTRIBUTION)
+import DocumentationSection from '@/components/documentation/DocumentationSection.vue'
 
 const enableSubRating = `
   /**

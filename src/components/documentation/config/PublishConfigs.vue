@@ -1,5 +1,5 @@
 <template>
-  <DocumentatonSection id="config@publish">
+  <DocumentationSection id="config@publish">
     <template #header><a href="#config@publish">Publish Configs</a></template>
     <template #content>
       <p>Before begin you should publish reviewer configs executing below command.</p>
@@ -9,10 +9,10 @@
         <code class="code-inline">/config/reviewer</code> directory.
       </p>
     </template>
-  </DocumentatonSection>
+  </DocumentationSection>
 </template>
 
 <script lang="ts" setup>
 import CodeBlock from '@/components/CodeBlock.vue'
-import DocumentatonSection from '@/components/documentation/DocumentationSection.vue'
+import DocumentationSection from '@/components/documentation/DocumentationSection.vue'
 </script>

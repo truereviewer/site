@@ -1,5 +1,5 @@
 <template>
-  <DocumentatonSection id="theming@buildAssets">
+  <DocumentationSection id="theming@buildAssets">
     <template #header><a href="#theming@buildAssets">Build Assets</a></template>
     <template #content>
       <p>
@@ -57,12 +57,12 @@
         </div>
       </div>
     </template>
-  </DocumentatonSection>
+  </DocumentationSection>
 </template>
 
 <script lang="ts" setup>
 import CodeBlock from '@/components/CodeBlock.vue'
-import DocumentatonSection from '@/components/documentation/DocumentationSection.vue'
+import DocumentationSection from '@/components/documentation/DocumentationSection.vue'
 
 const frontEndDependencies = `
   "devDependencies": {
