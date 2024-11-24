@@ -27,6 +27,12 @@ jobs:
       - name: Build assets
         run: npm run build-only
 
+      - name: Delete branch
+        uses: dawidd6/action-delete-branch@v3
+        with:
+          github_token: ${{secrets.GH_TOKEN}}
+          branches: deploy
+
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
