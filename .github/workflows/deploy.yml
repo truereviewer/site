@@ -32,3 +32,4 @@ jobs:
         with:
           commit_message: Build assets [skip actions]
           branch: deploy
+          push_options: '--force'
