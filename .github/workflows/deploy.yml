@@ -25,7 +25,7 @@ jobs:
         run: npm install -D
 
       - name: Build assets
-        run: npm run build
+        run: run-p type-check \"build-only {@}\" --"
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
