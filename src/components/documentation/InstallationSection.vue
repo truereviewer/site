@@ -81,7 +81,7 @@
 <script lang="ts" setup>
 import AlertComponent from '../AlertComponent.vue'
 import CodeBlock from '../CodeBlock.vue'
-import DocumentatonSection from './DocumentatonSection.vue'
+import DocumentatonSection from './DocumentationSection.vue'
 
 const addRepo = `
  "repositories": [

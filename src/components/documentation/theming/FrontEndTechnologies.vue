@@ -28,5 +28,5 @@
 </template>
 
 <script lang="ts" setup>
-import DocumentatonSection from '@/components/documentation/DocumentatonSection.vue'
+import DocumentatonSection from '@/components/documentation/DocumentationSection.vue'
 </script>

@@ -12,7 +12,7 @@
   </SectionComponent>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import SectionComponent from '@/components/SectionComponent.vue'
 import { ReviewerComponent } from '@/enums/ReviewerComponent'
 import { ReviewerComponentService } from '@/services/ReviewerComponentService'

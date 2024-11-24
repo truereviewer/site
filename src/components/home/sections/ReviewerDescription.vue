@@ -142,7 +142,3 @@
     </template>
   </SectionComponent>
 </template>
-
-<script setup>
-import SectionComponent from '@/components/SectionComponent.vue'
-</script>

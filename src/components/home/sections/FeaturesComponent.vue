@@ -120,6 +120,6 @@
   </SectionComponent>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import SectionComponent from '@/components/SectionComponent.vue'
 </script>

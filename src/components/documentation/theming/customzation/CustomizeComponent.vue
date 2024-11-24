@@ -1,5 +1,5 @@
 <template>
-  <DocumentatonSection id="customization">
+  <DocumentationSection id="customization">
     <template #header><a href="#customization">Customization</a></template>
     <template #content>
       <AlertComponent type="notice">
@@ -80,12 +80,12 @@
         </div>
       </div>
     </template>
-  </DocumentatonSection>
+  </DocumentationSection>
 </template>
 
 <script lang="ts" setup>
 import AlertComponent from '@/components/AlertComponent.vue'
-import DocumentatonSection from '@/Components/documentation/DocumentatonSection.vue'
+import DocumentationSection from '@/components/documentation/DocumentationSection.vue'
 import CodeBlock from '@/components/CodeBlock.vue'
 
 const defaultTheme = `

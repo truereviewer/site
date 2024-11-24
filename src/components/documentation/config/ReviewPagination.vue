@@ -34,7 +34,7 @@
 
 <script lang="ts" setup>
 import CodeBlock from '@/components/CodeBlock.vue'
-import DocumentatonSection from '@/components/documentation/DocumentatonSection.vue'
+import DocumentatonSection from '@/components/documentation/DocumentationSection.vue'
 
 const page = `
     /**

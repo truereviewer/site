@@ -86,7 +86,7 @@
 
 <script lang="ts" setup>
 import { ReviewerComponent } from '@/enums/ReviewerComponent'
-import DocumentatonSection from './DocumentatonSection.vue'
+import DocumentatonSection from './DocumentationSection.vue'
 import { ReviewerComponentService } from '@/services/ReviewerComponentService'
 import CodeBlock from '../CodeBlock.vue'
 
