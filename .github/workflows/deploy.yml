@@ -27,16 +27,19 @@ jobs:
       - name: Build assets
         run: npm run build-only
 
-      - name: Check if the deploy branch exists and delete
+      - name: Clear deploy branch contents
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          if git ls-remote --exit-code --heads origin deploy; then
-            echo "Deleting branch deploy from remote."
-            git push origin --delete deploy
-          else
-            echo "Branch deploy does not exist on the remote."
-          fi
+          BRANCH=deploy
+          git fetch origin $BRANCH
+          git checkout $BRANCH
+          git rm -r --cached .
+          git clean -fd
+          echo "This branch has been cleared." > README.md
+          git add README.md
+          git commit -m "Clear branch contents"
+          git push origin $BRANCH --force
 
       - name: Create and push branch
         run: |
