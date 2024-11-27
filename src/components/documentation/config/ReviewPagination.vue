@@ -2,7 +2,7 @@
   <DocumentationSection id="config@pagination">
     <template #header><a href="#config@pagination">Pagination</a></template>
     <template #content>
-      <p>Reviews are paginated by page. Reviewer support both page and infinite pagination.</p>
+      <p>Reviews are paginated by page. Reviewer support both page and infinite paginations.</p>
       <div class="space-y-12">
         <div class="space-y-2">
           <h3 id="config@pagePagination">
