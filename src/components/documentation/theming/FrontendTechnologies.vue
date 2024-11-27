@@ -11,7 +11,7 @@
           Reviewer also leverages the
           <a
             class="no-underline text-pink-500 inline-block pb-1"
-            href="https://primevue.org/"
+            href="https://primevue.org"
             target="_blank"
             >PrimeVue</a
           >
