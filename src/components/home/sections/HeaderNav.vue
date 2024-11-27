@@ -65,7 +65,7 @@
       </ul>
     </nav>
 
-    <nav class="hidden lg:flex items-center gap-x-6 gap-8 z-200 relative cursor-pointer">
+    <nav class="hidden lg:flex items-center gap-x-6 gap-8 z-[200] relative cursor-pointer">
       <div class="group mt-[12px]">
         <router-link
           class="no-underline !border-0 text-orange-400 inline-block pb-1"
