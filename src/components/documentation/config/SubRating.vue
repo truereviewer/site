@@ -7,12 +7,12 @@
         default but can be enabled by setting <code class="code-inline">enable_sub_rating</code> in
         the <code class="code-inline">/config/reviewer</code> file.
       </p>
-      <CodeBlock language="bash" :code="enableSubRating" />
+      <CodeBlock language="javascript" :code="enableSubRating" />
       <p>
         Then you should implement <code class="code-inline">subRatingTypes</code> method and add sub
         rating types.
       </p>
-      <CodeBlock language="bash" :code="subRatingTypes" />
+      <CodeBlock language="javascript" :code="subRatingTypes" />
       <p>This will enable following sub ratings.</p>
 
       <div>

@@ -7,7 +7,7 @@
         <code class="code-inline">enable_decimal_rating</code> setting in the
         <code class="code-inline">/config/reviewer</code> file.
       </p>
-      <CodeBlock language="bash" :code="enableDecimalRating" />
+      <CodeBlock language="javascript" :code="enableDecimalRating" />
     </template>
   </DocumentationSection>
 </template>

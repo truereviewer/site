@@ -8,14 +8,21 @@ import SectionComponent from '@/components/SectionComponent.vue'
     <template #content>
       <div class="text-center w-full">
         <div class="flex items-center justify-center w-full">
-          <h2 class="!m-0 !mr-4">Sponserware</h2>
+          <h2 class="!m-0 !mr-4">Sponsorware</h2>
+
           <img class="w-8 !m-0" src="/src/assets/img/give-love.png" alt="sponserware" />
         </div>
         <p class="!mb-0 w-full">
-          This is a sponserware. Only the people who sponser to my github repo can access to this
-          repo.
+          This is
+          <a
+            class="no-underline text-orange-400 inline-block pb-1"
+            href="https://github.com/sponsorware/docs"
+            >sponsorware</a
+          >, meaning only those who sponsor my GitHub account gain access to this repository.
         </p>
-        <p class="text-red-500 font-semibold !mt-0 w-full">* Only personnal accounts are allowed</p>
+        <p class="text-red-500 font-semibold !mt-0 w-full">
+          * Only personnal accounts are allowed.
+        </p>
 
         <div class="flex flex-wrap items-center lg:flex-row justify-center gap-8 w-full">
           <div
@@ -116,8 +123,8 @@ import SectionComponent from '@/components/SectionComponent.vue'
 
       <div class="mt-8">
         <p class="!mb-0 font-bold">Note:</p>
-        <p class="text-red-700 !my-0">
-          * If you chosed forever plan, email must be sent to the ep@gmail.com address
+        <p class="text-red-500 !my-0">
+          * If you chosed forever plan, email must be sent to the ep@gmail.com address.
         </p>
         <p class="!mt-0">* It can take up to 24 hours to get your subscription activated.</p>
       </div>

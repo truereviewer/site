@@ -1,9 +1,19 @@
 <template>
   <div class="w-full">
-    <div v-if="!expand" @click="expand = true" class="cursor-pointer flex justify-end p-2 border">
+    <div
+      v-if="!expand"
+      @click="expand = true"
+      class="cursor-pointer flex items-center justify-between p-2 border"
+    >
+      <h3 class="!my-0 !text-xl"><slot name="header" /></h3>
       <span class="text-4xl">+</span>
     </div>
-    <div v-else @click="expand = false" class="cursor-pointer flex justify-end p-2 border">
+    <div
+      v-else
+      @click="expand = false"
+      class="cursor-pointer flex items-center justify-between p-2 border"
+    >
+      <h3 class="!my-0 !text-xl"><slot name="header" /></h3>
       <span class="text-4xl">-</span>
     </div>
     <p
@@ -12,14 +22,12 @@
         { 'overflow-hidden !h-0 !p-0': !expand, ' h-full': expand }
       ]"
     >
-      ban
+      <slot name="content" />
     </p>
   </div>
 </template>
 
 <script setup lang="ts">
-import AccordianComponent from '@/components/AccordianComponent.vue'
-import SectionComponent from '@/components/SectionComponent.vue'
 import { ref } from 'vue'
 
 const expand = ref<boolean>(false)

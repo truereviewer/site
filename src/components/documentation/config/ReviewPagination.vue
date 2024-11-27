@@ -9,11 +9,11 @@
             <a href="#config@pagePagination">Page Pagination</a>
           </h3>
           <p>Page numbers are displayed.</p>
-          <CodeBlock language="html" :code="page" />
+          <CodeBlock language="javascript" :code="page" />
         </div>
         <div class="space-y-2">
           <h3 id="config@scrollPagination">
-            <a href="#config@scrollPagination">Media Types</a>
+            <a href="#config@scrollPagination">Infnite Pagination</a>
           </h3>
           <p>
             Load more button is displayed. Performance increase as
@@ -25,7 +25,7 @@
             >
             is used.
           </p>
-          <CodeBlock language="html" :code="scroll" />
+          <CodeBlock language="javascript" :code="scroll" />
         </div>
       </div>
     </template>

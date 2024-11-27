@@ -7,7 +7,7 @@
         <code class="code-inline">enable_media</code> in the
         <code class="code-inline">/config/reviewer</code> file.
       </p>
-      <CodeBlock language="bash" :code="enableMedia" />
+      <CodeBlock language="javascript" :code="enableMedia" />
 
       <div class="space-y-12">
         <div class="space-y-2">
@@ -15,21 +15,21 @@
             <a href="#config@mediaSize">Media Size</a>
           </h3>
           <p>Media size limit in bytes can be set as below.</p>
-          <CodeBlock language="html" :code="mediaSize" />
+          <CodeBlock language="javascript" :code="mediaSize" />
         </div>
         <div class="space-y-2">
           <h3 id="config@mediaType">
             <a href="#config@mediaType">Media Types</a>
           </h3>
           <p>Uploadable media types can be set as below.</p>
-          <CodeBlock language="html" :code="mediaType" />
+          <CodeBlock language="javascript" :code="mediaType" />
         </div>
         <div class="space-y-2">
           <h3 id="config@mediaLimit">
-            <a href="#config@mediaLimit">Media Limit for Review</a>
+            <a href="#config@mediaLimit">Media Limit per Review</a>
           </h3>
           <p>No of media that can be attached for a review can be set as below.</p>
-          <CodeBlock language="html" :code="mediaLimit" />
+          <CodeBlock language="javascript" :code="mediaLimit" />
         </div>
       </div>
     </template>

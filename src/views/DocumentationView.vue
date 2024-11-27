@@ -1,7 +1,7 @@
 <template>
   <div class="max-w-none overflow-hidden font-serif text-lg antialiased documentation mb-8">
     <header
-      class="relative p-6 bg-gradient-to-r from-green-600 via-green-600/60 via-[20%] to-green-600"
+      class="relative px-6 bg-gradient-to-r from-green-600 via-green-600/60 via-[20%] to-green-600"
     >
       <div class="flex justify-end">
         <HeaderNav />
@@ -20,6 +20,8 @@
         <SubRating />
         <MediaGallery />
         <ReviewPagination />
+        <ReviewPermissions />
+        <OtherOptions />
 
         <!--Theming-->
         <FrontendTechnologies />
@@ -46,6 +48,8 @@ import PublishAssets from '@/components/documentation/theming/PublishAssets.vue'
 import HeaderNav from '@/components/home/sections/HeaderNav.vue'
 import MediaGallery from '@/components/documentation/config/MediaGallery.vue'
 import ReviewPagination from '@/components/documentation/config/ReviewPagination.vue'
+import ReviewPermissions from '@/components/documentation/config/ReviewPermissions.vue'
+import OtherOptions from '@/components/documentation/config/OtherOptions.vue'
 </script>
 
 <style lang="css">

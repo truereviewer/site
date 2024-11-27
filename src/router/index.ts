@@ -6,6 +6,13 @@ const DocumentationView = () => import('@/views/DocumentationView.vue')
 const router = createRouter({
   linkExactActiveClass: 'border-b border-white',
   history: createWebHistory(import.meta.env.BASE_URL),
+  scrollBehavior(to) {
+    if (to.hash) {
+      return {
+        el: to.hash
+      }
+    }
+  },
   routes: [
     {
       path: '/',

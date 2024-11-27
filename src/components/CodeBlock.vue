@@ -1,6 +1,12 @@
 <template>
   <div class="text-base !mt-4">
-    <VCodeBlock :code="props.code" highlightjs :lang="props.language" theme="neon-bunny" />
+    <VCodeBlock
+      class="max-h-svh"
+      :code="props.code"
+      highlightjs
+      :lang="props.language"
+      theme="neon-bunny"
+    />
   </div>
 </template>
 
