@@ -3,7 +3,7 @@
     <h2 v-if="$slots.header" class="text-4xl mt-8 mb-4 inline-block">
       <span class="w-6 mr-2">#</span><slot name="header"></slot>
     </h2>
-    <div class="mx-6 w-full space-y-6 content">
+    <div class="w-full space-y-6 content">
       <slot name="content"> </slot>
     </div>
     <hr

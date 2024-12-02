@@ -1,16 +1,20 @@
 <template>
-  <aside @click="test" class="xl:w-[25%] text-base">
-    <div :class="['absolute w-8 top-18 right-2', { 'opacity-0': show }]" @click="show = true">
+  <aside @click="test" class="xl:w-[25%] text-base bg-green-500">
+    <div
+      v-if="!show"
+      :class="['absolute w-8 top-18 right-2 z-[300]', { 'opacity-0': show }]"
+      @click="show = true"
+    >
       <img src="/src/assets/icons/menu.svg" alt="menu" />
     </div>
-    <div class="fixed w-full sm:w-[75%] md:w-[50%] xl:w-[25%]">
+    <div class="fixed w-full z-[250] top-0 xl:top-auto sm:w-[75%] md:w-[50%] xl:w-[25%]">
       <nav
         :class="[
-          'relative overflow-scroll w-full  top-0 right-0 z-50 xl:static bg-gradient-to-b from-white to-90% to-green-600/10 h-svh pb-12 transition-all',
+          'relative overflow-scroll w-full top-0 right-0 z-50 xl:static bg-gray-100 xl:bg-white h-svh pb-12 transition-all',
           { '!w-0 opacity-0': !show }
         ]"
       >
-        <div @click="show = false" class="flex justify-end p-2 !m-0 xl:hidden">
+        <div v-if="show" @click="show = false" class="flex justify-end p-2 !m-0 xl:hidden">
           <img class="w-6 !m-0" src="/src/assets/icons/cancel.svg" alt="Cancel" />
         </div>
 

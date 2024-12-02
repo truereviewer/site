@@ -2,189 +2,50 @@
   <SectionComponent class="flex flex-col items-start justify-center">
     <template #header>Features </template>
     <template #content>
-      <div class="w-full grid grid-cols-3 gap-4">
-        <div
-          class="text-center pb-4 h-[25rem] border rounded bg-gradient-to-br from-green-400/50 to-green-500/80"
-        >
-          <div class="relative w-full h-full overflow-hidden">
-            <h2 class="!text-black !m-4">Widget</h2>
-            <div class="w-full h-full flex justify-center">
-              <a
-                class="flex justify-center"
-                href="/src/assets/img/reviewer/full-widget.png"
-                target="_blank"
-              >
-                <img
-                  class="absolute !my-0"
-                  src="/src/assets/img/reviewer/full-widget.png"
-                  alt="Statistics"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div
-          class="text-center pb-4 h-[25rem] border rounded bg-gradient-to-br from-green-400/50 to-green-500/80"
-        >
-          <div class="relative w-full h-full overflow-hidden">
-            <h2 class="!text-black !m-4">Review Statistics</h2>
-            <div class="w-full h-full flex justify-center">
-              <a
-                class="flex justify-center"
-                href="/src/assets/img/reviewer/lg/1.png"
-                target="_blank"
-              >
-                <img
-                  class="absolute w-72 h-92 object-cover !my-0"
-                  src="/src/assets/img/reviewer/lg/1.png"
-                  alt="Review Statistics"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div
-          class="text-center h-[25rem] border rounded bg-gradient-to-br from-green-400/50 to-green-500/80"
-        >
-          <div class="relative w-full h-full overflow-hidden">
-            <h2 class="!text-black !m-4">Recommendation</h2>
-            <div class="w-full h-full flex justify-center">
-              <a
-                class="flex justify-center"
-                href="/src/assets/img/reviewer/lg/2.png"
-                target="_blank"
-              >
-                <img
-                  class="absolute w-72 object-cover !my-0"
-                  src="/src/assets/img/reviewer/lg/2.png"
-                  alt="Recommendation"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div
-          class="text-center h-[25rem] border rounded bg-gradient-to-br from-green-400/50 to-green-500/80"
-        >
-          <div class="relative w-full h-full overflow-hidden">
-            <h2 class="!text-black !m-4">Dynamic Sub Ratings</h2>
-            <div class="w-full h-full flex justify-center">
-              <a
-                class="flex justify-center"
-                href="/src/assets/img/reviewer/sub_rating.png"
-                target="_blank"
-              >
-                <img
-                  class="absolute w-72 h-92 object-cover !my-0"
-                  src="/src/assets/img/reviewer/sub_rating.png"
-                  alt="Dynamic Sub Ratings"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div
-          class="text-center h-[25rem] border rounded bg-gradient-to-br from-green-400/50 to-green-500/80"
-        >
-          <div class="relative w-full h-full overflow-hidden">
-            <h2 class="!text-black !m-4">Media Gallery</h2>
-            <div class="w-full h-full flex justify-center">
-              <a
-                class="flex justify-center"
-                href="/src/assets/img/reviewer/lg/3.png"
-                target="_blank"
-              >
-                <img
-                  class="absolute w-72 h-92 object-cover !my-0"
-                  src="/src/assets/img/reviewer/lg/3.png"
-                  alt="Media Gallery"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div
-          class="text-center h-[25rem] border rounded bg-gradient-to-br from-green-400/50 to-green-500/80"
-        >
-          <div class="relative w-full h-full overflow-hidden">
-            <h2 class="!text-black !m-4">Review Modal</h2>
-            <div class="w-full h-full flex justify-center">
-              <a
-                class="flex justify-center"
-                href="/src/assets/img/reviewer/review_modal_sm.png"
-                target="_blank"
-              >
-                <img
-                  class="absolute object-cover !my-0"
-                  src="/src/assets/img/reviewer/review_modal_sm.png"
-                  alt="Review Modal"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div
-          class="text-center h-[25rem] border rounded bg-gradient-to-br from-green-400/50 to-green-500/80"
-        >
-          <div class="relative w-full h-full overflow-hidden">
-            <h2 class="!text-black !m-4">Detailed Review List</h2>
-            <div class="w-full h-full flex justify-center">
-              <a
-                class="flex justify-center"
-                href="/src/assets/img/reviewer/review.png"
-                target="_blank"
-                ><img
-                  class="absolute object-none !my-0"
-                  src="/src/assets/img/reviewer/review.png"
-                  alt="Detailed Review List"
-              /></a>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="text-center h-[25rem] border rounded bg-gradient-to-br from-green-400/50 to-green-500/80"
-        >
-          <div class="relative w-full h-full overflow-hidden">
-            <h2 class="!text-black !m-4">Advanced Filters</h2>
-            <div class="w-full h-full flex justify-center">
-              <a
-                class="flex justify-center"
-                href="/src/assets/img/reviewer/filters_sm.png"
-                target="_blank"
-              >
-                <img
-                  class="absolute w-84 h-92 object-cover !my-0"
-                  src="/src/assets/img/reviewer/filters_sm.png"
-                  alt="Advanced Filters"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div
-          class="text-center h-[25rem] border rounded bg-gradient-to-br from-green-400/50 to-green-500/80"
-        >
-          <div class="relative w-full h-full overflow-hidden">
-            <h2 class="!text-black !m-4">Elegant Forms</h2>
-            <div class="w-full h-full flex justify-center">
-              <a
-                class="flex justify-center"
-                href="/src/assets/img/reviewer/form.png"
-                target="_blank"
-                ><img
-                  class="absolute !my-0"
-                  src="/src/assets/img/reviewer/form.png"
-                  alt="Elegant Forms"
-              /></a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <ul
+        class="text-gray-500 !pl-0 lg:grid gap-x-12 lg:grid-cols-2 list-inside dark:text-gray-400"
+      >
+        <li v-for="point in list" :key="point" class="flex items-center">
+          <svg
+            class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+            />
+          </svg>
+          {{ point }}
+        </li>
+      </ul>
     </template>
   </SectionComponent>
 </template>
 
 <script setup lang="ts">
 import SectionComponent from '@/components/SectionComponent.vue'
+
+const list = [
+  'Modern, responsive design.',
+  'Theming with free presets and customizable colors.',
+  'Highly customizable to suit your preferences.',
+  'Packed with all the essential features.',
+  'Designed to cater to diverse user needs.',
+  'High performance powered by Vue.js.',
+  'API-agnostic for seamless integration.',
+  'Widget to summarize product reviews effectively.',
+  'Interactive statistics for deeper insights.',
+  'Dynamic sub-ratings for detailed product evaluation.',
+  'Advanced media gallery for an immersive visual experience.',
+  'Comprehensive review list with pagination.',
+  'Robust filtering options for quick navigation.',
+  'Elegant, user-friendly forms with built-in validation.',
+  'Enhanced security features for peace of mind.',
+  'Product recommendation capabilities.',
+  'React to reviews with helpfulness ratings.',
+  'Ability to report inappropriate reviews.',
+  'And much more to elevate the review experience!'
+]
 </script>

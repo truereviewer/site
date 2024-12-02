@@ -46,7 +46,7 @@ body {
   }
 
   section {
-    @apply !px-16;
+    @apply px-4 md:!px-16;
   }
 }
 
@@ -104,4 +104,27 @@ body {
   @apply bg-gray-200;
   @apply px-2;
   @apply rounded;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
 }

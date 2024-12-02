@@ -1,7 +1,7 @@
 <template>
   <div class="text-base !mt-4">
     <VCodeBlock
-      class="max-h-svh"
+      class="max-h-svh max-w-12"
       :code="props.code"
       highlightjs
       :lang="props.language"

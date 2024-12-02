@@ -9,7 +9,7 @@
     </header>
     <div class="flex">
       <SideBar />
-      <main class="xl:w-[75%] my-4 space-y-8">
+      <main class="w-full xl:w-[75%] my-4 space-y-8">
         <InstallationSection />
         <ComponentsSection />
 

@@ -13,7 +13,7 @@
         <p>Reviewer has its own migrations/tables as below .</p>
 
         <table
-          class="w-fulltext-sm !mb-6 text-left rtl:text-right text-gray-500 dark:text-gray-400"
+          class="w-full overflow-auto table-auto whitespace-nowrap text-sm !mb-6 text-left rtl:text-right text-gray-500 dark:text-gray-400"
         >
           <thead
             class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
