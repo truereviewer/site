@@ -50,12 +50,12 @@
             <h2 class="!text-black !m-4">Recommendation</h2>
             <div class="w-full h-full flex justify-center">
               <a
-                class="flex justify-center"
+                class="flex justify-center h-[20rem]"
                 href="/src/assets/img/reviewer/lg/2.png"
                 target="_blank"
               >
                 <img
-                  class="absolute w-72 object-cover !my-0 border-2 border-[var(--secondary-border-color)]"
+                  class="w-72 object-cover !my-0 border-2 border-[var(--secondary-border-color)]"
                   src="/src/assets/img/reviewer/lg/2.png"
                   alt="Recommendation"
                 />
@@ -90,12 +90,12 @@
             <h2 class="!text-black !m-4">Media Gallery</h2>
             <div class="w-full h-full flex justify-center">
               <a
-                class="flex justify-center"
+                class="flex justify-center w-[20rem] h-[20rem] bg-whit"
                 href="/src/assets/img/reviewer/lg/3.png"
                 target="_blank"
               >
                 <img
-                  class="absolute w-72 h-92 object-cover !my-0 border-2 border-[var(--secondary-border-color)]"
+                  class="object-contain !my-0 border-2 border-[var(--secondary-border-color)]"
                   src="/src/assets/img/reviewer/lg/3.png"
                   alt="Media Gallery"
                 />
@@ -110,12 +110,12 @@
             <h2 class="!text-black !m-4">Review Modal</h2>
             <div class="w-full h-full flex justify-center">
               <a
-                class="flex min-w-[18rem] bg-white justify-center border-2 border-[var(--secondary-border-color)]"
+                class="flex w-[20rem] h-[20rem] bg-white justify-center border-2 border-[var(--secondary-border-color)]"
                 href="/src/assets/img/reviewer/review_modal_sm.png"
                 target="_blank"
               >
                 <img
-                  class="absolute object-cover !my-0"
+                  class="object-contain w-full !my-0"
                   src="/src/assets/img/reviewer/review_modal_sm.png"
                   alt="Review Modal"
                 />
@@ -130,11 +130,11 @@
             <h2 class="!text-black !m-4">Detailed Review List</h2>
             <div class="w-full h-full flex justify-center">
               <a
-                class="flex justify-center min-w-[18rem] bg-white border-2 border-[var(--secondary-border-color)]"
+                class="flex justify-center w-[20rem] h-[20rem] bg-white border-2 border-[var(--secondary-border-color)]"
                 href="/src/assets/img/reviewer/review.png"
                 target="_blank"
                 ><img
-                  class="absolute object-none !my-0 border-2"
+                  class="object-contain !my-0 border-2"
                   src="/src/assets/img/reviewer/review.png"
                   alt="Detailed Review List"
               /></a>
@@ -149,12 +149,12 @@
             <h2 class="!text-black !m-4">Advanced Filters</h2>
             <div class="w-full h-full flex justify-center">
               <a
-                class="flex justify-center min-w-[18rem] bg-white border-2 border-[var(--secondary-border-color)]"
+                class="flex justify-center w-[20rem] h-[20rem] bg-white border-2 border-[var(--secondary-border-color)]"
                 href="/src/assets/img/reviewer/filters_sm.png"
                 target="_blank"
               >
                 <img
-                  class="absolute w-84 h-92 object-cover !my-0"
+                  class="w-84 h-92 object-contain !my-0"
                   src="/src/assets/img/reviewer/filters_sm.png"
                   alt="Advanced Filters"
                 />
@@ -169,11 +169,11 @@
             <h2 class="!text-black !m-4">Elegant Forms</h2>
             <div class="w-full h-full flex justify-center">
               <a
-                class="flex justify-center min-w-[18rem] bg-white border-2 border-[var(--secondary-border-color)]"
+                class="flex justify-center w-[20rem] h-[20rem] bg-white border-2 border-[var(--secondary-border-color)]"
                 href="/src/assets/img/reviewer/form.png"
                 target="_blank"
                 ><img
-                  class="absolute !my-0"
+                  class="!my-0 object-contain"
                   src="/src/assets/img/reviewer/form.png"
                   alt="Elegant Forms"
               /></a>

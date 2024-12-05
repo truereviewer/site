@@ -104,18 +104,27 @@ import SectionComponent from '@/components/SectionComponent.vue'
             </ul>
 
             <div class="flex justify-between items-center text-start mt-12">
-              <ButtonComponent
-                class="flex justify-between items-center gap-x-8 !py-[0.8rem] !text-lg !from-green-800 !to-green-900"
+              <a
+                href="https://github.com/sponsors/Lakshan-Madushanka/sponsorships?sponsor=Lakshan-Madushanka&tier_id=430275"
               >
-                <span>Forever</span>
-                <span>$350</span>
-              </ButtonComponent>
-              <ButtonComponent
-                class="flex justify-between items-center gap-x-8 !py-[0.8rem] !text-lg !from-green-800 !to-green-900"
+                <ButtonComponent
+                  class="flex justify-between items-center gap-x-8 !py-[0.8rem] !text-lg !from-green-800 !to-green-900"
+                >
+                  <span>Forever</span>
+                  <span>$350</span>
+                </ButtonComponent>
+              </a>
+
+              <a
+                href="https://github.com/sponsors/Lakshan-Madushanka/sponsorships?sponsor=Lakshan-Madushanka&frequency=one-time&amount=350"
               >
-                <span>Monthly</span>
-                <span>$15</span>
-              </ButtonComponent>
+                <ButtonComponent
+                  class="flex justify-between items-center gap-x-8 !py-[0.8rem] !text-lg !from-green-800 !to-green-900"
+                >
+                  <span>Monthly</span>
+                  <span>$25</span>
+                </ButtonComponent>
+              </a>
             </div>
           </div>
         </div>
