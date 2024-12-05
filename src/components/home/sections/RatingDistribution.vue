@@ -3,7 +3,7 @@
     <template #header>{{ rcs.title() }}</template>
     <template #content>
       <p>{{ rcs.description() }}</p>
-      <picture class="border rounded p-4">
+      <picture class="border border-[var(--secondary-border-color)] rounded p-4">
         <source media="(min-width:1024px)" srcset="/src/assets/img/reviewer/lg/1.png" />
         <source media="(min-width:768px)" srcset="/src/assets/img/reviewer/lg/1.png" />
         <img src="/src/assets/img/reviewer/lg/1.png" alt="Rating distribution" />

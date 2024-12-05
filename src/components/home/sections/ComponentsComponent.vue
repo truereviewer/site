@@ -15,7 +15,7 @@
                 target="_blank"
               >
                 <img
-                  class="absolute !my-0"
+                  class="absolute !my-0 border-2 border-[var(--secondary-border-color)]"
                   src="/src/assets/img/reviewer/full-widget.png"
                   alt="Statistics"
                 />
@@ -35,7 +35,7 @@
                 target="_blank"
               >
                 <img
-                  class="absolute w-72 h-92 object-cover !my-0"
+                  class="absolute w-72 h-92 object-cover !my-0 border-2 border-[var(--secondary-border-color)]"
                   src="/src/assets/img/reviewer/lg/1.png"
                   alt="Review Statistics"
                 />
@@ -55,7 +55,7 @@
                 target="_blank"
               >
                 <img
-                  class="absolute w-72 object-cover !my-0"
+                  class="absolute w-72 object-cover !my-0 border-2 border-[var(--secondary-border-color)]"
                   src="/src/assets/img/reviewer/lg/2.png"
                   alt="Recommendation"
                 />
@@ -75,7 +75,7 @@
                 target="_blank"
               >
                 <img
-                  class="absolute w-72 h-92 object-cover !my-0"
+                  class="absolute w-72 h-92 object-cover !my-0 border-2 border-[var(--secondary-border-color)]"
                   src="/src/assets/img/reviewer/sub_rating.png"
                   alt="Dynamic Sub Ratings"
                 />
@@ -95,7 +95,7 @@
                 target="_blank"
               >
                 <img
-                  class="absolute w-72 h-92 object-cover !my-0"
+                  class="absolute w-72 h-92 object-cover !my-0 border-2 border-[var(--secondary-border-color)]"
                   src="/src/assets/img/reviewer/lg/3.png"
                   alt="Media Gallery"
                 />
@@ -115,7 +115,7 @@
                 target="_blank"
               >
                 <img
-                  class="absolute object-cover !my-0"
+                  class="absolute object-cover !my-0 border-2 border-[var(--secondary-border-color)]"
                   src="/src/assets/img/reviewer/review_modal_sm.png"
                   alt="Review Modal"
                 />
@@ -134,7 +134,7 @@
                 href="/src/assets/img/reviewer/review.png"
                 target="_blank"
                 ><img
-                  class="absolute object-none !my-0"
+                  class="absolute object-none !my-0 border-2 border-[var(--secondary-border-color)]"
                   src="/src/assets/img/reviewer/review.png"
                   alt="Detailed Review List"
               /></a>
@@ -154,7 +154,7 @@
                 target="_blank"
               >
                 <img
-                  class="absolute w-84 h-92 object-cover !my-0"
+                  class="absolute w-84 h-92 object-cover !my-0 border-2 border-[var(--secondary-border-color)]"
                   src="/src/assets/img/reviewer/filters_sm.png"
                   alt="Advanced Filters"
                 />
@@ -173,7 +173,7 @@
                 href="/src/assets/img/reviewer/form.png"
                 target="_blank"
                 ><img
-                  class="absolute !my-0"
+                  class="absolute !my-0 border-2 border-[var(--secondary-border-color)]"
                   src="/src/assets/img/reviewer/form.png"
                   alt="Elegant Forms"
               /></a>
