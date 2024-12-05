@@ -75,8 +75,14 @@
           <p v-html="rcs.description()"></p>
           <CodeBlock language="html" :code="useComponent('review-list')" />
 
-          <div v-if="rcs.images().length > 0" class="flex gap-4 flex-wrap border p-4">
-            <img v-for="img in rcs.images()" :src="img.src" :alt="img.alt" :key="img.src" />
+          <div v-if="rcs.images().length > 0" class="complete__system gap-4 border p-4">
+            <img
+              v-for="(img, index) in rcs.images()"
+              :class="'component--' + (index + 1)"
+              :src="img.src"
+              :alt="img.alt"
+              :key="img.src"
+            />
           </div>
         </div>
       </div>
@@ -101,3 +107,68 @@ const useComponent = (name: string) => `
 <${name} id="{{$product->getKey()}} modelType={{$product->getMorphClass()}}"/>
 `
 </script>
+
+<style scoped>
+.complete__system {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.complete__system img {
+  object-fit: none;
+}
+
+.complete__system .component--6,
+.complete__system .component--7 {
+  object-fit: fill;
+}
+
+.component--4 {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .complete__system {
+    display: grid;
+    grid-template-areas:
+      'widget widget widget'
+      'stats recommendation gallery'
+      'filters filters filters'
+      'list list list';
+  }
+
+  .complete__system img {
+    object-fit: fill;
+  }
+
+  .component--4 {
+    display: inline;
+  }
+
+  .component--5 {
+    display: none;
+  }
+}
+
+.component--1 {
+  grid-area: widget;
+}
+.component--2 {
+  grid-area: stats;
+}
+.component--3 {
+  grid-area: recommendation;
+}
+.component--4 {
+  grid-area: gallery;
+}
+.component--6 {
+  grid-area: filters;
+}
+
+.component--7 {
+  grid-area: list;
+}
+</style>

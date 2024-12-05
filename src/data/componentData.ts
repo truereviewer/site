@@ -43,11 +43,13 @@ const bigPictureComponentData: ReviewerComponentData = {
   title: 'Together, they create a complete picture.',
   description: '',
   images: [
-    { src: '/src/assets/img/reviewer/widget.png.png', alt: 'Review List Filters' },
-    { src: '/src/assets/img/reviewer/lg/1.png', alt: 'Review List' },
-    { src: '/src/assets/img/reviewer/lg/2.png', alt: 'Review List' },
-    { src: '/src/assets/img/reviewer/lg/3.png.png', alt: 'Review List' },
-    { src: '/src/assets/img/reviewer/lg/4-1.png', alt: 'Review List' }
+    { src: '/src/assets/img/reviewer/widget.png', alt: 'Review List Filters' },
+    { src: '/src/assets/img/reviewer/lg/1.png', alt: 'Review Stats' },
+    { src: '/src/assets/img/reviewer/lg/2.png', alt: 'Review Recommendation' },
+    { src: '/src/assets/img/reviewer/lg/3.png', alt: 'Review Gallery' },
+    { src: '/src/assets/img/reviewer/sm/3.png', alt: 'Review Gallery' },
+    { src: '/src/assets/img/reviewer/lg/4-1.png', alt: 'Review Filters' },
+    { src: '/src/assets/img/reviewer/lg/4-2.png', alt: 'Review List' }
   ]
 }
 
