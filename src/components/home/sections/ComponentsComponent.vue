@@ -110,12 +110,12 @@
             <h2 class="!text-black !m-4">Review Modal</h2>
             <div class="w-full h-full flex justify-center">
               <a
-                class="flex justify-center"
+                class="flex min-w-[18rem] bg-white justify-center border-2 border-[var(--secondary-border-color)]"
                 href="/src/assets/img/reviewer/review_modal_sm.png"
                 target="_blank"
               >
                 <img
-                  class="absolute object-cover !my-0 border-2 border-[var(--secondary-border-color)]"
+                  class="absolute object-cover !my-0"
                   src="/src/assets/img/reviewer/review_modal_sm.png"
                   alt="Review Modal"
                 />
@@ -130,11 +130,11 @@
             <h2 class="!text-black !m-4">Detailed Review List</h2>
             <div class="w-full h-full flex justify-center">
               <a
-                class="flex justify-center"
+                class="flex justify-center min-w-[18rem] bg-white border-2 border-[var(--secondary-border-color)]"
                 href="/src/assets/img/reviewer/review.png"
                 target="_blank"
                 ><img
-                  class="absolute object-none !my-0 border-2 border-[var(--secondary-border-color)]"
+                  class="absolute object-none !my-0 border-2"
                   src="/src/assets/img/reviewer/review.png"
                   alt="Detailed Review List"
               /></a>
@@ -149,12 +149,12 @@
             <h2 class="!text-black !m-4">Advanced Filters</h2>
             <div class="w-full h-full flex justify-center">
               <a
-                class="flex justify-center"
+                class="flex justify-center min-w-[18rem] bg-white border-2 border-[var(--secondary-border-color)]"
                 href="/src/assets/img/reviewer/filters_sm.png"
                 target="_blank"
               >
                 <img
-                  class="absolute w-84 h-92 object-cover !my-0 border-2 border-[var(--secondary-border-color)]"
+                  class="absolute w-84 h-92 object-cover !my-0"
                   src="/src/assets/img/reviewer/filters_sm.png"
                   alt="Advanced Filters"
                 />
@@ -169,11 +169,11 @@
             <h2 class="!text-black !m-4">Elegant Forms</h2>
             <div class="w-full h-full flex justify-center">
               <a
-                class="flex justify-center"
+                class="flex justify-center min-w-[18rem] bg-white border-2 border-[var(--secondary-border-color)]"
                 href="/src/assets/img/reviewer/form.png"
                 target="_blank"
                 ><img
-                  class="absolute !my-0 border-2 border-[var(--secondary-border-color)]"
+                  class="absolute !my-0"
                   src="/src/assets/img/reviewer/form.png"
                   alt="Elegant Forms"
               /></a>

@@ -6,7 +6,7 @@
       <div class="flex items-start gap-4 flex-wrap lg:flex-nowrap">
         <picture class="border border-[var(--secondary-border-color)] rounded p-4 w-[35%]">
           <source media="(min-width:1024px)" srcset="/src/assets/img/reviewer/lg/3.png" />
-          <source media="(min-width:768px)" srcset="/src/assets/img/reviewer/md/3.png" />
+          <source media="(min-width:0px)" srcset="/src/assets/img/reviewer/md/3.png" />
           <img src="/src/assets/img/reviewer/lg/3.png" alt="Media gallery" />
         </picture>
         <img
