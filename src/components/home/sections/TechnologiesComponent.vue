@@ -6,16 +6,16 @@
       <div
         class="inline-flex bg-gradient-to-r from-green-300/10 to-green-400/10 p-4 gap-x-4 justify-start items-center rounded"
       >
-        <a class="flex space-x-4 items-center" href="www.laravel.com">
-          <img class="max-w-16 !my-0" src="/src/assets/img/laravel.png" alt="Laravel" />
+        <a class="flex space-x-4 items-center" href="https://laravel.com" target="_blank">
+          <img class="max-w-12 !my-0" src="/src/assets/img/laravel.png" alt="Laravel" />
           <span class="inline-block primary-bg-color h-8 w-[2px]"></span>
         </a>
-        <a class="flex space-x-4 items-center" href="https://vuejs.org/">
-          <img class="max-w-16 !my-0" src="/src/assets/img/vue.png" alt="Vue.js" />
+        <a class="flex space-x-4 items-center" href="https://vuejs.org/" target="_blank">
+          <img class="max-w-12 !my-0" src="/src/assets/img/vue.png" alt="Vue.js" />
           <span class="inline-block primary-bg-color h-8 w-[2px]"></span>
         </a>
-        <a class="flex space-x-4 items-center" href="https://primevue.org/">
-          <img class="max-w-16 !my-0" src="/src/assets/img/primevue.webp" alt="Primevue" />
+        <a class="flex space-x-4 items-center" href="https://primevue.org/" target="_blank">
+          <img class="max-w-12 !my-0" src="/src/assets/img/primevue.webp" alt="Primevue" />
         </a>
       </div>
     </template>

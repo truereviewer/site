@@ -38,17 +38,26 @@
           </div>
         </div>
       </div>
-      <div class="mt-8 shadow border">
-        <div class="border rounded p-4">
+      <div class="mt-8 w-full shadow border">
+        <div class="border w-full rounded p-4">
           <picture class="!mb-0">
             <source media="(min-width:1024px)" srcset="/src/assets/img/reviewer/lg/4-1.png" />
-            <source media="(min-width:768px)" srcset="/src/assets/img/reviewer/md/4.png" />
-            <img src="/src/assets/img/reviewer/sm/4-1.png" alt="Review list" />
+            <source media="(min-width:768px)" srcset="/src/assets/img/reviewer/md/4-1.png" />
+            <img
+              class="object-fill min-[1366px]:object-none"
+              src="/src/assets/img/reviewer/sm/4-1.png"
+              alt="Review list"
+            />
           </picture>
 
           <img
-            class="hidden lg:inline !mt-0"
+            class="hidden lg:inline object-fill min-[1366px]:object-none !mt-0"
             src="/src/assets/img/reviewer/lg/4-2.png"
+            alt="Review list"
+          />
+          <img
+            class="hidden md:inline lg:hidden !mt-0"
+            src="/src/assets/img/reviewer/md/4-2.png"
             alt="Review list"
           />
           <img
