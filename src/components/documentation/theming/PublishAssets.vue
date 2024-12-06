@@ -1,6 +1,6 @@
 <template>
-  <DocumentationSection id="theming@publsihAssets">
-    <template #header><a href="#theming@publsihAssets">Publish Assets</a></template>
+  <DocumentationSection id="theming@publishAssets">
+    <template #header><a href="#theming@publishAssets">Publish Assets</a></template>
     <template #content>
       <p>Before begin you should publish commenter views executing below command.</p>
       <CodeBlock language="bash" code="php artisan vendor:publish --tag=reviewer-views" />

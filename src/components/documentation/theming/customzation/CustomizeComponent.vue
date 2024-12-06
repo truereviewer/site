@@ -16,7 +16,7 @@
 
       <div class="space-y-6">
         <div class="space-y-4">
-          <h3 id="#customization@components">
+          <h3 id="customization@components">
             <a href="#customization@components">Components</a>
           </h3>
           <p>
