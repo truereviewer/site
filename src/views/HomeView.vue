@@ -5,6 +5,7 @@
       <DemoVideo />
       <ReviewerDescription />
       <FeaturesComponent />
+      <WhyTrueReviewer />
       <ComponentsComponent />
       <WidgetComponent />
       <RatingDistribution />
@@ -36,6 +37,7 @@ import FeaturesComponent from '@/components/home/sections/FeaturesComponent.vue'
 import { onMounted, reactive } from 'vue'
 import FrequentlyAskedQuestions from '@/components/home/sections/FrequentlyAskedQuestions.vue'
 import ComponentsComponent from '@/components/home/sections/ComponentsComponent.vue'
+import WhyTrueReviewer from '@/components/home/sections/WhyTrueReviewer.vue'
 
 const showReviewComponents = reactive({ middle: false })
 
