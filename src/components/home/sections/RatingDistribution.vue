@@ -1,5 +1,8 @@
 <template>
-  <SectionComponent class="flex flex-col items-start justify-center">
+  <SectionComponent
+    class="flex flex-col items-start justify-center"
+    id="component__rating_distribution"
+  >
     <template #header>{{ rcs.title() }}</template>
     <template #content>
       <p>{{ rcs.description() }}</p>

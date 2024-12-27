@@ -1,5 +1,5 @@
 <template>
-  <SectionComponent>
+  <SectionComponent id="component__sub_rating_distribution">
     <template #header>{{ rcs.title() }}</template>
     <template #content>
       <div v-html="rcs.description()" class="!mt-0"></div>

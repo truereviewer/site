@@ -1,5 +1,5 @@
 <template>
-  <SectionComponent class="flex flex-col items-start justify-center">
+  <SectionComponent id="media__gallery" class="flex flex-col items-start justify-center">
     <template #header>{{ rcs.title() }}</template>
     <template #content>
       <p>{{ rcs.description() }}</p>

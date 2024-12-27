@@ -1,5 +1,5 @@
 <template>
-  <SectionComponent>
+  <SectionComponent id="component__list">
     <template #header>{{ rcs.title() }}</template>
     <template #content>
       <p>{{ rcs.description() }}</p>
