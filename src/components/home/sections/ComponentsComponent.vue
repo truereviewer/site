@@ -39,10 +39,11 @@
 
 <script setup lang="ts">
 import SectionComponent from '@/components/SectionComponent.vue'
+import WidgetImg from '@/assets/img/reviewer/full-widget.png'
 
 const components = {
   widget: {
-    src: '/src/assets/img/reviewer/full-widget.png',
+    src: WidgetImg,
     alt: 'widget',
     title: 'widget',
     objectFit: 'object-none',
