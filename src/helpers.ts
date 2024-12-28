@@ -7,6 +7,8 @@ const imgUrl = (name: string, path: string = '', type: 'img' | 'svg' | 'icons' =
 
   tPath = tPath + '/' + name
 
+  //return fileURLToPath(new URL(tPath, import.meta.url))
+
   console.log(tPath)
   console.log(new URL(tPath, import.meta.url).href)
 
