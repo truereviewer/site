@@ -40,7 +40,14 @@
 <script setup lang="ts">
 import SectionComponent from '@/components/SectionComponent.vue'
 import WidgetImg from '@/assets/img/reviewer/full-widget.png'
-import { imgUrl } from '@/helpers'
+import StatsImg from '@/assets/img/reviewer/lg/1.png'
+import RecommendationImg from '@/assets/img/reviewer/lg/2.png'
+import SubRatingImg from '@/assets/img/reviewer/sub_rating.png'
+import MediaGalleryImg from '@/assets/img/reviewer/lg/3.png'
+import ModalImg from '@/assets/img/reviewer/review_modal_sm.png'
+import ReviewImg from '@/assets/img/reviewer/review.png'
+import FiltersImg from '@/assets/img/reviewer/filters_sm.png'
+import FormImg from '@/assets/img/reviewer/form.png'
 
 const components = {
   widget: {
@@ -51,56 +58,56 @@ const components = {
     id: 'component__widget'
   },
   stats: {
-    src: '/src/assets/img/reviewer/lg/1.png',
+    src: StatsImg,
     alt: 'stats',
     title: 'Review Statistics',
     objectFit: 'object-contain',
     id: 'component__rating_distribution'
   },
   recommendations: {
-    src: '/src/assets/img/reviewer/lg/2.png',
+    src: RecommendationImg,
     title: 'Recommendations',
     alt: 'recommendations',
     objectFit: 'object-contain',
     id: 'component__sub_rating_distribution'
   },
   dynamicSubRatings: {
-    src: '/src/assets/img/reviewer/sub_rating.png',
+    src: SubRatingImg,
     alt: 'dynamic sub ratings',
     title: 'dynamic sub ratings',
     objectFit: 'object-contain',
     id: 'component__sub_rating_distribution'
   },
   mediaGallery: {
-    src: 'src/assets/img/reviewer/lg/3.png',
+    src: MediaGalleryImg,
     alt: 'media gallery',
     title: 'Media Gallery',
     objectFit: 'object-contain',
     id: 'media__gallery'
   },
   modal: {
-    src: '/src/assets/img/reviewer/review_modal_sm.png',
+    src: ModalImg,
     alt: 'review modal',
     title: 'Review Modal',
     objectFit: 'object-contain',
     id: ''
   },
   list: {
-    src: '/src/assets/img/reviewer/review.png',
+    src: ReviewImg,
     alt: 'detailed review list',
     title: 'Detailed Review List',
     objectFit: 'object-contain',
     id: 'component__list'
   },
   filters: {
-    src: '/src/assets/img/reviewer/filters_sm.png',
+    src: FiltersImg,
     alt: 'advanced filters',
     title: 'Advanced Filters',
     objectFit: 'object-contain',
     id: ''
   },
   forms: {
-    src: '/src/assets/img/reviewer/form.png',
+    src: FormImg,
     alt: 'forms',
     title: 'Elegant Forms',
     objectFit: 'object-contain',
