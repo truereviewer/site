@@ -4,7 +4,7 @@
     <template #content>
       <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <div
-          class="text-center pb-4 h-[30rem] border rounded bg-gradient-to-br from-green-400/10 to-green-500/80"
+          class="text-center pb-4 border rounded bg-gradient-to-br from-green-400/10 to-green-500/80"
         >
           <div class="relative w-full h-full overflow-hidden">
             <h2 class="!text-black !m-4">Builds Trust and Credibility</h2>
@@ -26,7 +26,7 @@
         </div>
 
         <div
-          class="text-center pb-4 h-[30rem] border rounded bg-gradient-to-br from-green-400/10 to-green-500/80"
+          class="text-center pb-4 border rounded bg-gradient-to-br from-green-400/10 to-green-500/80"
         >
           <div class="relative w-full h-full overflow-hidden">
             <h2 class="!text-black !m-4">Boosts Customer Engagement</h2>
@@ -48,7 +48,7 @@
         </div>
 
         <div
-          class="text-center pb-4 h-[30rem] border rounded bg-gradient-to-br from-green-400/10 to-green-500/80"
+          class="text-center pb-4 border rounded bg-gradient-to-br from-green-400/10 to-green-500/80"
         >
           <div class="relative w-full h-full overflow-hidden">
             <h2 class="!text-black !m-4">Improves Online Visibility</h2>
@@ -70,7 +70,7 @@
         </div>
 
         <div
-          class="text-center pb-4 h-[30rem] border rounded bg-gradient-to-br from-green-400/10 to-green-500/80"
+          class="text-center pb-4 border rounded bg-gradient-to-br from-green-400/10 to-green-500/80"
         >
           <div class="relative w-full h-full overflow-hidden">
             <h2 class="!text-black !m-4">Provides Valuable Feedback</h2>
@@ -92,7 +92,7 @@
         </div>
 
         <div
-          class="text-center pb-4 h-[30rem] border rounded bg-gradient-to-br from-green-400/10 to-green-500/80"
+          class="text-center pb-4 border rounded bg-gradient-to-br from-green-400/10 to-green-500/80"
         >
           <div class="relative w-full h-full overflow-hidden">
             <h2 class="!text-black !m-4">Drives Sales Drives Sales</h2>
@@ -114,7 +114,7 @@
         </div>
 
         <div
-          class="text-center pb-4 h-[30rem] border rounded bg-gradient-to-br from-green-400/10 to-green-500/80"
+          class="text-center pb-4 border rounded bg-gradient-to-br from-green-400/10 to-green-500/80"
         >
           <div class="relative w-full h-full overflow-hidden">
             <h2 class="!text-black !m-4">Encourages Repeat Business</h2>
@@ -136,7 +136,7 @@
         </div>
 
         <div
-          class="text-center pb-4 h-[30rem] border rounded bg-gradient-to-br from-green-400/10 to-green-500/80"
+          class="text-center pb-4 border rounded bg-gradient-to-br from-green-400/10 to-green-500/80"
         >
           <div class="relative w-full h-full overflow-hidden">
             <h2 class="!text-black !m-4">Differentiates Your Business</h2>

@@ -24,7 +24,7 @@ import SectionComponent from '@/components/SectionComponent.vue'
           * Only personnal accounts are allowed.
         </p>
 
-        <div class="flex flex-wrap items-center lg:flex-row justify-center gap-8 w-full">
+        <div class="flex flex-wrap items-center mx-1 lg:flex-row justify-center gap-8 w-full">
           <div
             class="p-4 shadow border rounded lg:w-[35rem] bg-gradient-to-r from-green-300/10 to-green-400"
           >
@@ -33,7 +33,7 @@ import SectionComponent from '@/components/SectionComponent.vue'
             >
               <li class="flex items-center !pl-0">
                 <svg
-                  class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0"
+                  class="w-3.5 h-3.5 me-4 text-green-500 dark:text-green-400 flex-shrink-0"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -47,7 +47,7 @@ import SectionComponent from '@/components/SectionComponent.vue'
               </li>
               <li class="flex items-center !pl-0">
                 <svg
-                  class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0"
+                  class="w-3.5 h-3.5 me-4 text-green-500 dark:text-green-400 flex-shrink-0"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -61,7 +61,7 @@ import SectionComponent from '@/components/SectionComponent.vue'
               </li>
               <li class="flex items-center !pl-0">
                 <svg
-                  class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0"
+                  class="w-3.5 h-3.5 me-4 text-green-500 dark:text-green-400 flex-shrink-0"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -76,7 +76,7 @@ import SectionComponent from '@/components/SectionComponent.vue'
 
               <li class="flex items-center !pl-0">
                 <svg
-                  class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0"
+                  class="w-3.5 h-3.5 me-4 text-green-500 dark:text-green-400 flex-shrink-0"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -90,7 +90,7 @@ import SectionComponent from '@/components/SectionComponent.vue'
               </li>
               <li class="flex items-center !pl-0">
                 <svg
-                  class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0"
+                  class="w-3.5 h-3.5 me-4 text-green-500 dark:text-green-400 flex-shrink-0"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -104,7 +104,7 @@ import SectionComponent from '@/components/SectionComponent.vue'
               </li>
             </ul>
 
-            <div class="flex justify-between items-center text-start mt-12">
+            <div class="flex justify-between gap-4 items-center text-start mt-12">
               <a
                 class="no-underline"
                 href="https://github.com/sponsors/Lakshan-Madushanka/sponsorships?sponsor=Lakshan-Madushanka&tier_id=430275"
