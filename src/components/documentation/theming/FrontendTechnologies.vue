@@ -1,6 +1,6 @@
 <template>
-  <DocumentationSection id="theming@frontendtech">
-    <template #header><a href="#theming@frontendtech">Frontend Technologies</a></template>
+  <DocumentationSection id="theming-frontendtech">
+    <template #header><a href="#theming-frontendtech">Frontend Technologies</a></template>
     <template #content>
       <div class="space-y-2">
         <p>

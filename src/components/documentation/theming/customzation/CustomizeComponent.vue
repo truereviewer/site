@@ -4,7 +4,7 @@
     <template #content>
       <AlertComponent type="notice">
         You should've published the reviewer assets. You can refer the instruction
-        <a class="font-bold" href="#theming@publishAssets"> here. </a>
+        <a class="font-bold" href="#theming-publishAssets"> here. </a>
       </AlertComponent>
       <p>
         Reviewer leverge the primevue ui components package. So you can customize reviewer
@@ -16,20 +16,20 @@
 
       <div class="space-y-6">
         <div class="space-y-4">
-          <h3 id="customization@components">
-            <a href="#customization@components">Components</a>
+          <h3 id="customization-components">
+            <a href="#customization-components">Components</a>
           </h3>
           <p>
             All the reviewer components are published at
             <code class="code-inline">/resources/reviewer/ts</code>
             you are free to cunstomize components as you wish but make sure to
-            <a class="font-bold" href="#theming@buildAssets">build assets.</a>
+            <a class="font-bold" href="#theming-buildAssets">build assets.</a>
           </p>
         </div>
 
         <div class="space-y-4">
-          <h3 id="customization@presets">
-            <a href="#customization@presets">Presets</a>
+          <h3 id="customization-presets">
+            <a href="#customization-presets">Presets</a>
           </h3>
           <p>
             Reviewer support serveral
@@ -44,8 +44,8 @@
         </div>
 
         <div class="space-y-4">
-          <h3 id="customization@definePresets">
-            <a href="#customization@presets">Customizng Presets</a>
+          <h3 id="customization-definePresets">
+            <a href="#customization-presets">Customizng Presets</a>
           </h3>
           <p>
             With primevue, customizing presets are super easy. Let's imaging your site's main theme
@@ -89,7 +89,7 @@ import DocumentationSection from '@/components/documentation/DocumentationSectio
 import CodeBlock from '@/components/CodeBlock.vue'
 
 const defaultTheme = `
-  import Lara from '@primevue/themes/aura'
+  import Lara from '-primevue/themes/aura'
 
   createApp({})
   ...
@@ -103,7 +103,7 @@ const defaultTheme = `
 `
 
 const customPreset = `
-  import Aura from '@primevue/themes/aura'
+  import Aura from '-primevue/themes/aura'
 
   const MyPreset = definePreset(Aura, {
       semantic: {

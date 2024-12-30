@@ -1,6 +1,6 @@
 <template>
-  <DocumentationSection id="config@media">
-    <template #header><a href="#config@media">Media</a></template>
+  <DocumentationSection id="config-media">
+    <template #header><a href="#config-media">Media</a></template>
     <template #content>
       <p>
         Media uploading feature is disabled by default. You can enable the feature by setting
@@ -11,22 +11,22 @@
 
       <div class="space-y-12">
         <div class="space-y-2">
-          <h3 id="config@mediaSize">
-            <a href="#config@mediaSize">Media Size</a>
+          <h3 id="config-mediaSize">
+            <a href="#config-mediaSize">Media Size</a>
           </h3>
           <p>Media size limit in bytes can be set as below.</p>
           <CodeBlock language="javascript" :code="mediaSize" />
         </div>
         <div class="space-y-2">
-          <h3 id="config@mediaType">
-            <a href="#config@mediaType">Media Types</a>
+          <h3 id="config-mediaType">
+            <a href="#config-mediaType">Media Types</a>
           </h3>
           <p>Uploadable media types can be set as below.</p>
           <CodeBlock language="javascript" :code="mediaType" />
         </div>
         <div class="space-y-2">
-          <h3 id="config@mediaLimit">
-            <a href="#config@mediaLimit">Media Limit per Review</a>
+          <h3 id="config-mediaLimit">
+            <a href="#config-mediaLimit">Media Limit per Review</a>
           </h3>
           <p>No of media that can be attached for a review can be set as below.</p>
           <CodeBlock language="javascript" :code="mediaLimit" />

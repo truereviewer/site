@@ -1,6 +1,6 @@
 <template>
-  <DocumentationSection id="config@decimalRating">
-    <template #header><a href="#config@decimalRating">Decimal Rating</a></template>
+  <DocumentationSection id="config-decimalRating">
+    <template #header><a href="#config-decimalRating">Decimal Rating</a></template>
     <template #content>
       <p>
         By default, decimal rating numbers are allowed. You can disable this option by modifying the

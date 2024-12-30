@@ -1,9 +1,9 @@
 <template>
-  <DocumentationSection id="theming@buildAssets">
-    <template #header><a href="#theming@buildAssets">Build Assets</a></template>
+  <DocumentationSection id="theming-buildAssets">
+    <template #header><a href="#theming-buildAssets">Build Assets</a></template>
     <template #content>
       <p>
-        <a class="font-bold" href="#theming@publishAssets">
+        <a class="font-bold" href="#theming-publishAssets">
           Before begin you should publish commenter views.
         </a>
       </p>
@@ -66,8 +66,8 @@ import DocumentationSection from '@/components/documentation/DocumentationSectio
 
 const frontEndDependencies = `
   "devDependencies": {
-        "@primevue/themes": "^4.0.7",
-        "@vitejs/plugin-vue": "^5.2.0",
+        "-primevue/themes": "^4.0.7",
+        "-vitejs/plugin-vue": "^5.2.0",
         "autoprefixer": "^10.4.20",
         "axios": "^1.7.7",
         "laravel-vite-plugin": "^1.0.2",
@@ -105,7 +105,7 @@ const tsconfig = `
         "forceConsistentCasingInFileNames": true,
         "baseUrl": ".",
         "paths": {
-            "@reviewer/*": ["resources/reviewer/ts/*"]
+            "-reviewer/*": ["resources/reviewer/ts/*"]
         }
     },
     "include": ["resources/**/*.ts", "resources/**/*.vue"],
@@ -117,7 +117,7 @@ const vite = `
   import { defineConfig } from 'vite';
   import laravel from 'laravel-vite-plugin';
   import path from 'path'
-  import vue from '@vitejs/plugin-vue'
+  import vue from '-vitejs/plugin-vue'
 
   export default defineConfig({
       plugins: [
@@ -141,7 +141,7 @@ const vite = `
       ],
       resolve: {
           alias: {
-              '@reviewer': path.resolve(__dirname, 'resources/reviewer/ts'),
+              '-reviewer': path.resolve(__dirname, 'resources/reviewer/ts'),
               vue: 'vue/dist/vue.esm-bundler.js',
           },
       },

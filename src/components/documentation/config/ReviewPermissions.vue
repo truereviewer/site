@@ -1,6 +1,6 @@
 <template>
-  <DocumentationSection id="config@permissions">
-    <template #header><a href="#config@permissions">Permissions</a></template>
+  <DocumentationSection id="config-permissions">
+    <template #header><a href="#config-permissions">Permissions</a></template>
     <template #content>
       <p>
         Reviewer has been secured though authorization. You can find action and relavent policy in

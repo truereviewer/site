@@ -14,14 +14,14 @@
       </AlertComponent>
 
       <div class="space-y-6">
-        <h3 id="installation@step1"><a href="#installation@step1">Step-1</a></h3>
+        <h3 id="installation-step1"><a href="#installation-step1">Step-1</a></h3>
         <p>Next, add the repository URL to your composer.json file.</p>
 
         <CodeBlock language="bash" :code="addRepo" />
       </div>
 
       <div class="space-y-6">
-        <h3 id="installation@step2"><a href="#installation@step2">Step-2</a></h3>
+        <h3 id="installation-step2"><a href="#installation-step2">Step-2</a></h3>
         <p>Install the reviewer via composer.</p>
 
         <CodeBlock
@@ -30,32 +30,32 @@
         />
       </div>
       <div class="space-y-6">
-        <h3 id="installation@step3"><a href="#installation@step3">Step-3</a></h3>
+        <h3 id="installation-step3"><a href="#installation-step3">Step-3</a></h3>
         <p>Run below command to setup the package.</p>
 
         <CodeBlock language="bash" code="php artisan reviewer:setup" />
       </div>
 
       <div class="space-y-6">
-        <h3 id="installation@step4"><a href="#installation@step4">Step-4</a></h3>
+        <h3 id="installation-step4"><a href="#installation-step4">Step-4</a></h3>
         <p>Run below command to setup package.</p>
 
         <CodeBlock language="bash" code="php artisan reviewer:setup" />
       </div>
 
       <div class="space-y-6">
-        <h3 id="installation@step5"><a href="#installation@step5">Step-5</a></h3>
+        <h3 id="installation-step5"><a href="#installation-step5">Step-5</a></h3>
         <p>
           Include the reviewer assets in your template by adding
-          <code class="code-inline">@reviewerStyles</code> and
-          <code class="code-inline">@reviewerScripts</code> as shown below.
+          <code class="code-inline">-reviewerStyles</code> and
+          <code class="code-inline">-reviewerScripts</code> as shown below.
         </p>
 
         <CodeBlock language="html" :code="includeAssets" />
       </div>
 
       <div class="space-y-6">
-        <h3 id="installation@step6"><a href="#installation@step6">Step 6</a></h3>
+        <h3 id="installation-step6"><a href="#installation-step6">Step 6</a></h3>
         <p>
           The Reviewable model must extend the Reviewable class. Since this class extends the
           <code class="code-inline">Model</code>
@@ -66,7 +66,7 @@
       </div>
 
       <div class="space-y-6">
-        <h3 id="installation@step7"><a href="#installation@step7">Step-7</a></h3>
+        <h3 id="installation-step7"><a href="#installation-step7">Step-7</a></h3>
         <p>
           Use the components wherever needed. Refer to the Components section for detailed guidance.
           Each component requires <code>id</code> and <code>modelType</code> props.
@@ -100,12 +100,12 @@ const includeAssets = `
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Reviewer</title>
 
-      @reviewerStyles
+      -reviewerStyles
     </head>
     <body>
       <div id="app"></div>
   
-      @reviewerScripts
+      -reviewerScripts
     </body>
   </html>
   `

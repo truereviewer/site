@@ -1,6 +1,6 @@
 <template>
-  <DocumentationSection id="config@subRating">
-    <template #header><a href="#config@subRating">Sub Rating Types</a></template>
+  <DocumentationSection id="config-subRating">
+    <template #header><a href="#config-subRating">Sub Rating Types</a></template>
     <template #content>
       <p>
         Sub-ratings offer users valuable insights into the product. This feature is disabled by

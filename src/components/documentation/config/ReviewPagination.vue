@@ -1,19 +1,19 @@
 <template>
-  <DocumentationSection id="config@pagination">
-    <template #header><a href="#config@pagination">Pagination</a></template>
+  <DocumentationSection id="config-pagination">
+    <template #header><a href="#config-pagination">Pagination</a></template>
     <template #content>
       <p>Reviews are paginated by page. Reviewer support both page and infinite paginations.</p>
       <div class="space-y-12">
         <div class="space-y-2">
-          <h3 id="config@pagePagination">
-            <a href="#config@pagePagination">Page Pagination</a>
+          <h3 id="config-pagePagination">
+            <a href="#config-pagePagination">Page Pagination</a>
           </h3>
           <p>Page numbers are displayed.</p>
           <CodeBlock language="javascript" :code="page" />
         </div>
         <div class="space-y-2">
-          <h3 id="config@scrollPagination">
-            <a href="#config@scrollPagination">Infnite Pagination</a>
+          <h3 id="config-scrollPagination">
+            <a href="#config-scrollPagination">Infnite Pagination</a>
           </h3>
           <p>
             Load more button is displayed. Performance increase as

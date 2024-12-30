@@ -1,6 +1,6 @@
 <template>
-  <DocumentationSection id="config@table">
-    <template #header><a href="#config@table">Change Table/Model</a></template>
+  <DocumentationSection id="config-table">
+    <template #header><a href="#config-table">Change Table/Model</a></template>
     <template #content>
       <p>Before begin you should publish reviewer configs executing below command. .</p>
       <CodeBlock language="bash" code="php artisan vendor:publish --tag=reviewer-config" />
@@ -105,7 +105,7 @@ const changeTable = `
   'models' => [
         'review_model' => [
             /**
-             * @extends Review
+             * -extends Review
              */
             'class' => Review::class,
             'table' => 'lakm_reviews',

@@ -9,8 +9,8 @@
 
       <div class="space-y-12">
         <div class="space-y-4">
-          <h3 id="components@widget">
-            <a href="#components@widget">{{ wcs.title() }}</a>
+          <h3 id="components-widget">
+            <a href="#components-widget">{{ wcs.title() }}</a>
           </h3>
           <p>{{ wcs.description() }}</p>
           <CodeBlock language="html" :code="useComponent('widget')" />
@@ -21,8 +21,8 @@
         </div>
 
         <div class="space-y-4">
-          <h3 id="components@ratingDistribution">
-            <a href="#components@ratingDistribution">{{ rdcs.title() }}</a>
+          <h3 id="components-ratingDistribution">
+            <a href="#components-ratingDistribution">{{ rdcs.title() }}</a>
           </h3>
           <p>{{ rdcs.description() }}</p>
           <CodeBlock language="html" :code="useComponent('rating-distribution')" />
@@ -33,8 +33,8 @@
         </div>
 
         <div class="space-y-4">
-          <h3 id="components@subRatingDistribution">
-            <a href="#components@subRatingDistribution">{{ srdcs.title() }}</a>
+          <h3 id="components-subRatingDistribution">
+            <a href="#components-subRatingDistribution">{{ srdcs.title() }}</a>
           </h3>
           <p v-html="srdcs.description()"></p>
           <CodeBlock language="html" :code="useComponent('sub-rating-distribution')" />
@@ -45,8 +45,8 @@
         </div>
 
         <div class="space-y-4">
-          <h3 id="components@mediaGallery">
-            <a href="#components@mediaGallery">{{ mgcs.title() }}</a>
+          <h3 id="components-mediaGallery">
+            <a href="#components-mediaGallery">{{ mgcs.title() }}</a>
           </h3>
           <p v-html="mgcs.description()"></p>
           <CodeBlock language="html" :code="useComponent('media-gallery')" />
@@ -57,8 +57,8 @@
         </div>
 
         <div class="space-y-4">
-          <h3 id="components@reviewList">
-            <a href="#components@reviewList">{{ rlcs.title() }}</a>
+          <h3 id="components-reviewList">
+            <a href="#components-reviewList">{{ rlcs.title() }}</a>
           </h3>
           <p v-html="rlcs.description()"></p>
           <CodeBlock language="html" :code="useComponent('review-list')" />
@@ -69,8 +69,8 @@
         </div>
 
         <div class="space-y-4">
-          <h3 id="components@reviewer">
-            <a href="#components@reviewer">{{ rcs.title() }}</a>
+          <h3 id="components-reviewer">
+            <a href="#components-reviewer">{{ rcs.title() }}</a>
           </h3>
           <p v-html="rcs.description()"></p>
           <CodeBlock language="html" :code="useComponent('review-list')" />
@@ -129,7 +129,7 @@ const useComponent = (name: string) => `
   display: none;
 }
 
-@media (min-width: 1024px) {
+-media (min-width: 1024px) {
   .complete__system {
     display: grid;
     grid-template-areas:

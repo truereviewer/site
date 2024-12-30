@@ -1,6 +1,6 @@
 <template>
-  <DocumentationSection id="config@publish">
-    <template #header><a href="#config@publish">Publish Configs</a></template>
+  <DocumentationSection id="config-publish">
+    <template #header><a href="#config-publish">Publish Configs</a></template>
     <template #content>
       <p>Before begin you should publish reviewer configs executing below command.</p>
       <CodeBlock language="bash" code="php artisan vendor:publish --tag=reviewer-config" />

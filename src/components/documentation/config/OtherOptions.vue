@@ -1,6 +1,6 @@
 <template>
-  <DocumentationSection id="config@otherOptions">
-    <template #header><a href="#config@otherOptions">Other Options</a></template>
+  <DocumentationSection id="config-otherOptions">
+    <template #header><a href="#config-otherOptions">Other Options</a></template>
     <template #content>
       <p>
         All the configurable options you can find in
@@ -33,35 +33,35 @@ const config = `
       'models' => [
           'review_model' => [
               /**
-               * @extends Review
+               * -extends Review
                */
               'class' => Review::class,
               'table' => 'reviews',
           ],
           'review_statistic_model' => [
               /**
-               * @extends ReviewStatistic
+               * -extends ReviewStatistic
                */
               'class' => ReviewStatistic::class,
               'table' => 'review_statistics',
           ],
           'media_model' => [
               /**
-               * @extends Media
+               * -extends Media
                */
               'class' => Media::class,
               'table' => 'media',
           ],
           'reaction_model' => [
               /**
-               * @extends Reaction
+               * -extends Reaction
                */
               'class' => Reaction::class,
               'table' => 'reactions',
           ],
           'report_model' => [
               /**
-               * @extends Report
+               * -extends Report
                */
               'class' => Report::class,
               'table' => 'reports',
@@ -69,7 +69,7 @@ const config = `
       ],
 
       /**
-       * @extends \Illuminate\Foundation\Auth\User
+       * -extends \Illuminate\Foundation\Auth\User
        */
       'user_model' => User::class,
 
