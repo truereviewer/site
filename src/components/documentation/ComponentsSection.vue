@@ -129,7 +129,7 @@ const useComponent = (name: string) => `
   display: none;
 }
 
--media (min-width: 1024px) {
+@media (min-width: 1024px) {
   .complete__system {
     display: grid;
     grid-template-areas:
