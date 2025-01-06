@@ -79,7 +79,7 @@
       <div class="space-y-8 [&_p]:!my-0">
         <h3>Details</h3>
 
-        <div class="space-y-4 text-base">
+        <div class="space-y-4 text-base !mt-4">
           <h4 id="api-traits-reviewable-reviews" class="mb-4 bg-gray-100 p-2">
             <a href="#api-traits-reviewable-reviews"
               >reviews(): Illuminate\Database\Eloquent\Relations\MorphMany</a
@@ -101,7 +101,9 @@
 
         <div class="space-y-2 text-base">
           <h4 id="api-traits-reviewable-reviews" class="mb-4 bg-gray-100 p-2">
-            <a href="#api-traits-reviewable-reviews">reviewStats(): Illuminate\Database\Eloquent\Relations\MorphOne</a>
+            <a href="#api-traits-reviewable-reviews"
+              >reviewStats(): Illuminate\Database\Eloquent\Relations\MorphOne</a
+            >
           </h4>
 
           <p>Get the reviews's statistics of a revewable model</p>
