@@ -35,12 +35,9 @@ body {
 }
 
 @layer base {
-  h2 {
-    color: var(--main-text-color) !important;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-
-  h3 {
+  h2,
+  h3,
+  h4 {
     color: var(--main-text-color) !important;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
@@ -83,6 +80,10 @@ body {
   @apply text-xl;
 }
 
+.documentation h4 {
+  @apply text-lg;
+}
+
 .documentation h3 + * {
   @apply mt-4;
 }
@@ -91,7 +92,8 @@ body {
   @apply cursor-pointer;
 }
 
-.documentation h3:hover::before {
+.documentation h3:hover::before,
+h4:hover::before {
   content: '#';
   margin-right: 4px;
 }
