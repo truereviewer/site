@@ -1,10 +1,11 @@
 import type { ReviewerComponentData } from '@/interfaces'
+import FullWidget from '@/assets/img/reviewer/full-widget.png'
 
 const widgetComponentData: ReviewerComponentData = {
   title: 'Widget',
   description:
     'The widget provides users with an overall idea about your product. Statistics appear as a popup when hovered over.',
-  images: [{ src: '/src/assets/img/reviewer/full-widget.png', alt: 'Full Widget' }]
+  images: [{ src: FullWidget, alt: 'Full Widget' }]
 }
 
 const RatingDistributionComponentData: ReviewerComponentData = {
