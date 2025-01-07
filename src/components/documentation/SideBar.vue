@@ -1,6 +1,5 @@
 <template>
   <aside
-    @click="test"
     class="xl:w-[25%] text-base bg-gradient-to-r from-green-600 via-green-600/60 via-[20%] to-green-600"
   >
     <div
@@ -438,10 +437,6 @@ onMounted(() => {
     show.value = true
   }
 })
-
-const test = () => {
-  console.log(route.hash)
-}
 </script>
 
 <style scoped>
