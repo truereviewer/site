@@ -144,10 +144,21 @@ const extendClass = `
   namespace App\\Models;
 
   use LakM\\Reviewer\\Models\\Reviewable;
+  use TrueReviewer\\Reviewer\\Models\\Contracts\\ReviewableContract;
+  use TrueReviewer\\Reviewer\\Models\\Concerns\\Reviewable;
 
-  class Product extends Reviewable
+  class Product implements ReviewableContract
   {
-      
+     use Reviewable;
+
+    public function subRatingTypes(): array
+    {
+        return [
+            'quality' => ['title' => 'Quality'],
+            'value' => ['title' => 'Value for money'],
+            'durability' => ['title' => 'Durability'],
+        ];
+    }
   }
   `
 
