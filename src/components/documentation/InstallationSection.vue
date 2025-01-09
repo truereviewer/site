@@ -151,6 +151,7 @@ const extendClass = `
   {
      use Reviewable;
 
+    // Optional
     public function subRatingTypes(): array
     {
         return [
