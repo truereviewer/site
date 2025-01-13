@@ -31,6 +31,8 @@
 
         <!--API-->
         <TraitComponent />
+
+        <FooterComponent />
       </main>
     </div>
   </div>

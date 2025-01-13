@@ -1,6 +1,6 @@
 <template>
   <main class="font-sans antialiased">
-    <div class="prose lg:prose-xl max-w-none overflow-hidden mb-8">
+    <div class="prose lg:prose-xl max-w-none overflow-hidden">
       <HeaderSection />
       <DemoVideo />
       <ReviewerDescription />
@@ -16,6 +16,7 @@
       <TechnologiesComponent />
       <SponserwareComponent />
       <FrequentlyAskedQuestions />
+      <FooterComponent />
     </div>
   </main>
 </template>
@@ -38,6 +39,7 @@ import { onMounted, reactive } from 'vue'
 import FrequentlyAskedQuestions from '@/components/home/sections/FrequentlyAskedQuestions.vue'
 import ComponentsComponent from '@/components/home/sections/ComponentsComponent.vue'
 import WhyTrueReviewer from '@/components/home/sections/WhyTrueReviewer.vue'
+import FooterComponent from '@/components/FooterComponent.vue'
 
 const showReviewComponents = reactive({ middle: false })
 

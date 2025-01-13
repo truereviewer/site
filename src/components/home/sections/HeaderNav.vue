@@ -63,7 +63,9 @@
           />
         </li>
         <li class="group">
-          <router-link class="no-underline text-orange-400 inline-block pb-1" :to="{ name: 'docs' }"
+          <router-link
+            class="no-underline text-orange-400 inline-block pb-1"
+            :to="{ name: 'documentation' }"
             >Contacts</router-link
           >
           <hr
