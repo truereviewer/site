@@ -4,4 +4,8 @@ interface ReviewerComponentData {
   images?: { src: string; alt: string }[]
 }
 
-export type { ReviewerComponentData }
+interface MetaTags {
+  title: string
+}
+
+export type { ReviewerComponentData, MetaTags }

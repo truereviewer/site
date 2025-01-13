@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 
 const DocumentationView = () => import('@/views/DocumentationView.vue')
+const ContactsView = () => import('@/views/ContactsView.vue')
 
 const router = createRouter({
   linkExactActiveClass: 'border-b border-white',
@@ -30,10 +31,16 @@ const router = createRouter({
       name: 'home',
       component: HomeView
     },
+
     {
       path: '/documentation',
       name: 'documentation',
       component: DocumentationView
+    },
+    {
+      path: '/contacts',
+      name: 'contacts',
+      component: ContactsView
     }
     // {
     //   path: '/about',

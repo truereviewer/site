@@ -4,20 +4,6 @@
       <HeaderNav />
     </div>
 
-    <!-- <div class="hidden z-40 opacity-10 absolute left-4 top-0">
-      <img
-        class="object-contain"
-        src="/src/assets/img/reviewer/lg/1.png"
-        alt="review distribution"
-      />
-    </div>
-    <div class="hidden z-40 absolute opacity-10 right-4 bottom-0">
-      <img
-        class="object-contain"
-        src="/src/assets/img/reviewer/lg/2.png"
-        alt="sub review distribution"
-      />
-    </div> -->
     <div class="lg:hidden z-10 absolute left-4 top-0">
       <img
         class="object-contain"
