@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import ButtonComponent from '@/components/ButtonComponent.vue'
 import SectionComponent from '@/components/SectionComponent.vue'
+import { Contact } from '@/enums/Contact'
 </script>
 
 <template>
@@ -22,12 +23,28 @@ import SectionComponent from '@/components/SectionComponent.vue'
         </p>
         <p class="text-red-500 font-semibold !mt-0 w-full">
           * Only personnal accounts are allowed.
+          <a :href="'mailto:' + Contact.EMAIL" class="text-red-500">Contact us for team support</a>
         </p>
 
         <div class="mt-4">
           <p class="text-red-500 font-semibold !my-0">
-            * If you chosed forever plan, email must be sent to the ep@gmail.com address.
+            * If you chosed forever plan, email must be sent to the
+            <a :href="'mailto:' + Contact.EMAIL" class="text-red-500">{{ Contact.EMAIL }}</a>
+            address with followings.
           </p>
+          <div
+            class="list-none flex w-full italic text-base !mt-0 gap-x-8 items-center justify-center"
+          >
+            <ul class="list-none !mt-0">
+              <li class="flex justify-between w-[15rem]">
+                <span>Subject</span><span>Activate</span>
+              </li>
+              <li class="flex justify-between w-[15rem]">
+                <span>Body</span><span>Github repository</span>
+              </li>
+            </ul>
+          </div>
+
           <p class="!mt-0">* It can take up to 24 hours to get your subscription activated.</p>
         </div>
 
@@ -128,19 +145,21 @@ import SectionComponent from '@/components/SectionComponent.vue'
             <div class="flex justify-between gap-4 items-center text-start mt-12">
               <a
                 class="no-underline"
-                href="https://github.com/sponsors/Lakshan-Madushanka/sponsorships?sponsor=Lakshan-Madushanka&tier_id=430275"
+                href="https://github.com/sponsors/Lakshan-Madushanka/sponsorships?sponsor=Lakshan-Madushanka&tier_id=430277"
+                target="_blank"
               >
                 <ButtonComponent
                   class="flex justify-between items-center gap-x-8 !py-[0.6rem] !text-lg !from-green-800 !to-green-900"
                 >
                   <span>Forever</span>
-                  <span>$350</span>
+                  <span>$550</span>
                 </ButtonComponent>
               </a>
 
               <a
                 class="no-underline"
-                href="https://github.com/sponsors/Lakshan-Madushanka/sponsorships?sponsor=Lakshan-Madushanka&frequency=one-time&amount=350"
+                href="https://github.com/sponsors/Lakshan-Madushanka/sponsorships?sponsor=Lakshan-Madushanka&tier_id=430275"
+                target="_blank"
               >
                 <ButtonComponent
                   class="flex justify-between items-center gap-x-8 !py-[0.6rem] !text-lg !from-green-800 !to-green-900"
@@ -149,6 +168,11 @@ import SectionComponent from '@/components/SectionComponent.vue'
                   <span>$25</span>
                 </ButtonComponent>
               </a>
+            </div>
+            <div class="justify-self-start mt-4 text-base">
+              <a :href="'mailto:' + Contact.EMAIL" class="text-red-500"
+                >Contact us for team support</a
+              >
             </div>
           </div>
         </div>
