@@ -13,16 +13,23 @@ import SectionComponent from '@/components/SectionComponent.vue'
           <img class="w-8 !m-0" src="/src/assets/img/give-love.png" alt="sponserware" />
         </div>
         <p class="!mb-0 w-full">
-          This is
+          This is a
           <a
             class="no-underline text-orange-400 inline-block pb-1"
             href="https://github.com/sponsorware/docs"
             >sponsorware</a
-          >, meaning only those who sponsor my GitHub account gain access to this repository.
+          >, meaning only those who sponsor to the GitHub account gain access to this repository.
         </p>
         <p class="text-red-500 font-semibold !mt-0 w-full">
           * Only personnal accounts are allowed.
         </p>
+
+        <div class="mt-4">
+          <p class="text-red-500 font-semibold !my-0">
+            * If you chosed forever plan, email must be sent to the ep@gmail.com address.
+          </p>
+          <p class="!mt-0">* It can take up to 24 hours to get your subscription activated.</p>
+        </div>
 
         <div class="flex flex-wrap items-center mx-1 lg:flex-row justify-center gap-8 w-full">
           <div
@@ -102,6 +109,20 @@ import SectionComponent from '@/components/SectionComponent.vue'
                 </svg>
                 <span>Only personnal accounts, Not support organization</span>
               </li>
+              <li class="flex items-center !pl-0">
+                <svg
+                  class="w-3.5 h-3.5 me-4 text-green-500 dark:text-green-400 flex-shrink-0"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                  />
+                </svg>
+                <span>No hidden agendas</span>
+              </li>
             </ul>
 
             <div class="flex justify-between gap-4 items-center text-start mt-12">
@@ -131,14 +152,6 @@ import SectionComponent from '@/components/SectionComponent.vue'
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="mt-8">
-        <p class="!mb-0 font-bold">Note:</p>
-        <p class="text-red-500 !my-0">
-          * If you chosed forever plan, email must be sent to the ep@gmail.com address.
-        </p>
-        <p class="!mt-0">* It can take up to 24 hours to get your subscription activated.</p>
       </div>
     </template>
   </SectionComponent>

@@ -11,7 +11,7 @@ import ReviewList from '@/assets/img/reviewer/lg/4-2.png'
 const widgetComponentData: ReviewerComponentData = {
   title: 'Widget',
   description:
-    'The widget provides users with an overall idea about your product. Statistics appear as a popup when hovered over.',
+    'The widget gives users an overall idea of your product, with detailed statistics appearing as a popup when hovered over.',
   images: [{ src: FullWidget, alt: 'Full Widget' }]
 }
 

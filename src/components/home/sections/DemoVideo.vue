@@ -1,17 +1,17 @@
 <template>
   <SectionComponent class="flex flex-col items-start justify-center">
-    <template #header>Add Review Functionality in minutes </template>
+    <template #header>Add Review Functionality in Minutes </template>
     <template #content>
       <div class="w-full">
-        <!-- <iframe
-          class="!w-full min-h-[35rem]"
-          src="https://www.youtube.com/embed/tVxo4BeQrNs?si=4UTlC7IjE490hVTr"
+        <iframe
+          class="border w-full lg:w-2/3 md:h-[26rem]"
+          src="https://www.youtube.com/embed/Jh8gqO1RTAM"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
-        ></iframe> -->
+        ></iframe>
       </div>
     </template>
   </SectionComponent>
