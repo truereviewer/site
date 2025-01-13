@@ -9,11 +9,12 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
-      const elm = document.querySelector(to.hash)
-
-      setTimeout(() => {
-        elm?.scrollIntoView()
-      }, 100)
+      if (to.hash) {
+        const elm = document.querySelector(to.hash)
+        setTimeout(() => {
+          elm?.scrollIntoView()
+        }, 100)
+      }
 
       return savedPosition
     }
