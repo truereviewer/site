@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-none overflow-hidden font-serif text-lg antialiased documentation mb-8">
+  <div class="max-w-none overflow-hidden font-serif text-lg antialiased documentation">
     <header
       class="relative px-6 bg-gradient-to-r from-green-600 via-green-600/60 via-[20%] to-green-600"
     >
@@ -9,7 +9,7 @@
     </header>
     <div class="flex">
       <SideBar />
-      <main class="w-full xl:w-[75%] my-4 space-y-8">
+      <main class="w-full xl:w-[75%] mt-4 space-y-8">
         <InstallationSection />
         <ComponentsSection />
 
@@ -56,6 +56,7 @@ import ReviewPagination from '@/components/documentation/config/ReviewPagination
 import ReviewPermissions from '@/components/documentation/config/ReviewPermissions.vue'
 import OtherOptions from '@/components/documentation/config/OtherOptions.vue'
 import TraitComponent from '@/components/documentation/api/TraitComponent.vue'
+import FooterComponent from '@/components/FooterComponent.vue'
 </script>
 
 <style lang="css">
