@@ -40,6 +40,9 @@ import FrequentlyAskedQuestions from '@/components/home/sections/FrequentlyAsked
 import ComponentsComponent from '@/components/home/sections/ComponentsComponent.vue'
 import WhyTrueReviewer from '@/components/home/sections/WhyTrueReviewer.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
+import { useMetaTags } from '@/composables/useMetaTags'
+
+useMetaTags({ title: 'Home' })
 
 const showReviewComponents = reactive({ middle: false })
 

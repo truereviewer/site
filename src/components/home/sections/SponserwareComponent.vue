@@ -36,11 +36,15 @@ import { Contact } from '@/enums/Contact'
             class="list-none flex w-full italic text-base !mt-0 gap-x-8 items-center justify-center"
           >
             <ul class="list-none !mt-0">
-              <li class="flex justify-between w-[15rem]">
+              <li class="flex justify-between md:w-[25rem]">
                 <span>Subject</span><span>Activate</span>
               </li>
-              <li class="flex justify-between w-[15rem]">
-                <span>Body</span><span>Github repository</span>
+              <li class="flex justify-between md:w-[25rem]">
+                <span>Body</span
+                ><span
+                  >Github repository
+                  <span class="text-xs">(must be the same used to sponser)</span></span
+                >
               </li>
             </ul>
           </div>
@@ -48,7 +52,7 @@ import { Contact } from '@/enums/Contact'
           <p class="!mt-0">* It can take up to 24 hours to get your subscription activated.</p>
         </div>
 
-        <div class="flex flex-wrap items-center mx-1 lg:flex-row justify-center gap-8 w-full">
+        <div class="flex flex-wrap items-center px-2 lg:flex-row justify-center gap-8 w-full">
           <div
             class="p-4 shadow border rounded lg:w-[35rem] bg-gradient-to-r from-green-300/10 to-green-400"
           >

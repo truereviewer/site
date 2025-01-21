@@ -57,6 +57,9 @@ import ReviewPermissions from '@/components/documentation/config/ReviewPermissio
 import OtherOptions from '@/components/documentation/config/OtherOptions.vue'
 import TraitComponent from '@/components/documentation/api/TraitComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
+import { useMetaTags } from '@/composables/useMetaTags'
+
+useMetaTags({ title: 'Documentation' })
 </script>
 
 <style lang="css">

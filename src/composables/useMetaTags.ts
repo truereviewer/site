@@ -3,6 +3,6 @@ import { onBeforeMount } from 'vue'
 
 export function useMetaTags(tags: MetaTags) {
   onBeforeMount(() => {
-    document.title = `${tags.title} - Truereviewer`
+    document.title = `${tags.title} - TrueReviewer`
   })
 }

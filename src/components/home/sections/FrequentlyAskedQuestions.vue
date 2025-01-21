@@ -54,6 +54,14 @@
           >.
         </template>
       </AccordianComponent>
+      <AccordianComponent>
+        <template #header>Can I get a refund ?</template>
+        <template #content>
+          Due to the digital nature of the sponserware, we are unable to offer refunds once
+          subscribed. We encourage you to carefully review the features and functionalities of
+          TrueReviewer before purchasing.
+        </template>
+      </AccordianComponent>
     </template>
   </SectionComponent>
 </template>

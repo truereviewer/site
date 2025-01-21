@@ -27,11 +27,13 @@
         </li>
         <li class="flex items-center gap-8">
           <span class="!text-black w-full md:w-[8rem] text-xl font-bold !my-0">Discord:</span>
-          <a :href="Contact.DISCORD" class="text-green-500">{{ Contact.DISCORD }}</a>
+          <a :href="Contact.DISCORD" target="_blank" class="text-green-500">{{
+            Contact.DISCORD
+          }}</a>
         </li>
         <li class="flex items-center gap-8">
           <span class="!text-black w-full md:w-[8rem] text-xl font-bold !my-0">Github:</span>
-          <a :href="Contact.GITHUB" class="text-green-500">{{ Contact.GITHUB }}</a>
+          <a :href="Contact.GITHUB" target="_blank" class="text-green-500">{{ Contact.GITHUB }}</a>
         </li>
       </ul>
     </div>

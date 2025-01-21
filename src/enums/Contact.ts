@@ -1,5 +1,5 @@
 export enum Contact {
   EMAIL = 'lakm.truereviewer@gmail.com',
-  DISCORD = 'https://shorturl.at/zGK9m',
+  DISCORD = 'https://discord.gg/fNmDRrfChz',
   GITHUB = 'https://github.com/truereviewer'
 }
