@@ -59,7 +59,10 @@ import TraitComponent from '@/components/documentation/api/TraitComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 import { useMetaTags } from '@/composables/useMetaTags'
 
-useMetaTags({ title: 'Documentation' })
+useMetaTags({
+  title: 'Documentation',
+  description: 'The documentation provides everything you need to know about TrueReviewer'
+})
 </script>
 
 <style lang="css">

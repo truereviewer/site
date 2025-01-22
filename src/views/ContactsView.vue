@@ -48,5 +48,8 @@ import HeaderNav from '@/components/home/sections/HeaderNav.vue'
 import { useMetaTags } from '@/composables/useMetaTags'
 import { Contact } from '@/enums/Contact'
 
-useMetaTags({ title: 'Contacts' })
+useMetaTags({
+  title: 'Contacts',
+  description: 'Reach out to TrueReviewer for any questions or assistance!'
+})
 </script>

@@ -6,6 +6,7 @@ interface ReviewerComponentData {
 
 interface MetaTags {
   title: string
+  description: string
 }
 
 export type { ReviewerComponentData, MetaTags }

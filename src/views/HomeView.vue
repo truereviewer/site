@@ -42,7 +42,7 @@ import WhyTrueReviewer from '@/components/home/sections/WhyTrueReviewer.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 import { useMetaTags } from '@/composables/useMetaTags'
 
-useMetaTags({ title: 'Home' })
+useMetaTags({ title: 'Home', description: 'Ideal review system for Laravel projects' })
 
 const showReviewComponents = reactive({ middle: false })
 
