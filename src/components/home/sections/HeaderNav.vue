@@ -76,6 +76,7 @@
           <a
             class="no-underline text-orange-400 inline-block pb-1"
             href="https://reviewer-demo.vercel.app/products/nicce-mens-original-hood"
+            target="_blank"
             >Demo</a
           >
           <hr
@@ -123,10 +124,7 @@
         />
       </div>
       <div class="group">
-        <a
-          class="no-underline text-orange-400 inline-block pb-1"
-          href="/#technologies"
-          target="_blank"
+        <a class="no-underline text-orange-400 inline-block pb-1" href="/#technologies"
           >Technologies</a
         >
         <hr
@@ -148,6 +146,7 @@
         <a
           class="no-underline text-orange-400 inline-block pb-1"
           href="https://reviewer-demo.vercel.app/products/nicce-mens-original-hood"
+          target="_blank"
           >Demo</a
         >
         <hr
