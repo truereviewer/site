@@ -13,6 +13,17 @@
         </p>
       </AlertComponent>
 
+      <iframe
+        width="875"
+        height="406"
+        src="https://www.youtube.com/embed/l-Ns1ym-HHM"
+        title="Installation"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+
       <div class="space-y-4">
         <h3 id="installation-step1"><a href="#installation-step1">Step-1</a></h3>
         <p>
