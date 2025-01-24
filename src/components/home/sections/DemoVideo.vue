@@ -4,7 +4,7 @@
     <template #content>
       <div class="w-full">
         <iframe
-          class="border w-full lg:w-2/3 md:h-[26rem]"
+          class="border w-full lg:w-2/3 aspect-video"
           src="https://www.youtube.com/embed/Jh8gqO1RTAM"
           title="YouTube video player"
           frameborder="0"
