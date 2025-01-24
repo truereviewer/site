@@ -3,18 +3,8 @@
 @tailwind utilities;
 
 html {
-  font-family:
-    Inter,
-    -apple-system,
-    BlinkMacSystemFont,
-    Segoe UI,
-    Roboto,
-    Helvetica,
-    Arial,
-    sans-serif,
-    Apple Color Emoji,
-    Segoe UI Emoji,
-    Segoe UI Symbol;
+  font-family: 'Inter', 'sans-serif', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto',
+    'Helvetica', 'Arial', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
 :root {
@@ -39,7 +29,7 @@ body {
   h3,
   h4 {
     color: var(--main-text-color) !important;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Inter', Arial, sans-serif;
   }
 
   section {
@@ -74,6 +64,12 @@ body {
   ul {
     margin-bottom: 0 !important;
   }
+}
+
+.documentation h2,
+h3,
+h4 {
+  font-family: 'Franklin Gothic Medium', sans-serif, Inter, Helvetica, sans-serif;
 }
 
 .documentation h3 {

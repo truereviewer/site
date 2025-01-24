@@ -1,5 +1,5 @@
 <template>
-  <main class="font-sans antialiased">
+  <main class="antialiased">
     <div class="prose lg:prose-xl max-w-none overflow-hidden">
       <HeaderSection />
       <DemoVideo />
