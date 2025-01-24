@@ -89,7 +89,7 @@
       </div>
 
       <div class="space-y-4">
-        <h3 id="installation-step7"><a href="#installation-step7">Step 7</a></h3>
+        <h3 id="installation-step7"><a href="#installation-step7">Step-7</a></h3>
         <p>
           The Reviewable model must extend the Reviewable class. Since this class extends the
           <code class="code-inline">Model</code>
