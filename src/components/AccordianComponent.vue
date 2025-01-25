@@ -5,7 +5,7 @@
       @click="expand = true"
       class="cursor-pointer flex items-center justify-between p-2 border"
     >
-      <h3 class="!my-0 !text-xl !text-black"><slot name="header" /></h3>
+      <h3 class="!my-0 !text-lg !text-black"><slot name="header" /></h3>
       <span class="text-4xl">+</span>
     </div>
     <div
@@ -13,7 +13,7 @@
       @click="expand = false"
       class="cursor-pointer flex items-center justify-between p-2 border"
     >
-      <h3 class="!my-0 !text-xl !text-black"><slot name="header" /></h3>
+      <h3 class="!my-0 !text-lg !text-black"><slot name="header" /></h3>
       <span class="text-4xl">-</span>
     </div>
     <p

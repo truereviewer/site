@@ -52,9 +52,9 @@ import { Contact } from '@/enums/Contact'
           <p class="!mt-0">* It can take up to 24 hours to get your subscription activated.</p>
         </div>
 
-        <div class="flex flex-wrap items-center px-2 lg:flex-row justify-center gap-8 w-full">
+        <div class="flex flex-wrap items-center lg:flex-row justify-center gap-8 w-full">
           <div
-            class="p-4 shadow border rounded lg:w-[35rem] bg-gradient-to-r from-green-300/10 to-green-400"
+            class="p- lg:p-4 shadow border rounded lg:w-[35rem] bg-gradient-to-r from-green-300/10 to-green-400"
           >
             <ul
               class="text-start leading-7 max-w-lg text-black list-inside dark:text-gray-400 !pl-0"
@@ -146,14 +146,14 @@ import { Contact } from '@/enums/Contact'
               </li>
             </ul>
 
-            <div class="flex justify-between gap-4 items-center text-start mt-12">
+            <div class="flex justify-between gap-4 items-center text-start mt-12 overflow-hidden">
               <a
                 class="no-underline"
                 href="https://github.com/sponsors/Lakshan-Madushanka/sponsorships?sponsor=Lakshan-Madushanka&tier_id=430277"
                 target="_blank"
               >
                 <ButtonComponent
-                  class="flex justify-between items-center gap-x-8 !py-[0.6rem] !text-lg !from-green-800 !to-green-900"
+                  class="flex overflow-hidden justify-between items-center gap-x-4 lg:gap-x-8 !py-[0.6rem] !text-lg !from-green-800 !to-green-400"
                 >
                   <span>Forever</span>
                   <span>$550</span>
@@ -166,7 +166,7 @@ import { Contact } from '@/enums/Contact'
                 target="_blank"
               >
                 <ButtonComponent
-                  class="flex justify-between items-center gap-x-8 !py-[0.6rem] !text-lg !from-green-800 !to-green-900"
+                  class="flex justify-between items-center gap-x-4 lg:gap-x-8 !py-[0.6rem] !text-lg !from-green-500 !to-green-800"
                 >
                   <span>Monthly</span>
                   <span>$25</span>
