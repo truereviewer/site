@@ -172,7 +172,7 @@ import { Contact } from '@/enums/Contact'
                     address with followings.
                   </p>
                   <div
-                    class="list-none flex w-full italic !mt-0 gap-x-8 items-center justify-start text-sm"
+                    class="list-none flex w-full italic !mt-0 gap-x-8 items-center justify-start text-xs"
                   >
                     <ul class="list-none !mt-0">
                       <li class="flex justify-between md:w-[25rem]">
@@ -188,7 +188,7 @@ import { Contact } from '@/enums/Contact'
                     </ul>
                   </div>
                 </li>
-                <li class="!mt-0">
+                <li class="!my-0">
                   It can take up to 24 hours to get your subscription activated.
                 </li>
               </ul>
