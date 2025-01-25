@@ -24,7 +24,7 @@ import { Contact } from '@/enums/Contact'
 
         <div class="flex flex-wrap items-center lg:flex-row justify-center gap-8 w-full">
           <div
-            class="p- lg:p-4 shadow border rounded lg:w-[35rem] bg-gradient-to-r from-green-300/10 to-green-400"
+            class="p-2 lg:p-4 shadow border rounded lg:w-[35rem] bg-gradient-to-r from-green-300/10 to-green-400"
           >
             <ul
               class="text-start leading-7 max-w-lg text-black list-inside dark:text-gray-400 !pl-0"
