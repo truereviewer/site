@@ -124,7 +124,6 @@
 </template>
 
 <script lang="ts" setup>
-import CodeBlock from '@/components/CodeBlock.vue'
 import DocumentationSection from '@/components/documentation/DocumentationSection.vue'
 
 const scrollTo = (id: string) => {
