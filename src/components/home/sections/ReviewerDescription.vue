@@ -11,7 +11,7 @@
       </p>
       <p class="font-bold">Did you know ?</p>
       <blockquote
-        class="!mt-2 text-base font-normal"
+        class="!mt-2 text-sm lg:text-base font-normal"
         cite="https://www.businesswire.com/news/home/20241009362692/en/New-Survey-Reveals-the-Strong-Influence-of-Online-Reviews-on-Consumer-Decision-Making#:~:text=According%20to%20the%20findings%2C%2054,to%20be%20%E2%80%9Cmostly%E2%80%9D%20trustworthy."
       >
         <span
