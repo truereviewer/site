@@ -32,9 +32,10 @@
 
         <p class="flex flex-col gap-y-4 !mb-8">
           <code class="code-inline"
-            >Settings -> Developer settings -> Personal access tokens -> Fine-grained tokens</code
+            >Settings &rarr; Developer settings &rarr; Personal access tokens &rarr; Fine-grained
+            tokens</code
           >
-          <img class="object-none" :src="PATToken" alt="Token Scope" />
+          <img class="lg:object-none" :src="PATToken" alt="Token Scope" />
         </p>
 
         <AlertComponent type="notice">
