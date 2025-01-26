@@ -7,9 +7,14 @@
       :class="['absolute w-8 top-18 right-2 z-[300]', { 'opacity-0': show }]"
       @click="show = true"
     >
-      <img src="/src/assets/icons/menu.svg" alt="menu" />
+      <img src="/src/assets/icons/right-arrow.svg" alt="menu" />
     </div>
-    <div class="fixed w-full z-[250] top-0 xl:top-auto sm:w-[75%] md:w-[50%] xl:w-[25%]">
+    <div
+      :class="[
+        'fixed w-full z-[350] top-0 xl:top-auto sm:w-[75%] md:w-[50%] xl:w-[25%]',
+        { '!z-50': !show }
+      ]"
+    >
       <nav
         :class="[
           'relative overflow-scroll w-full top-0 right-0 z-50 xl:static bg-gray-100 xl:bg-white h-svh pb-16 transition-all',
@@ -421,7 +426,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, ref } from 'vue'
+import { computed, onMounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
 const route = useRoute()
@@ -435,6 +440,14 @@ const currentSection = computed(() => {
 onMounted(() => {
   if (document.documentElement.clientWidth >= 1280) {
     show.value = true
+  } else {
+    watch(
+      () => route.hash,
+      () => {
+        console.log('here')
+        show.value = false
+      }
+    )
   }
 })
 </script>

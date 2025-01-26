@@ -14,8 +14,7 @@
       </AlertComponent>
 
       <iframe
-        width="875"
-        height="406"
+        class="aspect-video border w-full"
         src="https://www.youtube.com/embed/l-Ns1ym-HHM"
         title="Installation"
         frameborder="0"

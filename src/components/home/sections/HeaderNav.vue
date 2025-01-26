@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="flex text-base justify-end lg:hidden relative left-4 z-[200]">
+    <nav class="flex text-base justify-end lg:hidden relative left-4 z-[300]">
       <div v-if="!showMenu" class="mt-[8px]">
         <router-link
           class="no-underline !border-0 text-orange-400 inline-block pb-1"
@@ -9,9 +9,10 @@
           <img class="!p-0 !m-0 w-12" src="/src/assets/img/logo.webp" alt="review distribution"
         /></router-link>
       </div>
+
       <img
         v-if="!showMenu"
-        @click="showMenu = true"
+        ref="navButton"
         class="w-8 !my-0"
         src="/src/assets/icons/menu.svg"
         alt="menu"
@@ -19,6 +20,7 @@
 
       <ul
         v-if="showMenu"
+        ref="navMenu"
         class="bg-gradient-to-tr space-y-4 from-green-200/25 to-green-400/50 relative min-w-72 px-4 py-2 rounded list-none bg-white top-0 m-0"
       >
         <li class="flex justify-end">
@@ -158,7 +160,34 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { onBeforeUnmount, onMounted, ref } from 'vue'
+
+const navButton = ref<Element>()
+
+const navMenu = ref<Element>()
 
 const showMenu = ref(false)
+
+const toggleShow = () => {
+  showMenu.value = !showMenu.value
+}
+
+const onClickOutside = (event: Event) => {
+  console.log(event.target, navButton.value)
+
+  if (event.target === (navButton.value as Node)) {
+    showMenu.value = true
+    return
+  }
+
+  showMenu.value = false
+}
+
+onMounted(() => {
+  document.addEventListener('click', onClickOutside)
+})
+
+onBeforeUnmount(() => {
+  document.removeEventListener('click', onClickOutside)
+})
 </script>
