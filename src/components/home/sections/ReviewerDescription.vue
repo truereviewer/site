@@ -11,7 +11,7 @@
       </p>
       <p>Did you know ?</p>
       <blockquote
-        class="!mt-2"
+        class="!mt-2 text-base"
         cite="https://www.businesswire.com/news/home/20241009362692/en/New-Survey-Reveals-the-Strong-Influence-of-Online-Reviews-on-Consumer-Decision-Making#:~:text=According%20to%20the%20findings%2C%2054,to%20be%20%E2%80%9Cmostly%E2%80%9D%20trustworthy."
       >
         <span
@@ -21,7 +21,7 @@
           to be “mostly” trustworthy.
         </span>
         <a
-          class="flex justify-end font-normal text-sm"
+          class="flex justify-end font-normal text-xs mt-2"
           href="https://www.businesswire.com/news/home/20241009362692/en/New-Survey-Reveals-the-Strong-Influence-of-Online-Reviews-on-Consumer-Decision-Making#:~:text=According%20to%20the%20findings%2C%2054,to%20be%20%E2%80%9Cmostly%E2%80%9D%20trustworthy."
           >businesswire</a
         >

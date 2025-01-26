@@ -1,6 +1,6 @@
 <template>
   <main class="antialiased">
-    <div class="prose lg:prose-xl max-w-none overflow-hidden">
+    <div class="prose lg:prose-lg xl:prose-xl max-w-none overflow-hidden">
       <HeaderSection />
       <DemoVideo />
       <ReviewerDescription />
