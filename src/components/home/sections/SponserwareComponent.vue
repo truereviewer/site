@@ -175,15 +175,14 @@ import { Contact } from '@/enums/Contact'
                     class="list-none flex w-full italic !mt-0 gap-x-8 items-center justify-start text-xs"
                   >
                     <ul class="list-none !mt-0">
-                      <li class="flex justify-between md:w-[25rem]">
-                        <span>Subject</span><span>Activate</span>
+                      <li class="flex">
+                        <span class="w-[4rem] md:w-44">Subject</span><span>Activate</span>
                       </li>
-                      <li class="flex justify-between md:w-[25rem]">
-                        <span>Body</span
-                        ><span
-                          >Github repository
-                          <span class="text-xs">(must be the same used to sponser)</span></span
-                        >
+                      <li class="flex">
+                        <span class="w-[6rem] md:w-44">Body</span>
+                        <span>
+                          Github repository <span>(must be the same used to sponser)</span>
+                        </span>
                       </li>
                     </ul>
                   </div>
