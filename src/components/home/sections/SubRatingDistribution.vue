@@ -4,11 +4,13 @@
     <template #content>
       <div v-html="rcs.description()" class="!mt-0"></div>
 
-      <picture class="border rounded p-4">
-        <source media="(min-width:1024px)" srcset="/src/assets/img/reviewer/lg/2.png" />
-        <source media="(min-width:768px)" srcset="/src/assets/img/reviewer/lg/2.png" />
-        <img src="/src/assets/img/reviewer/lg/2.png" alt="Sub ratng distribution" />
-      </picture>
+      <a class="cursor-pointer" href="/src/assets/img/reviewer/lg/2.png" target="_blank">
+        <picture class="border rounded p-4">
+          <source media="(min-width:1024px)" srcset="/src/assets/img/reviewer/lg/2.png" />
+          <source media="(min-width:768px)" srcset="/src/assets/img/reviewer/lg/2.png" />
+          <img src="/src/assets/img/reviewer/lg/2.png" alt="Sub ratng distribution" />
+        </picture>
+      </a>
     </template>
   </SectionComponent>
 </template>
