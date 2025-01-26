@@ -98,8 +98,5 @@ import MediaGalleryImgMd from '@/assets/img/reviewer/md/3.png'
 import MediaGalleryImgLg from '@/assets/img/reviewer/lg/3.png'
 import MediaGalleryImgSm from '@/assets/img/reviewer/sm/3.png'
 
-import ReviewModalImgLg from '@/assets/img/reviewer/lg/review_modal.png'
-import ReviewModalImgMd from '@/assets/img/reviewer/review_modal.png'
-
 const rcs = new ReviewerComponentService(ReviewerComponent.BIG_PICTURE)
 </script>
