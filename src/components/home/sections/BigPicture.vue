@@ -4,19 +4,19 @@
     <template #content>
       <div class="flex flex-flex gap-y-4 not-prose mb-8">
         <div class="shadow border">
-          <a href="/src/assets/img/reviewer/widget.png" target="_blank">
-            <img src="/src/assets/img/reviewer/widget.png" />
+          <a :href="WidgetImg" target="_blank">
+            <img :src="WidgetImg" />
           </a>
         </div>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-8 w-full">
         <div class="flex flex-col gap-y-4">
           <div class="lg:h-[36rem] rounded shadow border pt-2">
-            <a href="/src/assets/img/reviewer/lg/1.png" target="_blank">
+            <a :href="RatingDistributionImg" target="_blank">
               <picture>
-                <source media="(min-width:1024px)" srcset="/src/assets/img/reviewer/lg/1.png" />
-                <source media="(min-width:768px)" srcset="/src/assets/img/reviewer/lg/1.png" />
-                <img src="/src/assets/img/reviewer/lg/1.png" alt="Rating distribution" />
+                <source media="(min-width:1024px)" :srcset="RatingDistributionImg" />
+                <source media="(min-width:768px)" :srcset="RatingDistributionImg" />
+                <img :src="RatingDistributionImg" alt="Rating distribution" />
               </picture>
             </a>
           </div>
@@ -24,11 +24,11 @@
 
         <div class="flex flex-col gap-y-4">
           <div class="lg:h-[36rem] rounded shadow border pt-2">
-            <a href="/src/assets/img/reviewer/lg/2.png" target="_blank">
+            <a :href="SubRatingDistributionImg" target="_blank">
               <picture>
-                <source media="(min-width:1024px)" srcset="/src/assets/img/reviewer/lg/2.png" />
-                <source media="(min-width:768px)" srcset="/src/assets/img/reviewer/lg/2.png" />
-                <img src="/src/assets/img/reviewer/lg/2.png" alt="Sub ratng distribution" />
+                <source media="(min-width:1024px)" :srcset="SubRatingDistributionImg" />
+                <source media="(min-width:768px)" :srcset="SubRatingDistributionImg" />
+                <img :src="SubRatingDistributionImg" alt="Sub ratng distribution" />
               </picture>
             </a>
           </div>
@@ -36,11 +36,11 @@
 
         <div class="flex flex-col gap-y-4 md:col-span-2 lg:col-span-1">
           <div class="lg:h-[36rem] rounded shadow border pt-2">
-            <a href="/src/assets/img/reviewer/lg/3.png" target="_blank">
+            <a :href="MediaGalleryImgLg" target="_blank">
               <picture>
-                <source media="(min-width:1024px)" srcset="/src/assets/img/reviewer/lg/3.png" />
-                <source media="(min-width:768px)" srcset="/src/assets/img/reviewer/md/3.png" />
-                <img src="/src/assets/img/reviewer/sm/3.png" alt="Media gallery" />
+                <source media="(min-width:1024px)" :srcset="MediaGalleryImgLg" />
+                <source media="(min-width:768px)" :srcset="MediaGalleryImgMd" />
+                <img :src="MediaGalleryImgSm" alt="Media gallery" />
               </picture>
             </a>
           </div>
@@ -91,6 +91,15 @@
 import SectionComponent from '@/components/SectionComponent.vue'
 import { ReviewerComponent } from '@/enums/ReviewerComponent'
 import { ReviewerComponentService } from '@/services/ReviewerComponentService'
+import WidgetImg from '@/assets/img/reviewer/widget.png'
+import RatingDistributionImg from '@/assets/img/reviewer/lg/1.png'
+import SubRatingDistributionImg from '@/assets/img/reviewer/lg/2.png'
+import MediaGalleryImgMd from '@/assets/img/reviewer/md/3.png'
+import MediaGalleryImgLg from '@/assets/img/reviewer/lg/3.png'
+import MediaGalleryImgSm from '@/assets/img/reviewer/sm/3.png'
+
+import ReviewModalImgLg from '@/assets/img/reviewer/lg/review_modal.png'
+import ReviewModalImgMd from '@/assets/img/reviewer/review_modal.png'
 
 const rcs = new ReviewerComponentService(ReviewerComponent.BIG_PICTURE)
 </script>

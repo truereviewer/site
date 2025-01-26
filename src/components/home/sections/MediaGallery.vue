@@ -6,21 +6,21 @@
       <div class="flex items-start gap-4 flex-wrap lg:flex-nowrap">
         <a
           class="cursor-pointer border rounded p-4 lg:w-[35%]"
-          href="/src/assets/img/reviewer/lg/3.png"
+          :href="MediaGalleryImgLg"
           target="_blank"
         >
           <picture>
-            <source media="(min-width:1024px)" srcset="/src/assets/img/reviewer/lg/3.png" />
-            <source media="(min-width:0px)" srcset="/src/assets/img/reviewer/md/3.png" />
-            <img src="/src/assets/img/reviewer/lg/3.png" alt="Media gallery" />
+            <source media="(min-width:1024px)" :srcset="MediaGalleryImgLg" />
+            <source media="(min-width:0px)" :srcset="MediaGalleryImgMd" />
+            <img :src="MediaGalleryImgLg" alt="Media gallery" />
           </picture>
         </a>
         <a
           class="cursor-pointer lg:w-[65%] object-cover border rounded !mt-0"
-          href="/src/assets/img/reviewer/lg/review_modal.png"
+          :href="ReviewModalImgLg"
           target="_blank"
         >
-          <img src="/src/assets/img/reviewer/review_modal.png" alt="Media gallery modal" />
+          <img :src="ReviewModalImgMd" alt="Media gallery modal" />
         </a>
       </div>
     </template>
@@ -31,6 +31,10 @@
 import SectionComponent from '@/components/SectionComponent.vue'
 import { ReviewerComponent } from '@/enums/ReviewerComponent'
 import { ReviewerComponentService } from '@/services/ReviewerComponentService'
+import MediaGalleryImgMd from '@/assets/img/reviewer/md/3.png'
+import MediaGalleryImgLg from '@/assets/img/reviewer/lg/3.png'
+import ReviewModalImgLg from '@/assets/img/reviewer/lg/review_modal.png'
+import ReviewModalImgMd from '@/assets/img/reviewer/review_modal.png'
 
 const rcs = new ReviewerComponentService(ReviewerComponent.MEDIA_GALLERY)
 </script>

@@ -4,38 +4,30 @@
     <template #content>
       <p>{{ rcs.description() }}</p>
       <div class="border rounded p-4">
-        <a href="/src/assets/img/reviewer/lg/4-1.png" target="_blank">
+        <a :href="ReviewListFiltersLg" target="_blank">
           <picture class="!mb-0">
-            <source media="(min-width:1024px)" srcset="/src/assets/img/reviewer/lg/4-1.png" />
-            <source media="(min-width:768px)" srcset="/src/assets/img/reviewer/md/4-1.png" />
+            <source media="(min-width:1024px)" :srcset="ReviewListFiltersLg" />
+            <source media="(min-width:768px)" :srcset="ReviewListFiltersMd" />
             <img
               class="object-fill min-[1366px]:object-none"
-              src="/src/assets/img/reviewer/sm/4-1.png"
-              alt="Review list"
+              :src="ReviewListFiltersSm"
+              alt="Review list filters"
             />
           </picture>
         </a>
 
-        <a href="/src/assets/img/reviewer/lg/4-2.png" target="_blank">
+        <a :href="ReviewListLg" target="_blank">
           <img
             class="hidden lg:inline object-fill min-[1366px]:object-none !mt-0"
-            src="/src/assets/img/reviewer/lg/4-2.png"
+            :src="ReviewListLg"
             alt="Review list"
           />
         </a>
-        <a href="/src/assets/img/reviewer/md/4-2.png" target="_blank">
-          <img
-            class="hidden md:inline lg:hidden !mt-0"
-            src="/src/assets/img/reviewer/md/4-2.png"
-            alt="Review list"
-          />
+        <a :href="ReviewListMd" target="_blank">
+          <img class="hidden md:inline lg:hidden !mt-0" :src="ReviewListMd" alt="Review list" />
         </a>
-        <a href="/src/assets/img/reviewer/sm/4-2.png" target="_blank">
-          <img
-            class="inline md:hidden !mt-0"
-            src="/src/assets/img/reviewer/sm/4-2.png"
-            alt="Review list"
-          />
+        <a :href="ReviewListSm" target="_blank">
+          <img class="inline md:hidden !mt-0" :src="ReviewListSm" alt="Review list" />
         </a>
       </div>
     </template>
@@ -46,6 +38,12 @@
 import SectionComponent from '@/components/SectionComponent.vue'
 import { ReviewerComponent } from '@/enums/ReviewerComponent'
 import { ReviewerComponentService } from '@/services/ReviewerComponentService'
+import ReviewListFiltersLg from '@/assets/img/reviewer/lg/4-1.png'
+import ReviewListFiltersMd from '@/assets/img/reviewer/md/4-1.png'
+import ReviewListFiltersSm from '@/assets/img/reviewer/sm/4-1.png'
+import ReviewListLg from '@/assets/img/reviewer/lg/4-2.png'
+import ReviewListMd from '@/assets/img/reviewer/md/4-1.png'
+import ReviewListSm from '@/assets/img/reviewer/sm/4-1.png'
 
 const rcs = new ReviewerComponentService(ReviewerComponent.REVIEW_LIST)
 </script>
