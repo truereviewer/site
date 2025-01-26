@@ -444,7 +444,6 @@ onMounted(() => {
     watch(
       () => route.hash,
       () => {
-        console.log('here')
         show.value = false
       }
     )
