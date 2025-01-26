@@ -129,6 +129,12 @@ const useComponent = (name: string) => `
   display: none;
 }
 
+@media (max-width: 1024px) {
+  .component--5 {
+    object-fit: fill !important;
+  }
+}
+
 @media (min-width: 1024px) {
   .complete__system {
     display: grid;
@@ -149,6 +155,12 @@ const useComponent = (name: string) => `
 
   .component--5 {
     display: none;
+  }
+
+  .component--2,
+  .component--3,
+  .component--4 {
+    height: 20rem;
   }
 }
 

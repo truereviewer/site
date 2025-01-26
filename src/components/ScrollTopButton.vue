@@ -12,7 +12,7 @@
 
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from 'vue'
-import ScrollToTopImg from '@/assets/img/scroll_to_top.png'
+import ScrollToTopImg from '@/assets/icons/up-arrow.svg'
 
 const show = ref(false)
 

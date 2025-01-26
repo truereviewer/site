@@ -9,7 +9,7 @@
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-8 w-full">
         <div class="flex flex-col gap-y-4">
-          <div class="lg:h-[36rem] rounded shadow border">
+          <div class="lg:h-[36rem] rounded shadow border pt-2">
             <picture>
               <source media="(min-width:1024px)" srcset="/src/assets/img/reviewer/lg/1.png" />
               <source media="(min-width:768px)" srcset="/src/assets/img/reviewer/lg/1.png" />
@@ -19,7 +19,7 @@
         </div>
 
         <div class="flex flex-col gap-y-4">
-          <div class="lg:h-[36rem] rounded shadow border">
+          <div class="lg:h-[36rem] rounded shadow border pt-2">
             <picture>
               <source media="(min-width:1024px)" srcset="/src/assets/img/reviewer/lg/2.png" />
               <source media="(min-width:768px)" srcset="/src/assets/img/reviewer/lg/2.png" />
@@ -29,7 +29,7 @@
         </div>
 
         <div class="flex flex-col gap-y-4 md:col-span-2 lg:col-span-1">
-          <div class="lg:h-[36rem] rounded shadow border">
+          <div class="lg:h-[36rem] rounded shadow border pt-2">
             <picture>
               <source media="(min-width:1024px)" srcset="/src/assets/img/reviewer/lg/3.png" />
               <source media="(min-width:768px)" srcset="/src/assets/img/reviewer/md/3.png" />
