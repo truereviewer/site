@@ -23,7 +23,7 @@
         ref="navMenu"
         class="bg-gradient-to-tr space-y-4 from-green-200/25 to-green-400/50 relative min-w-72 px-4 py-2 rounded list-none bg-white top-0 m-0"
       >
-        <li class="flex justify-end">
+        <li v-if="!props.keepOpen" class="flex justify-end">
           <img
             @click="showMenu = false"
             class="w-8 !my-0"
@@ -67,7 +67,7 @@
         <li class="group">
           <router-link
             class="no-underline text-orange-400 inline-block pb-1"
-            :to="{ name: 'documentation' }"
+            :to="{ name: 'contacts' }"
             >Contacts</router-link
           >
           <hr
@@ -160,7 +160,9 @@
 </template>
 
 <script setup lang="ts">
-import { onBeforeUnmount, onMounted, ref } from 'vue'
+const props = defineProps({ keepOpen: { type: Boolean, required: false, defaul: false } })
+
+import { onBeforeMount, onBeforeUnmount, ref } from 'vue'
 
 const navButton = ref<Element>()
 
@@ -168,13 +170,7 @@ const navMenu = ref<Element>()
 
 const showMenu = ref(false)
 
-const toggleShow = () => {
-  showMenu.value = !showMenu.value
-}
-
 const onClickOutside = (event: Event) => {
-  console.log(event.target, navButton.value)
-
   if (event.target === (navButton.value as Node)) {
     showMenu.value = true
     return
@@ -183,11 +179,18 @@ const onClickOutside = (event: Event) => {
   showMenu.value = false
 }
 
-onMounted(() => {
+onBeforeMount(() => {
+  if (props.keepOpen) {
+    showMenu.value = true
+    return
+  }
   document.addEventListener('click', onClickOutside)
 })
 
 onBeforeUnmount(() => {
+  if (props.keepOpen) {
+    return
+  }
   document.removeEventListener('click', onClickOutside)
 })
 </script>
