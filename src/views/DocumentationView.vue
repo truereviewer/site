@@ -33,6 +33,8 @@
         <TraitComponent />
 
         <FooterComponent />
+
+        <ScrollTopButton />
       </main>
     </div>
   </div>
@@ -58,6 +60,7 @@ import OtherOptions from '@/components/documentation/config/OtherOptions.vue'
 import TraitComponent from '@/components/documentation/api/TraitComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 import { useMetaTags } from '@/composables/useMetaTags'
+import ScrollTopButton from '@/components/ScrollTopButton.vue'
 
 useMetaTags({
   title: 'Documentation',
