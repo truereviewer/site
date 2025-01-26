@@ -33,7 +33,7 @@ import { ReviewerComponent } from '@/enums/ReviewerComponent'
 import { ReviewerComponentService } from '@/services/ReviewerComponentService'
 import MediaGalleryImgMd from '@/assets/img/reviewer/md/3.png'
 import MediaGalleryImgLg from '@/assets/img/reviewer/lg/3.png'
-import ReviewModalImgLg from '@/assets/img/reviewer/lg/review_modal.png'
+import ReviewModalImgLg from '@/assets/img/reviewer/review_modal.png'
 import ReviewModalImgMd from '@/assets/img/reviewer/review_modal.png'
 
 const rcs = new ReviewerComponentService(ReviewerComponent.MEDIA_GALLERY)
