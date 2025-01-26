@@ -4,7 +4,7 @@
     :src="ScrollToTopImg"
     alt="scroll to top"
     :class="[
-      'w-0 opacity-0 fixed bottom-4 right-4 transition-all cursor-pointer',
+      'w-0 opacity-0 z-[500] fixed bottom-4 right-4 transition-all cursor-pointer',
       { 'opacity-100 w-8': show }
     ]"
   />
