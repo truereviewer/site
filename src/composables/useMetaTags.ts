@@ -1,11 +1,11 @@
 import type { MetaTags } from '@/interfaces'
-import { onMounted } from 'vue'
+import { onBeforeMount } from 'vue'
 import { useHead } from '@unhead/vue'
 
 export function useMetaTags(tags: MetaTags) {
-  onMounted(() => {
+  onBeforeMount(() => {
     useHead({
-      title: () => `${tags.title} - TrueReviewer`,
+      title: `${tags.title} - TrueReviewer`,
       meta: [
         // Meta tags
         { name: 'description', content: tags.description },
