@@ -28,4 +28,6 @@ export function useMetaTags(tags: MetaTags) {
       ]
     })
   })
+
+  console.log(document.head)
 }
