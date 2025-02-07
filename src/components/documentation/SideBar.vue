@@ -12,7 +12,7 @@
     <div
       :class="[
         'fixed w-full z-[350] top-0 xl:top-auto sm:w-[75%] md:w-[50%] xl:w-[25%]',
-        { '!z-50': !show }
+        { '!z-50 !w-0': !show }
       ]"
     >
       <nav
