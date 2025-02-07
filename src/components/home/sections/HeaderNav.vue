@@ -72,6 +72,14 @@
             class="w-0 !my-0 transition-all ease-in-out duration-300 group-hover:w-full mx-auto h-px max-w-7xl border-none bg-gradient-to-r from-transparent via-white to-transparent"
           />
         </li>
+        <div class="group">
+          <a class="no-underline text-orange-400 inline-block pb-1" href="/#ai">
+            <img class="w-12 !my-0" src="/src/assets/img/ai.png" alt="AI" />
+          </a>
+          <hr
+            class="w-0 !my-0 transition-all ease-in-out duration-300 group-hover:w-full mx-auto h-px max-w-7xl border-none bg-gradient-to-r from-transparent via-white to-transparent"
+          />
+        </div>
         <li class="group">
           <router-link
             class="no-underline text-orange-400 inline-block pb-1"
@@ -137,6 +145,15 @@
         <a class="no-underline text-orange-400 inline-block pb-1" href="/#technologies"
           >Technologies</a
         >
+        <hr
+          class="w-0 !my-0 transition-all ease-in-out duration-300 group-hover:w-full mx-auto h-px max-w-7xl border-none bg-gradient-to-r from-transparent via-white to-transparent"
+        />
+      </div>
+
+      <div class="group">
+        <a class="no-underline text-orange-400 inline-block pb-1" href="/#ai">
+          <img class="w-12 !my-0" src="/src/assets/img/ai.png" alt="AI" />
+        </a>
         <hr
           class="w-0 !my-0 transition-all ease-in-out duration-300 group-hover:w-full mx-auto h-px max-w-7xl border-none bg-gradient-to-r from-transparent via-white to-transparent"
         />

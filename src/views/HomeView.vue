@@ -6,6 +6,7 @@
       <ReviewerDescription />
       <FeaturesComponent />
       <WhyTrueReviewer />
+      <AIComponent />
       <ComponentsComponent />
       <WidgetComponent />
       <RatingDistribution />
@@ -42,6 +43,7 @@ import WhyTrueReviewer from '@/components/home/sections/WhyTrueReviewer.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 import { useMetaTags } from '@/composables/useMetaTags'
 import ScrollTopButton from '@/components/ScrollTopButton.vue'
+import AIComponent from '@/components/home/sections/AIComponent.vue'
 
 useMetaTags({ title: 'Home', description: 'Ideal review system for Laravel projects' })
 </script>
