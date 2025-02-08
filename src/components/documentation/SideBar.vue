@@ -1,17 +1,18 @@
 <template>
   <aside
+    ref="sideBar"
     class="xl:w-[25%] text-base bg-gradient-to-r from-green-600 via-green-600/60 via-[20%] to-green-600"
   >
     <div
       v-if="!show"
+      ref="showButton"
       :class="['absolute w-8 top-18 right-2 z-[300]', { 'opacity-0': show }]"
-      @click="show = true"
     >
       <img src="/src/assets/icons/right-arrow.svg" alt="menu" />
     </div>
     <div
       :class="[
-        'fixed w-full z-[350] top-0 xl:top-auto sm:w-[75%] md:w-[50%] xl:w-[25%]',
+        'fixed w-full z-[350] top-0 xl:top-auto sm:w-[75%] md:w-[50%] xl:w-[25%] transition-all',
         { '!z-50 !w-0': !show }
       ]"
     >
@@ -433,9 +434,23 @@ const route = useRoute()
 
 const show = ref<boolean>(false)
 
+const sideBar = ref<Element>()
+const showButton = ref<Element>()
+
 const currentSection = computed(() => {
   return route.hash
 })
+
+const onClickOutside = (event: Event) => {
+  if (showButton.value?.contains(event.target as Node)) {
+    show.value = true
+    return
+  }
+
+  if (!sideBar.value?.contains(event.target as Node)) {
+    show.value = false
+  }
+}
 
 onMounted(() => {
   if (document.documentElement.clientWidth >= 1280) {
@@ -447,6 +462,8 @@ onMounted(() => {
         show.value = false
       }
     )
+
+    document.addEventListener('click', onClickOutside)
   }
 })
 </script>
