@@ -41,7 +41,7 @@
         </ul>
         <div>
           <h3>Sentiment Detector</h3>
-          <p>
+          <p class="!mb-0">
             Humans engage with sentiments. Reviews will be analyzed to identify the most intense
             sentiment, and a filterable badge will be displayed. This enhances the user experience
             by allowing users to filter reviews based on sentiment.
