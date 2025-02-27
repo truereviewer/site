@@ -1,6 +1,6 @@
 <template>
   <section class="flex flex-col items-start justify-center">
-    <h2 v-if="$slots.header" class="text-4xl mt-8 mb-4 inline-block">
+    <h2 v-if="$slots.header" class="text-4xl mt-6 mb-2 inline-block">
       <span class="w-6 mr-2">#</span><slot name="header"></slot>
     </h2>
     <div class="w-full space-y-6 content">

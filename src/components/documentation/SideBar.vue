@@ -30,16 +30,66 @@
           <div class="space-y-6">
             <div class="flex flex-col">
               <a class="no-underline main-text-color font-bold">Getting Started </a>
-              <ul class="mt-2 space-y-2">
-                <li class="ml-2">
+              <div class="mt-2">
+                <div class="ml-2">
                   <a
-                    :class="{ 'text-[var(--main-text-color)]': currentSection === '#installation' }"
+                    :class="{
+                      'text-[var(--main-text-color)]': currentSection === '#installation'
+                    }"
                     href="#installation"
                     ><span v-if="currentSection === '#installation'" class="mr-1">#</span
                     ><span>Installation</span></a
                   >
-                </li>
-              </ul>
+                </div>
+                <ul class="ml-4 mt-2 space-y-2 text-sm">
+                  <li>
+                    <a
+                      :class="{
+                        'text-[var(--main-text-color)]':
+                          currentSection === '#installation-monolithic'
+                      }"
+                      href="#installation-monolithic"
+                      ><span v-if="currentSection === '#installation-monolithic'" class="mr-1"
+                        >#</span
+                      ><span>Monolithic</span></a
+                    >
+                  </li>
+                  <li>
+                    <div>
+                      <a
+                        :class="{
+                          'text-[var(--main-text-color)]': currentSection === '#installation-api'
+                        }"
+                        href="#installation-api"
+                        ><span v-if="currentSection === '#installation-api'" class="mr-1">#</span
+                        ><span>API</span></a
+                      >
+                    </div>
+                    <div class="ml-2 mt-2 space-y-1 flex flex-col">
+                      <a
+                        :class="{
+                          'text-[var(--main-text-color)]':
+                            currentSection === '#installation-api-front-end'
+                        }"
+                        href="#installation-api-front-end"
+                        ><span v-if="currentSection === '#installation-api-front-end'" class="mr-1"
+                          >#</span
+                        ><span>Front-End</span></a
+                      >
+                      <a
+                        :class="{
+                          'text-[var(--main-text-color)]':
+                            currentSection === '#installation-api-back-end'
+                        }"
+                        href="#installation-api-back-end"
+                        ><span v-if="currentSection === '#installation-api-back-end'" class="mr-1"
+                          >#</span
+                        ><span>Back-End</span></a
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <div class="flex flex-col">

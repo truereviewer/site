@@ -88,8 +88,8 @@ h4 {
   @apply cursor-pointer;
 }
 
-.documentation h3:hover::before,
-h4:hover::before {
+.documentation h3::before,
+h4::before {
   content: '#';
   margin-right: 4px;
 }
