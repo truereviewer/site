@@ -29,6 +29,8 @@
         <BuildAssets />
         <CustomizeComponent />
 
+        <AIComponent />
+
         <!--API-->
         <TraitComponent />
 
@@ -57,6 +59,7 @@ import MediaGallery from '@/components/documentation/config/MediaGallery.vue'
 import ReviewPagination from '@/components/documentation/config/ReviewPagination.vue'
 import ReviewPermissions from '@/components/documentation/config/ReviewPermissions.vue'
 import OtherOptions from '@/components/documentation/config/OtherOptions.vue'
+import AIComponent from '@/components/documentation/AIComponent.vue'
 import TraitComponent from '@/components/documentation/api/TraitComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 import { useMetaTags } from '@/composables/useMetaTags'

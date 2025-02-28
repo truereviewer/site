@@ -3,28 +3,27 @@
     <template #header><a href="#theming-buildAssets">Build Assets</a></template>
     <template #content>
       <p>
-        <a class="font-bold" href="#theming-publishAssets">
-          Before begin you should publish commenter views.
-        </a>
+        Before begin you should
+        <a class="underline" href="#theming-publishAssets"> publish commenter views. </a>
       </p>
 
       <div class="space-y-6">
         <div>
-          <h3>Step-1</h3>
+          <h3 id="theming-publishAssets-step1">
+            <a href="#theming-publishAssets-step1">Step-1</a>
+          </h3>
           <p>
             Install and setup tailwind css. You can do that by following
-            <a
-              class="font-bold"
-              href="#https://tailwindcss.com/docs/guides/laravel"
-              target="_blank"
-            >
+            <a class="underline" href="https://tailwindcss.com/docs/guides/laravel" target="_blank">
               documentation.
             </a>
           </p>
         </div>
 
         <div>
-          <h3>Step-2</h3>
+          <h3 id="theming-publishAssets-step2">
+            <a href="#theming-publishAssets-step2">Step-2</a>
+          </h3>
           <p>
             Add following reviewer front-end dependencies in
             <code class="code-inline">package.json</code> file.
@@ -36,13 +35,17 @@
         </div>
 
         <div>
-          <h3>Step-3</h3>
+          <h3 id="theming-publishAssets-step3">
+            <a href="#theming-publishAssets-step3">Step-3</a>
+          </h3>
           <p>Create <code class="code-inline">tsconfig.json</code> file. and add following.</p>
           <CodeBlock language="js" :code="tsconfig" />
         </div>
 
         <div>
-          <h3>Step-4</h3>
+          <h3 id="theming-publishAssets-step4">
+            <a href="#theming-publishAssets-step4">Step-4</a>
+          </h3>
           <p>
             Finally your <code class="code-inline">vite.config.js</code> should have following
             entries.
@@ -51,7 +54,9 @@
         </div>
 
         <div>
-          <h3>Step-5</h3>
+          <h3 id="theming-publishAssets-step5">
+            <a href="#theming-publishAssets-step5">Step-5</a>
+          </h3>
           <p>Finally build the assets.</p>
           <CodeBlock language="js" code="npm run build" />
         </div>

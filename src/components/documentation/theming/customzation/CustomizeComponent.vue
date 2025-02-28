@@ -2,7 +2,7 @@
   <DocumentationSection id="customization">
     <template #header><a href="#customization">Customization</a></template>
     <template #content>
-      <AlertComponent type="notice">
+      <AlertComponent class="mt-4" type="notice">
         You should've published the reviewer assets. You can refer the instruction
         <a class="font-bold" href="#theming-publishAssets"> here. </a>
       </AlertComponent>
@@ -44,8 +44,8 @@
         </div>
 
         <div class="space-y-4">
-          <h3 id="customization-definePresets">
-            <a href="#customization-presets">Customizng Presets</a>
+          <h3 id="customization-presets">
+            <a href="#customization-presets">Customizing Presets</a>
           </h3>
           <p>
             With primevue, customizing presets are super easy. Let's imaging your site's main theme
