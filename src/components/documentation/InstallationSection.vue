@@ -13,7 +13,7 @@
         </h3>
         <AlertComponent type="notice">
           <p>
-            You should have read-only access to the reviewer repository. For more information,
+            You should have read-only access to the reviewer repositories. For more information,
             please refer to the
             <a class="no-underline text-orange-400 inline-block pb-1" href="/#sponserware"
               >Sponserware</a
@@ -35,11 +35,27 @@
         <div class="space-y-4">
           <h3 id="installation-step1"><a href="#installation-step1">Step-1</a></h3>
           <p>
-            Obtain a personal access token (fine-grained) with read-only access to the
-            <a class="underline" href="https://github.com/truereviewer/reviewer" target="_blank"
-              >Reviewer repository.</a
-            >
+            Obtain a personal access token (fine-grained) with read-only access to the following
+            TrueReviewer Repositories.
           </p>
+          <ul class="!mt-2 ml-2 list-disc list-inside">
+            <li>
+              <a class="underline" href="https://github.com/truereviewer/sdk" target="_blank"
+                >TrueReviewer SDK</a
+              >
+            </li>
+            <li>
+              <a class="underline" href="https://github.com/truereviewer/vur-front" target="_blank">
+                TrueReviewer vue-front
+              </a>
+            </li>
+
+            <li>
+              <a class="underline" href="https://github.com/truereviewer/reviewer" target="_blank">
+                TrueReviewer Reviewer
+              </a>
+            </li>
+          </ul>
 
           <p class="flex flex-col gap-y-4 !mb-8">
             <code class="code-inline"
