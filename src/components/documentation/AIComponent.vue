@@ -17,7 +17,10 @@
         <AlertComponent class="!my-4" type="notice">
           <p>
             You must manually install and setup above package. Consult the
-            <a class="underline" href="https://prism.echolabs.dev/getting-started/introduction.html"
+            <a
+              class="underline"
+              href="https://prism.echolabs.dev/getting-started/introduction.html"
+              target="_blank"
               >documentation</a
             >
             for instructions.
