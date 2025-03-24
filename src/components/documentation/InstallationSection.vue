@@ -4,7 +4,7 @@
     <template #content>
       <p>
         You can install TrueReviewer in your monolithic Laravel project(server-side rendering) or
-        API project (with a separate back-end and front-end).
+        API project(with a separate back-end and vue.js front-end).
       </p>
 
       <div class="space-y-6">
@@ -32,11 +32,21 @@
           allowfullscreen
         ></iframe>
 
+        <AlertComponent type="notice">
+          <p>
+            If you are using token-based authentication (classic token with full repo scope) for
+            GitHub in a development environment, you might not need to follow
+            <a class="underline" href="#installation-step1">step1</a> and
+            <a class="underline" href="#installation-step2">step2</a>
+          </p>
+        </AlertComponent>
+
         <div class="space-y-4">
           <h3 id="installation-step1"><a href="#installation-step1">Step-1</a></h3>
           <p>
-            Obtain a personal access token (fine-grained) with read-only access to the following
-            TrueReviewer Repositories.
+            Obtain a <b>classic</b> personal access token (fine-grained tokens won't support) with
+            repo scope (Full control of private repositories) access to the following TrueReviewer
+            Repositories.
           </p>
           <ul class="!mt-2 ml-2 list-disc list-inside">
             <li>
@@ -59,18 +69,11 @@
 
           <p class="flex flex-col gap-y-4 !mb-8">
             <code class="code-inline"
-              >Settings &rarr; Developer settings &rarr; Personal access tokens &rarr; Fine-grained
-              tokens</code
+              >Settings &rarr; Developer settings &rarr; Personal access tokens &rarr; Tokens
+              (classic)</code
             >
             <img class="lg:object-none" :src="PATToken" alt="Token Scope" />
           </p>
-
-          <AlertComponent type="notice">
-            <p>
-              You can also use a classic token, but we do not recommend it as it grants broader
-              access to your repositories.
-            </p>
-          </AlertComponent>
         </div>
 
         <div class="space-y-4">
@@ -139,7 +142,7 @@
 
       <div class="!mt-12">
         <h3 id="installation-api" class="mb-6 !text-2xl">
-          <a href="#installation-api"> API (with a separate back-end and front-end) </a>
+          <a href="#installation-api"> API (with a separate back-end and vue.js front-end) </a>
         </h3>
 
         <AlertComponent type="notice">
@@ -155,7 +158,7 @@
 
         <div class="mb-6">
           <h3 id="installation-api-front-end">
-            <a href="#installation-api-front-end"> Front-End </a>
+            <a href="#installation-api-front-end"> Front-End (Vue.js) </a>
           </h3>
           <div class="!mt-4">
             <div class="space-y-4">
@@ -164,7 +167,7 @@
                   <a href="#installation-api-front-end-step1">Step-1</a>
                 </h3>
                 <p class="!mt-2">
-                  Obtain a personal access token (fine-grained) with read-only access to the
+                  Obtain a classic personal access token with full repo scope to the
                   <a
                     class="underline"
                     href="https://github.com/truereviewer/vue-front"

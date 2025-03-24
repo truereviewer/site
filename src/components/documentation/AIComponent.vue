@@ -12,7 +12,7 @@
         <h3 id="ai-integration-requirements" class="mb-6 !text-3xl">
           <a href="#ai-integration-requirements">Requirements</a>
         </h3>
-        <p>"echolabsdev/prism": "~0.4"</p>
+        <p>"echolabsdev/prism": "^0.40.0"</p>
 
         <AlertComponent class="!my-4" type="notice">
           <p>
