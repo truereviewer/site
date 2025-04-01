@@ -41,7 +41,7 @@
                     ><span>Installation</span></a
                   >
                 </div>
-                <ul class="ml-4 mt-2 space-y-2 text-sm">
+                <ul class="ml-4 mt-2 space-y-2">
                   <li>
                     <a
                       :class="{
@@ -65,7 +65,7 @@
                         ><span>API</span></a
                       >
                     </div>
-                    <div class="ml-2 mt-2 space-y-1 flex flex-col">
+                    <div class="ml-2 mt-2 space-y-1 flex flex-col text-sm">
                       <a
                         :class="{
                           'text-[var(--main-text-color)]':
@@ -87,6 +87,18 @@
                         ><span>Back-End</span></a
                       >
                     </div>
+                  </li>
+                  <li>
+                    <a
+                      :class="{
+                        'text-[var(--main-text-color)]':
+                          currentSection === '#installation-production'
+                      }"
+                      href="#installation-production"
+                      ><span v-if="currentSection === '#installation-production'" class="mr-1"
+                        >#</span
+                      ><span>Production</span></a
+                    >
                   </li>
                 </ul>
               </div>

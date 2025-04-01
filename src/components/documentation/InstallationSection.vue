@@ -84,6 +84,15 @@
           </p>
 
           <CodeBlock language="bash" :code="authJson" />
+
+          <AlertComponent type="danger">
+            <p>
+              You should never add auth.json file to a VCS. Make sure you have add it to the
+              <code class="code-inline">.gitignore</code>
+
+              <CodeBlock language="bash" code="auth.json" />
+            </p>
+          </AlertComponent>
         </div>
 
         <div class="space-y-4">
@@ -248,7 +257,7 @@
 
           <div>
             <p class="!mt-4">
-              <a class="text-[var(--main-text-color)] font-bold" href="#installation-step2"
+              <a class="text-[var(--main-text-color)] font-bold" href="#installation-step4"
                 >Step-4</a
               >
               is slighly differ.
@@ -256,6 +265,17 @@
             <CodeBlock language="bash" code="composer require truereviewer/sdk" />
           </div>
         </div>
+      </div>
+      <div class="space-y-6 !mt-12">
+        <h3 id="installation-production" class="mb-4 !text-3xl">
+          <a href="#installation-production"> Production </a>
+        </h3>
+        <p>
+          If you're using a dedicated server, make sure to complete
+          <a class="text-[var(--main-text-color)] font-bold" href="#installation-step2">Step-2</a>
+          before installing Composer dependencies. After that, run the post-installation command:
+          <CodeBlock language="bash" code="php artisan reviewer:setup" />
+        </p>
       </div>
     </template>
   </DocumentationSection>
