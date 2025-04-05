@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import AlertComponent from '@/components/AlertComponent.vue'
 import ButtonComponent from '@/components/ButtonComponent.vue'
 import SectionComponent from '@/components/SectionComponent.vue'
 import { Contact } from '@/enums/Contact'
@@ -21,6 +22,47 @@ import { Contact } from '@/enums/Contact'
             >sponsorware</a
           >, meaning only those who sponsor to the GitHub account gain access to this repository.
         </p>
+
+        <div>
+          <AlertComponent type="important" class="inline-block">
+            <div class="inline-flex flex-col items-center w-full text-base">
+              <div class="text-left">
+                <ul class="list-disc !mt-0">
+                  <li class="font-semibold !my-0 w-full">
+                    Only personnal accounts are allowed.
+                    <a :href="'mailto:' + Contact.EMAIL">Contact us for team support.</a>
+                  </li>
+
+                  <li class="!-0">
+                    <p class="font-semibold !my-0">
+                      If you chosed forever plan, email must be sent to the
+                      <a :href="'mailto:' + Contact.EMAIL">{{ Contact.EMAIL }}</a>
+                      address with followings.
+                    </p>
+                    <div
+                      class="list-none flex w-full italic !mt-0 gap-x-8 items-center justify-start text-xs"
+                    >
+                      <ul class="list-none !mt-0">
+                        <li class="flex">
+                          <span class="w-[4rem] md:w-44">Subject</span><span>Activate</span>
+                        </li>
+                        <li class="flex">
+                          <span class="w-[6rem] md:w-44">Body</span>
+                          <span>
+                            Github repository <span>(must be the same used to sponser)</span>
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="!my-0">
+                    It can take up to 24 hours to get your subscription activated.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </AlertComponent>
+        </div>
 
         <div class="flex flex-wrap items-center lg:flex-row justify-center gap-8 w-full">
           <div
@@ -169,50 +211,6 @@ import { Contact } from '@/enums/Contact'
               <a :href="'mailto:' + Contact.EMAIL" class="text-red-500"
                 >Contact us for team support</a
               >
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="flex flex-col items-center w-full text-base !mt-12">
-            <div class="text-left">
-              <p class="font-bold">Note:</p>
-              <ul class="list-disc">
-                <li class="text-red-500 font-semibold !my-0 w-full">
-                  Only personnal accounts are allowed.
-                  <a :href="'mailto:' + Contact.EMAIL" class="text-red-500"
-                    >Contact us for team support</a
-                  >
-                </li>
-
-                <li class="!-0">
-                  <p class="text-red-500 font-semibold !my-0">
-                    If you chosed forever plan, email must be sent to the
-                    <a :href="'mailto:' + Contact.EMAIL" class="text-red-500">{{
-                      Contact.EMAIL
-                    }}</a>
-                    address with followings.
-                  </p>
-                  <div
-                    class="list-none flex w-full italic !mt-0 gap-x-8 items-center justify-start text-xs"
-                  >
-                    <ul class="list-none !mt-0">
-                      <li class="flex">
-                        <span class="w-[4rem] md:w-44">Subject</span><span>Activate</span>
-                      </li>
-                      <li class="flex">
-                        <span class="w-[6rem] md:w-44">Body</span>
-                        <span>
-                          Github repository <span>(must be the same used to sponser)</span>
-                        </span>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="!my-0">
-                  It can take up to 24 hours to get your subscription activated.
-                </li>
-              </ul>
             </div>
           </div>
         </div>
