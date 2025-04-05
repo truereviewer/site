@@ -13,7 +13,7 @@ const router = createRouter({
         const elm = document.querySelector(to.hash)
         setTimeout(() => {
           elm?.scrollIntoView()
-        }, 500)
+        }, 700)
       }
 
       return savedPosition
