@@ -5,7 +5,7 @@
       <div class="w-full">
         <iframe
           class="border w-full lg:w-2/3 aspect-video"
-          src="https://youtu.be/-NJszz8lnuA"
+          src="https://www.youtube.com/embed/-NJszz8lnuA?si=Sl8HGlVcG3zYDgsl"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
