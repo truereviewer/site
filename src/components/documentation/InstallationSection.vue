@@ -24,7 +24,7 @@
 
         <iframe
           class="aspect-video border w-full"
-          src="https://www.youtube.com/embed/l-Ns1ym-HHM"
+          src="https://youtu.be/Jdp7xRmY7r4"
           title="Installation"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
