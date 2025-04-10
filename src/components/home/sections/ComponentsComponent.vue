@@ -6,15 +6,17 @@
         <div
           v-for="(img, name) in components"
           :key="name"
-          class="text-center h-[25rem] border rounded bg-gradient-to-br from-green-400/10 to-green-500/80"
+          class="text-center h-[25rem] border rounded bg-gradient-to-br from-green-400/10 to-green-500/80 hover:!bg-none group"
         >
           <div class="relative w-full h-full overflow-hidden">
             <h2
-              class="!text-black !px-4 !m-0 w-full h-full flex justify-center items-center uppercase"
+              class="!text-black !px-4 !m-0 w-full h-full flex justify-center items-center uppercase group-hover:invisible transition-[visibility]"
             >
               {{ img.title }}
             </h2>
-            <div class="absolute top-0 left-0 w-full h-full z-10 opacity-20">
+            <div
+              class="absolute top-0 left-0 w-full h-full z-10 opacity-20 group-hover:opacity-100 transition-[opacity]"
+            >
               <a
                 class="flex justify-center items-center w-full h-full"
                 :href="img.id ? '#' + img.id : img.src"
@@ -75,7 +77,7 @@ const components = {
     src: SubRatingImg,
     alt: 'dynamic sub ratings',
     title: 'dynamic sub ratings',
-    objectFit: 'object-contain',
+    objectFit: 'object-none',
     id: 'component__sub_rating_distribution'
   },
   mediaGallery: {
