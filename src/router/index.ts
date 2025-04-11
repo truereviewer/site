@@ -3,6 +3,7 @@ import HomeView from '@/views/HomeView.vue'
 
 const DocumentationView = () => import('@/views/DocumentationView.vue')
 const ContactsView = () => import('@/views/ContactsView.vue')
+const AboutDeveloperView = () => import('@/views/AboutDeveloper.vue')
 
 const router = createRouter({
   linkExactActiveClass: 'border-b border-white',
@@ -42,15 +43,12 @@ const router = createRouter({
       path: '/contacts',
       name: 'contacts',
       component: ContactsView
+    },
+    {
+      path: '/@developer',
+      name: 'aboutDeveloper',
+      component: AboutDeveloperView
     }
-    // {
-    //   path: '/about',
-    //   name: 'about',
-    //   // route level code-splitting
-    //   // this generates a separate chunk (About.[hash].js) for this route
-    //   // which is lazy-loaded when the route is visited.
-    //   component: () => import('../views/AboutView.vue')
-    // }
   ]
 })
 
