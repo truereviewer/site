@@ -64,7 +64,7 @@ import img9 from '@/assets/img/reviewer/media_gallery/4.jpeg'
 const carouselConfig = {
   itemsToShow: 1,
   wrapAround: true,
-  autoplay: 3000,
+  autoplay: 4000,
   pauseAutoplayOnHover: true
 }
 

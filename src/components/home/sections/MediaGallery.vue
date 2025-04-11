@@ -3,14 +3,13 @@
     <template #header>{{ rcs.title() }}</template>
     <template #content>
       <p>{{ rcs.description() }}</p>
+
       <Carousel
         v-bind="carouselConfig"
-        class="border rounded p-4 bg-gradient-to-br from-green-400/10 to-green-500/80"
+        class="lg:w-[75%] border rounded p-4 bg-gradient-to-br from-green-400/10 to-green-500/80"
       >
         <Slide v-for="slide in images" :key="slide">
-          <div class="lg:h-[80vh] lg:w-%]">
-            <img :src="slide" alt="media gallery" class="object-contain w-full !m-0" />
-          </div>
+          <img :src="slide" alt="media gallery" class="object-contain w-full !m-0 lg:h-[70vh]" />
         </Slide>
 
         <template #addons>
@@ -38,7 +37,7 @@ const rcs = new ReviewerComponentService(ReviewerComponent.MEDIA_GALLERY)
 const carouselConfig = {
   itemsToShow: 1,
   wrapAround: true,
-  autoplay: 3000,
+  autoplay: 4000,
   pauseAutoplayOnHover: true
 }
 
