@@ -26,10 +26,47 @@
           >businesswire</a
         >
       </blockquote>
+
+      <div class="flex items-center justify-center">
+        <Carousel
+          v-bind="carouselConfig"
+          class="lg:w-[75%] border rounded p-4 bg-gradient-to-br from-green-400/10 to-green-500/80"
+        >
+          <Slide v-for="slide in images" :key="slide">
+            <div class="lg:h-[70vh]">
+              <img :src="slide" alt="media gallery" class="object-cover w-full !m-0" />
+            </div>
+          </Slide>
+
+          <template #addons>
+            <Navigation />
+            <Pagination />
+          </template>
+        </Carousel>
+      </div>
     </template>
   </SectionComponent>
 </template>
 
 <script setup lang="ts">
 import SectionComponent from '@/components/SectionComponent.vue'
+import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
+import img1 from '@/assets/img/reviewer/cuarousal/1.jpeg'
+import img2 from '@/assets/img/reviewer/cuarousal/2.jpeg'
+import img3 from '@/assets/img/reviewer/cuarousal/3.jpeg'
+import img4 from '@/assets/img/reviewer/cuarousal/4.jpeg'
+import img5 from '@/assets/img/reviewer/cuarousal/5.jpeg'
+import img6 from '@/assets/img/reviewer/cuarousal/6.jpeg'
+import img7 from '@/assets/img/reviewer/media_gallery/2.jpeg'
+import img8 from '@/assets/img/reviewer/media_gallery/3.jpeg'
+import img9 from '@/assets/img/reviewer/media_gallery/4.jpeg'
+
+const carouselConfig = {
+  itemsToShow: 1,
+  wrapAround: true,
+  autoplay: 3000,
+  pauseAutoplayOnHover: true
+}
+
+const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9]
 </script>

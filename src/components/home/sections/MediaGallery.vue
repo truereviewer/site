@@ -44,12 +44,3 @@ const carouselConfig = {
 
 const images = [img1, img2, img3, img4]
 </script>
-
-<style>
-.carousel {
-  --vc-pgn-background-color: rgba(255, 255, 255, 0.7);
-  --vc-pgn-active-color: rgba(255, 255, 255, 1);
-  --vc-nav-background: rgba(255, 255, 255, 0.7);
-  --vc-nav-border-radius: 100%;
-}
-</style>
