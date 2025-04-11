@@ -3,26 +3,21 @@
     <template #header>{{ rcs.title() }}</template>
     <template #content>
       <p>{{ rcs.description() }}</p>
-      <div class="flex items-start gap-4 flex-wrap lg:flex-nowrap">
-        <a
-          class="cursor-pointer border rounded p-4 lg:w-[35%]"
-          :href="MediaGalleryImgLg"
-          target="_blank"
-        >
-          <picture>
-            <source media="(min-width:1024px)" :srcset="MediaGalleryImgLg" />
-            <source media="(min-width:0px)" :srcset="MediaGalleryImgMd" />
-            <img :src="MediaGalleryImgLg" alt="Media gallery" />
-          </picture>
-        </a>
-        <a
-          class="cursor-pointer lg:w-[65%] object-cover border rounded !mt-0"
-          :href="ReviewModalImgLg"
-          target="_blank"
-        >
-          <img :src="ReviewModalImgMd" alt="Media gallery modal" />
-        </a>
-      </div>
+      <Carousel
+        v-bind="carouselConfig"
+        class="border rounded p-4 bg-gradient-to-br from-green-400/10 to-green-500/80"
+      >
+        <Slide v-for="slide in images" :key="slide">
+          <div class="lg:h-[80vh] lg:w-%]">
+            <img :src="slide" alt="media gallery" class="object-contain w-full !m-0" />
+          </div>
+        </Slide>
+
+        <template #addons>
+          <Navigation />
+          <Pagination />
+        </template>
+      </Carousel>
     </template>
   </SectionComponent>
 </template>
@@ -31,10 +26,30 @@
 import SectionComponent from '@/components/SectionComponent.vue'
 import { ReviewerComponent } from '@/enums/ReviewerComponent'
 import { ReviewerComponentService } from '@/services/ReviewerComponentService'
-import MediaGalleryImgMd from '@/assets/img/reviewer/md/3.png'
-import MediaGalleryImgLg from '@/assets/img/reviewer/lg/3.png'
-import ReviewModalImgLg from '@/assets/img/reviewer/review_modal.png'
-import ReviewModalImgMd from '@/assets/img/reviewer/review_modal.png'
+import 'vue3-carousel/carousel.css'
+import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
+import img1 from '@/assets/img/reviewer/media_gallery/1.jpeg'
+import img2 from '@/assets/img/reviewer/media_gallery/2.jpeg'
+import img3 from '@/assets/img/reviewer/media_gallery/3.jpeg'
+import img4 from '@/assets/img/reviewer/media_gallery/4.jpeg'
 
 const rcs = new ReviewerComponentService(ReviewerComponent.MEDIA_GALLERY)
+
+const carouselConfig = {
+  itemsToShow: 1,
+  wrapAround: true,
+  autoplay: 3000,
+  pauseAutoplayOnHover: true
+}
+
+const images = [img1, img2, img3, img4]
 </script>
+
+<style>
+.carousel {
+  --vc-pgn-background-color: rgba(255, 255, 255, 0.7);
+  --vc-pgn-active-color: rgba(255, 255, 255, 1);
+  --vc-nav-background: rgba(255, 255, 255, 0.7);
+  --vc-nav-border-radius: 100%;
+}
+</style>

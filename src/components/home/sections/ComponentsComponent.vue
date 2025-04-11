@@ -10,7 +10,7 @@
         >
           <div class="relative w-full h-full overflow-hidden">
             <h2
-              class="!text-black !px-4 !m-0 w-full h-full flex justify-center items-center uppercase group-hover:invisible transition-[visibility]"
+              class="!text-black !px-4 !m-0 w-full h-full flex justify-center items-center uppercase group-hover:invisible"
             >
               {{ img.title }}
             </h2>
