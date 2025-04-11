@@ -13,12 +13,14 @@
       @click="expand = false"
       class="cursor-pointer flex items-center gap-x-4 justify-between p-2 border"
     >
-      <h3 class="!my-0 !text-black"><slot name="header" /></h3>
+      <h3 :class="['!my-0 !text-black  text-xs', { '!text-xl': expand }]">
+        <slot name="header" />
+      </h3>
       <span class="text-4xl">-</span>
     </div>
     <p
       :class="[
-        'transition-all ease-in-out duration-1000 border !mt-0 p-8',
+        'transition-all ease-in-out duration-700 border !mt-0 p-8',
         { 'overflow-hidden !h-0 !p-0': !expand, ' h-full': expand }
       ]"
     >
