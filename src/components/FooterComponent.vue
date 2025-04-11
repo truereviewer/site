@@ -1,9 +1,9 @@
 <template>
   <div
-    class="text-white relativeb bottom-0 flex justify-between items-center text-base bg-gradient-to-r from-green-800 to-green-600 px-4 py-8"
+    class="text-white flex flex-col justify-center gap-4 md:gap-0 items-center text-base bg-gradient-to-r from-green-800 to-green-600 px-4 py-8"
   >
-    <span>@ {{ new Date().getFullYear() }} Truereviewer</span>
-    <HeaderNav :keepOpen="alwaysShowMenu" />
+    <HeaderNav :keepOpen="alwaysShowMenu" class="relative -start-4" />
+    <span class="">@ {{ new Date().getFullYear() }} Truereviewer</span>
   </div>
 </template>
 

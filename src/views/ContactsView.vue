@@ -3,7 +3,7 @@
     <div
       class="px-4 prose max-w-none flex justify-end bg-gradient-to-br from-green-800 to-green-600"
     >
-      <HeaderNav />
+      <HeaderNav class="fixed w-full md:static md:w-auto" />
     </div>
 
     <div
@@ -20,23 +20,23 @@
     <div
       class="prose lg:prose-lg max-w-none min-h-[calc(100svh-256px-66px-64px)] flex justify-start my-8 lg:ml-12"
     >
-      <ul class="list list-none">
-        <li class="flex items-center gap-8">
+      <ul class="list list-none ps-0 md:ps-8">
+        <li class="flex items-center gap-2 md:gap-8">
           <span class="!text-black w-full md:w-[8rem] text-xl font-bold !my-0">Email:</span>
           <a :href="'mailto:' + Contact.EMAIL" class="text-green-500">{{ Contact.EMAIL }}</a>
         </li>
-        <li class="flex items-center gap-8">
+        <li class="flex items-center gap-2 md:gap-8">
           <span class="!text-black w-full md:w-[8rem] text-xl font-bold !my-0">Discord:</span>
           <a :href="Contact.DISCORD" target="_blank" class="text-green-500">{{
             Contact.DISCORD
           }}</a>
         </li>
 
-        <li class="flex items-center gap-8">
+        <li class="flex items-center gap-2 md:gap-8">
           <span class="!text-black w-full md:w-[8rem] text-xl font-bold !my-0">X(Twitter):</span>
           <a :href="Contact.X" target="_blank" class="text-green-500">{{ Contact.X }}</a>
         </li>
-        <li class="flex items-center gap-8">
+        <li class="flex items-center gap-2 md:gap-8">
           <span class="!text-black w-full md:w-[8rem] text-xl font-bold !my-0">Github:</span>
           <a :href="Contact.GITHUB" target="_blank" class="text-green-500">{{ Contact.GITHUB }}</a>
         </li>
