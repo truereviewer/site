@@ -11,12 +11,15 @@
     >
       <div class="prose text-white lg:prose-lg !max-w-max">
         <h1 class="text-white">Hi 👋 I'am Lakshan Madhushanka (LakM)</h1>
-        <blockquote class="text-white prose lg:prose-lg">
-          I develop high-quality web applications with passion, applying everything I've learned
-          over the past 5+ years. Learn more about me
-          <a href="https://lakm.lovestoblog.com/" target="_blank" class="text-white">here</a> on my
-          personal site.
-        </blockquote>
+        <div class="flex items-center">
+          <blockquote class="text-white prose lg:prose-lg">
+            I develop high-quality web applications with passion, applying everything I've learned
+            over the past 5+ years. Learn more about me
+            <a href="https://lakm.lovestoblog.com/" target="_blank" class="text-white">here</a> on
+            my personal site.
+          </blockquote>
+          <img :src="DeveloperImg" alt="developer" class="w-24 rounded-full border py-2 px-1" />
+        </div>
       </div>
     </div>
     <div
@@ -85,6 +88,7 @@ import FooterComponent from '@/components/FooterComponent.vue'
 import HeaderNav from '@/components/home/sections/HeaderNav.vue'
 import { useMetaTags } from '@/composables/useMetaTags'
 import { Contact } from '@/enums/Contact'
+import DeveloperImg from '@/assets/img/developer.png'
 
 useMetaTags({
   title: '@developer',
