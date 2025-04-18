@@ -3,10 +3,10 @@
     <template #header>Complete Review System </template>
     <template #content>
       <p class="!mb-0">
-        TrueReviewer is a powerful review system featuring five thoughtfully crafted components
-        designed to captivate users while maintaining a clean, intuitive interface. Each component
-        is designed to make a visual impact without being overbearing, ensuring a seamless user
-        experience. With the flexibility to integrate and utilize components independently,
+        TrueReviewer is a powerful review and rating system featuring five thoughtfully crafted
+        components designed to captivate users while maintaining a clean, intuitive interface. Each
+        component is designed to make a visual impact without being overbearing, ensuring a seamless
+        user experience. With the flexibility to integrate and utilize components independently,
         TrueReviewer effortlessly adapts to your application’s unique requirements.
       </p>
       <p class="font-bold">Did you know ?</p>
