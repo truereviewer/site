@@ -8,7 +8,7 @@ const AboutDeveloperView = () => import('@/views/AboutDeveloper.vue')
 const router = createRouter({
   linkExactActiveClass: 'border-b border-white',
   history: createWebHistory(import.meta.env.BASE_URL),
-  scrollBehavior(to, from, savedPosition) {
+  scrollBehavior(to) {
     if (to.hash) {
       const elm = document.querySelector(to.hash)
       setTimeout(() => {
