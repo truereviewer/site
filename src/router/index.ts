@@ -13,7 +13,7 @@ const router = createRouter({
       const elm = document.querySelector(to.hash)
       setTimeout(() => {
         elm?.scrollIntoView()
-      }, 2500)
+      }, 1500)
     }
   },
   routes: [
