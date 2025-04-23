@@ -13,7 +13,7 @@
         </li>
         <li class="flex justify-between items-center">
           <span>Vue.js</span>
-          <span class="w-[22rem]">^3.5 (Only for seperated front-end | API)</span>
+          <span class="w-[22rem]">^3.5 (Only for separated front-end | API)</span>
         </li>
       </ul>
     </template>
