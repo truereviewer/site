@@ -12,11 +12,17 @@
         <h3 id="ai-integration-requirements" class="mb-6 !text-3xl">
           <a href="#ai-integration-requirements">Requirements</a>
         </h3>
-        <p>"echolabsdev/prism": "^0.40.0"</p>
+
+        <ul>
+          <li>PHP: &nbsp; ^8.2</li>
+          <li>Laravel: &nbsp; ^11.0 | ^12.0</li>
+          <li>echolabsdev/prism: &nbsp; ^0.40.0</li>
+        </ul>
 
         <AlertComponent class="!my-4" type="notice">
           <p>
-            You must manually install and setup above package. Consult the
+            You must manually install and setup the
+            <span class="font-semibold">echolabsdev/prism</span> package. Consult the
             <a
               class="underline"
               href="https://prism.echolabs.dev/getting-started/introduction.html"

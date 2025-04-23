@@ -10,6 +10,7 @@
     <div class="flex">
       <SideBar />
       <main class="w-full xl:w-[75%] mt-4 space-y-8">
+        <RequirementsSection />
         <InstallationSection />
         <ComponentsSection />
 
@@ -64,6 +65,7 @@ import TraitComponent from '@/components/documentation/api/TraitComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 import { useMetaTags } from '@/composables/useMetaTags'
 import ScrollTopButton from '@/components/ScrollTopButton.vue'
+import RequirementsSection from '@/components/documentation/RequirementsSection.vue'
 
 useMetaTags({
   title: 'Documentation',

@@ -31,6 +31,16 @@
             <div class="flex flex-col">
               <a class="no-underline main-text-color font-bold">Getting Started </a>
               <div class="mt-2">
+                <div class="ml-2 mb-2">
+                  <a
+                    :class="{
+                      'text-[var(--main-text-color)]': currentSection === '#requirements'
+                    }"
+                    href="#requirements"
+                    ><span v-if="currentSection === '#requirements'" class="mr-1">#</span
+                    ><span>Requirements</span></a
+                  >
+                </div>
                 <div class="ml-2">
                   <a
                     :class="{

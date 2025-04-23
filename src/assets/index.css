@@ -94,7 +94,7 @@ h4::before {
   margin-right: 4px;
 }
 
-.documentation p {
+.documentation section div {
   @apply mt-6;
 }
 
