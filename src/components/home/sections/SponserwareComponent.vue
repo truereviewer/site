@@ -149,7 +149,7 @@ import { Contact } from '@/enums/Contact'
             <div class="flex justify-between gap-4 items-center text-start overflow-hidden">
               <a
                 class="no-underline"
-                href="https://github.com/sponsors/Lakshan-Madushanka/sponsorships?sponsor=Lakshan-Madushanka&tier_id=430277"
+                href="https://github.com/sponsors/Lakshan-Madushanka/sponsorships?sponsor=Lakshan-Madushanka&tier_id=483369"
                 target="_blank"
               >
                 <ButtonComponent
