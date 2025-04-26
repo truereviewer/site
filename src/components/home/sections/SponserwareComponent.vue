@@ -162,7 +162,7 @@ import { Contact } from '@/enums/Contact'
 
               <a
                 class="no-underline"
-                href="https://github.com/sponsors/Lakshan-Madushanka/sponsorships?sponsor=Lakshan-Madushanka&tier_id=483357"
+                href="https://github.com/sponsors/Lakshan-Madushanka/sponsorships?sponsor=Lakshan-Madushanka&tier_id=455855"
                 target="_blank"
               >
                 <ButtonComponent
