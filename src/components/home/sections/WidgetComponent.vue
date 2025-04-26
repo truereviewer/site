@@ -5,11 +5,11 @@
       <p>
         {{ rcs.description() }}
       </p>
-      <a class="cursor-pointer" :href="FullWidgetImg" target="_blank">
+      <a class="cursor-pointer" :href="FullWidgetImg1" target="_blank">
         <picture class="border rounded p-4 inline-block">
-          <source media="(min-width:1024px)" :srcset="FullWidgetImg" />
-          <source media="(min-width:768px)" :srcset="FullWidgetImg" />
-          <img :src="FullWidgetImg" alt="Full Widget" />
+          <!-- <source media="(min-width:1024px)" :srcset="FullWidgetImg" />
+          <source media="(min-width:768px)" :srcset="FullWidgetImg" /> -->
+          <img :src="FullWidgetImg1" alt="Full Widget" />
         </picture>
       </a>
     </template>
@@ -21,6 +21,7 @@ import SectionComponent from '@/components/SectionComponent.vue'
 import { ReviewerComponent } from '@/enums/ReviewerComponent'
 import { ReviewerComponentService } from '@/services/ReviewerComponentService'
 import FullWidgetImg from '@/assets/img/reviewer/full-widget.png'
+import FullWidgetImg1 from '@/assets/img/reviewer/full-widget-2.png'
 
 const rcs = new ReviewerComponentService(ReviewerComponent.WIDGET)
 </script>
