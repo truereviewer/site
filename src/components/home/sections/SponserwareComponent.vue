@@ -156,13 +156,13 @@ import { Contact } from '@/enums/Contact'
                   class="flex overflow-hidden justify-between items-center gap-x-4 lg:gap-x-8 !py-[0.6rem] !text-lg !from-green-500 !to-green-800 hover:!to-green-600"
                 >
                   <span>Forever</span>
-                  <span> <span>$199</span> &nbsp; <span class="line-through"> $499</span> </span>
+                  <span> <span>$199</span> &nbsp; <span class="line-through"> $499</span></span>
                 </ButtonComponent>
               </a>
 
               <a
                 class="no-underline"
-                href="https://github.com/sponsors/Lakshan-Madushanka/sponsorships?sponsor=Lakshan-Madushanka&tier_id=430275"
+                href="https://github.com/sponsors/Lakshan-Madushanka/sponsorships?sponsor=Lakshan-Madushanka&tier_id=483357"
                 target="_blank"
               >
                 <ButtonComponent
