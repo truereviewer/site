@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import AlertComponent from '@/components/AlertComponent.vue'
 import ButtonComponent from '@/components/ButtonComponent.vue'
 import SectionComponent from '@/components/SectionComponent.vue'
 import { Contact } from '@/enums/Contact'
@@ -23,46 +22,9 @@ import { Contact } from '@/enums/Contact'
           >, meaning only those who sponsor to the GitHub account gain access to this repository.
         </p>
 
-        <div>
-          <AlertComponent type="important" class="inline-block">
-            <div class="inline-flex flex-col items-center w-full text-base">
-              <div class="text-left">
-                <ul class="list-disc !mt-0">
-                  <li class="font-semibold !my-0 w-full">
-                    Only personnal accounts are allowed.
-                    <a :href="'mailto:' + Contact.EMAIL">Contact us for team support.</a>
-                  </li>
-
-                  <li class="!-0">
-                    <p class="font-semibold !my-0">
-                      If you chosed forever plan, email must be sent to the
-                      <a :href="'mailto:' + Contact.EMAIL">{{ Contact.EMAIL }}</a>
-                      address with followings.
-                    </p>
-                    <div
-                      class="list-none flex w-full italic !mt-0 gap-x-8 items-center justify-start text-xs"
-                    >
-                      <ul class="list-none !mt-0">
-                        <li class="flex">
-                          <span class="w-[4rem] md:w-44">Subject</span><span>Activate</span>
-                        </li>
-                        <li class="flex">
-                          <span class="w-[6rem] md:w-44">Body</span>
-                          <span>
-                            Github repository <span>(must be the same used to sponser)</span>
-                          </span>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="!my-0">
-                    It can take up to 24 hours to get your subscription activated.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </AlertComponent>
-        </div>
+        <p class="text-red-500 font-semibold !mt-0">
+          * It can take up to 24 hours to get your subscription activated.
+        </p>
 
         <div class="flex flex-wrap items-center lg:flex-row justify-center gap-8 w-full">
           <div
@@ -181,7 +143,10 @@ import { Contact } from '@/enums/Contact'
               </li>
             </ul>
 
-            <div class="flex justify-between gap-4 items-center text-start mt-12 overflow-hidden">
+            <p class="font-bold text-red-800 mt-12 !mb-2">
+              * These special prices only valid for first 10 customers.
+            </p>
+            <div class="flex justify-between gap-4 items-center text-start overflow-hidden">
               <a
                 class="no-underline"
                 href="https://github.com/sponsors/Lakshan-Madushanka/sponsorships?sponsor=Lakshan-Madushanka&tier_id=430277"
@@ -191,7 +156,7 @@ import { Contact } from '@/enums/Contact'
                   class="flex overflow-hidden justify-between items-center gap-x-4 lg:gap-x-8 !py-[0.6rem] !text-lg !from-green-500 !to-green-800 hover:!to-green-600"
                 >
                   <span>Forever</span>
-                  <span>$550</span>
+                  <span> <span>$199</span> &nbsp; <span class="line-through"> $499</span> </span>
                 </ButtonComponent>
               </a>
 
@@ -204,7 +169,7 @@ import { Contact } from '@/enums/Contact'
                   class="flex justify-between items-center gap-x-4 lg:gap-x-8 !py-[0.6rem] !text-lg !from-green-500 !to-green-800 hover:!to-green-600"
                 >
                   <span>Monthly</span>
-                  <span>$25</span>
+                  <span><span>$15</span> &nbsp; <span class="line-through">$25</span></span>
                 </ButtonComponent>
               </a>
             </div>
