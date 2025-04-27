@@ -156,7 +156,9 @@ import { Contact } from '@/enums/Contact'
                   class="flex overflow-hidden justify-between items-center gap-x-4 lg:gap-x-8 !py-[0.6rem] !text-lg !from-green-500 !to-green-800 hover:!to-green-600"
                 >
                   <span>Forever</span>
-                  <span> <span>$199</span> &nbsp; <span class="line-through"> $499</span></span>
+                  <span>
+                    <span>$199 (10 left)</span> &nbsp; <span class="line-through"> $499</span></span
+                  >
                 </ButtonComponent>
               </a>
 
@@ -169,7 +171,9 @@ import { Contact } from '@/enums/Contact'
                   class="flex justify-between items-center gap-x-4 lg:gap-x-8 !py-[0.6rem] !text-lg !from-green-500 !to-green-800 hover:!to-green-600"
                 >
                   <span>Monthly</span>
-                  <span><span>$15</span> &nbsp; <span class="line-through">$25</span></span>
+                  <span
+                    ><span>$15 (10 left)</span> &nbsp; <span class="line-through">$25</span></span
+                  >
                 </ButtonComponent>
               </a>
             </div>
