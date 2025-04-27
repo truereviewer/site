@@ -18,6 +18,7 @@ import { Contact } from '@/enums/Contact'
           <a
             class="no-underline text-orange-400 inline-block pb-1"
             href="https://github.com/sponsorware/docs"
+            target="_blank"
             >sponsorware</a
           >, meaning only those who sponsor to the GitHub account gain access to this repository.
         </p>
