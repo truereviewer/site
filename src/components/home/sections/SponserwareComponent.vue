@@ -147,7 +147,9 @@ import { Contact } from '@/enums/Contact'
             <p class="font-bold text-red-800 mt-12 !mb-2">
               * These special prices only valid for first 10 customers.
             </p>
-            <div class="flex justify-between gap-4 items-center text-start overflow-hidden">
+            <div
+              class="flex flex-col md:flex-row justify-between gap-4 items-center text-start overflow-hidden"
+            >
               <a
                 class="no-underline"
                 href="https://github.com/sponsors/Lakshan-Madushanka/sponsorships?sponsor=Lakshan-Madushanka&tier_id=483369"
