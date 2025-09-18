@@ -133,3 +133,7 @@ h4::before {
   --vc-nav-background: rgba(255, 255, 255, 0.7);
   --vc-nav-border-radius: 100%;
 }
+
+.v-code-block--code-copy-button {
+  margin-top: 0 !important;
+}
