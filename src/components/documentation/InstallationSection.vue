@@ -267,15 +267,54 @@
         </div>
       </div>
       <div class="space-y-6 !mt-12">
-        <h3 id="installation-production" class="mb-4 !text-3xl">
+        <h3 id="installation-production" class="mb-2 !text-3xl">
           <a href="#installation-production"> Production </a>
         </h3>
+        <p>This section will guide you for the production deployment</p>
+      </div>
+
+      <div class="space-y-2 !mt-6">
+        <h3 id="installation-production-shared-hosting" class="mb-2">
+          <a href="#installation-production-shared-hosting"> Shared Hosting </a>
+        </h3>
         <p>
-          If you're using a dedicated server, make sure to complete
-          <a class="text-[var(--main-text-color)] font-bold" href="#installation-step2">Step-2</a>
-          before installing Composer dependencies. After that, run the post-installation command:
+          You don't need to to do anything particularly. You're good to go as long as you copy
+          essential files.
+        </p>
+      </div>
+
+      <div class="space-y-2 !mt-6">
+        <h3 id="installation-production-vps" class="mb-4">
+          <a href="#installation-production-vps"> VPS </a>
+        </h3>
+        <h4>Prerequisites</h4>
+        <ul class="!mb-6 list-disc list-inside">
+          <li>Git client</li>
+          <li>Read/Write aceess to the project</li>
+        </ul>
+
+        <div class="!mb-8">
+          <p>
+            If you're using a VPS, make sure to complete
+            <a class="text-[var(--main-text-color)] font-bold" href="#installation-step2">Step-2</a>
+            before installing composer dependencies. You can easily do this by automating a post
+            deployment task as simillar following.
+          </p>
+          <CodeBlock language="bash" :code="authjsCreatecmd" />
+        </div>
+
+        <p class="!mb-8">
+          After that, schedule the post-installation (one time after new deployment) command:
           <CodeBlock language="bash" code="php artisan reviewer:setup" />
         </p>
+
+        <AlertComponent type="notice">
+          <p>
+            Scheduling above commands simillar to the way you schedule Laravel's, post installation
+            commands
+            <code class="code-inline">php artisan migrate</code> etc.
+          </p>
+        </AlertComponent>
       </div>
     </template>
   </DocumentationSection>
@@ -357,8 +396,8 @@ const addRepoPackageJson = `
   }
 
   /* 
-    if the token is abdhfjglglleuguutututu
-    "@truereviewer/vue-front": "git+https://truereviewer:abdhfjglglleuguutututu@github.com/truereviewer/vue-front.git"
+    if the token is e135191e-e1ca-43a8-b24b-03782bb83ea6
+    "@truereviewer/vue-front": "git+https://truereviewer:e135191e-e1ca-43a8-b24b-03782bb83ea6@github.com/truereviewer/vue-front.git"
   */
   `
 
@@ -380,7 +419,7 @@ const setupFrontend = `
 `
 
 const useComponentsGlobaly = `
-  import { TrueReviewer, ReviewWidget,RatingDistribution,SubRatingDistribution, ReviewMediaGallery, ReviewList, Reviewer } from '@truereviewer/vue-front'
+  \import { TrueReviewer, ReviewWidget,RatingDistribution,SubRatingDistribution, ReviewMediaGallery, ReviewList, Reviewer } from '@truereviewer/vue-front'
 
   app
   .component('ReviewWidget', ReviewWidget)
@@ -405,8 +444,18 @@ const useComponentsLocally = `
   </div>
 </template>
 
-<script setup lang="ts">
-import { Reviewer, ReviewWidget } from '@truereviewer/vue-front'
-<//script>
+\<script setup lang="ts">
+\import { Reviewer, ReviewWidget } from '@truereviewer/vue-front'
+\<script>
+`
+
+const authjsCreatecmd = `
+cat > auth.json <<EOF
+{
+    "github-oauth": {
+        "github.com": "$GITHUB_TOKEN"
+    }
+}
+EOF
 `
 </script>

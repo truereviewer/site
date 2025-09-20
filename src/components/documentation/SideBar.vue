@@ -110,6 +110,37 @@
                       ><span>Production</span></a
                     >
                   </li>
+
+                  <ul class="ml-2 mt-2 space-y-2 text-sm">
+                    <li>
+                      <a
+                        :class="{
+                          'text-[var(--main-text-color)]':
+                            currentSection === '#installation-production-shared-hosting'
+                        }"
+                        href="#installation-production-shared-hosting"
+                        ><span
+                          v-if="currentSection === '#installation-production-shared-hosting'"
+                          class="mr-1"
+                          >#</span
+                        ><span>Shared Hosting</span></a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="ml-2 mt-2 space-y-2 text-sm">
+                    <li>
+                      <a
+                        :class="{
+                          'text-[var(--main-text-color)]':
+                            currentSection === '#installation-production-vps'
+                        }"
+                        href="#installation-production-vps"
+                        ><span v-if="currentSection === '#installation-production-vps'" class="mr-1"
+                          >#</span
+                        ><span>VPS</span></a
+                      >
+                    </li>
+                  </ul>
                 </ul>
               </div>
             </div>
@@ -162,6 +193,23 @@
                       ><span>Sub Rating Distribution</span></a
                     >
                   </li>
+
+                  <ul class="ml-2 mt-2 space-y-2 text-sm">
+                    <li>
+                      <a
+                        :class="{
+                          'text-[var(--main-text-color)]':
+                            currentSection === '#components-subRatingDistribution-customTypes'
+                        }"
+                        href="#components-subRatingDistribution-customTypes"
+                        ><span
+                          v-if="currentSection === '#components-subRatingDistribution-customTypes'"
+                          class="mr-1"
+                          >#</span
+                        ><span>Customize Types</span></a
+                      >
+                    </li>
+                  </ul>
 
                   <li>
                     <a

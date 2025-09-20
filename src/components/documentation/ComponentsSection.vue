@@ -45,6 +45,14 @@
         </div>
 
         <div class="space-y-4">
+          <h4 id="components-subRatingDistribution-customTypes">
+            <a href="#components-subRatingDistribution-customTypes">Customize Types</a>
+          </h4>
+          <p>You can customize sub-rating types as following</p>
+          <CodeBlock language="php" :code="customizeSubRatingTypes" />
+        </div>
+
+        <div class="space-y-4">
           <h3 id="components-mediaGallery">
             <a href="#components-mediaGallery">{{ mgcs.title() }}</a>
           </h3>
@@ -105,6 +113,33 @@ const rcs = new ReviewerComponentService(ReviewerComponent.BIG_PICTURE)
 
 const useComponent = (name: string) => `
 <${name} id="{{$product->getKey()}} modelType={{$product->getMorphClass()}}"/>
+`
+
+const customizeSubRatingTypes = `
+
+  <?php
+
+  namespace App\\Models;
+
+  use LakM\\Reviewer\\Models\\Reviewable;
+  use TrueReviewer\\Reviewer\\Models\\Contracts\\ReviewableContract;
+  use TrueReviewer\\Reviewer\\Models\\Concerns\\Reviewable;
+
+  class Product implements ReviewableContract
+  {
+     use Reviewable;
+
+    // Custom types
+    public function subRatingTypes(): array
+    {
+        return [
+            'quality' => ['title' => 'Quality'],
+            'value' => ['title' => 'Value for money'],
+            'durability' => ['title' => 'Durability'],
+        ];
+    }
+  }
+  
 `
 </script>
 
