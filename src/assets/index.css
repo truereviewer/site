@@ -98,6 +98,11 @@ h4::before {
   @apply mt-6;
 }
 
+.documentation a.font-bold {
+  text-decoration: underline;
+  font-weight: normal;
+}
+
 .code-inline {
   @apply bg-gray-200;
   @apply px-2;

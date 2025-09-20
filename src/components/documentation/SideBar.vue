@@ -410,72 +410,136 @@
                 <li class="ml-2">
                   <a
                     :class="{
-                      'text-[var(--main-text-color)]': currentSection === '#theming-frontendtech'
+                      'text-[var(--main-text-color)]': currentSection === '#theming-basics'
                     }"
-                    href="#theming-frontendtech"
-                    ><span v-if="currentSection === '#theming-frontendtech'" class="mr-1">#</span
-                    ><span>Frontend Technologies</span></a
+                    href="#theming-basics"
+                    ><span v-if="currentSection === '#theming-basics'" class="mr-1">#</span
+                    ><span>Basics</span></a
                   >
                 </li>
-
-                <li class="ml-2">
-                  <a
-                    :class="{
-                      'text-[var(--main-text-color)]': currentSection === '#theming-publishAssets'
-                    }"
-                    href="#theming-publishAssets"
-                    ><span v-if="currentSection === '#theming-publishAssets'" class="mr-1">#</span
-                    ><span>Publish Assets</span></a
-                  >
-                </li>
-
-                <li class="ml-2">
-                  <a
-                    :class="{
-                      'text-[var(--main-text-color)]': currentSection === '#theming-buildAssets'
-                    }"
-                    href="#theming-buildAssets"
-                    ><span v-if="currentSection === '#theming-buildAssets'" class="mr-1">#</span
-                    ><span>Build Assets</span></a
-                  >
-                </li>
-              </ul>
-              <div class="mt-2">
-                <div class="ml-2">
-                  <a
-                    :class="{
-                      'text-[var(--main-text-color)]': currentSection === '#customization'
-                    }"
-                    href="#customization"
-                    ><span v-if="currentSection === '#customization'" class="mr-1">#</span
-                    ><span>Customization</span></a
-                  >
-                </div>
                 <ul class="ml-4 mt-2 space-y-2 text-sm">
-                  <li>
+                  <li class="ml-2">
                     <a
                       :class="{
-                        'text-[var(--main-text-color)]':
-                          currentSection === '#customization-components'
+                        'text-[var(--main-text-color)]': currentSection === '#theming-basics-preset'
                       }"
-                      href="#customization-components"
-                      ><span v-if="currentSection === '#customization-components'" class="mr-1"
-                        >#</span
-                      ><span>Components</span></a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      :class="{
-                        'text-[var(--main-text-color)]': currentSection === '#customization-presets'
-                      }"
-                      href="#customization-presets"
-                      ><span v-if="currentSection === '#customization-presets'" class="mr-1">#</span
-                      ><span>Presets</span></a
+                      href="#theming-basics-preset"
+                      ><span v-if="currentSection === '#theming-basics-preset'" class="mr-1">#</span
+                      ><span>Preset</span></a
                     >
                   </li>
                 </ul>
-              </div>
+                <ul class="ml-4 mt-2 space-y-2 text-sm">
+                  <li class="ml-2">
+                    <a
+                      :class="{
+                        'text-[var(--main-text-color)]': currentSection === '#theming-basics-colors'
+                      }"
+                      href="#theming-basics-colors"
+                      ><span v-if="currentSection === '#theming-basics-colors'" class="mr-1">#</span
+                      ><span>Colors</span></a
+                    >
+                  </li>
+                </ul>
+                <ul class="ml-4 mt-2 space-y-2 text-sm">
+                  <li class="ml-2">
+                    <a
+                      :class="{
+                        'text-[var(--main-text-color)]':
+                          currentSection === '#theming-basics-darkMode'
+                      }"
+                      href="#theming-basics-darkMode"
+                      ><span v-if="currentSection === '#theming-basics-darkMode'" class="mr-1"
+                        >#</span
+                      ><span>Dark Mode</span></a
+                    >
+                  </li>
+                </ul>
+              </ul>
+              <ul class="mt-2 space-y-2">
+                <li class="ml-2">
+                  <a
+                    :class="{
+                      'text-[var(--main-text-color)]': currentSection === '#theming-advanced'
+                    }"
+                    href="#theming-advanced"
+                    ><span v-if="currentSection === '#theming-advanced'" class="mr-1">#</span
+                    ><span>Advanced</span></a
+                  >
+                </li>
+
+                <ul class="ml-4 mt-2 space-y-2 text-sm">
+                  <li class="ml-2">
+                    <a
+                      :class="{
+                        'text-[var(--main-text-color)]': currentSection === '#theming-frontendtech'
+                      }"
+                      href="#theming-frontendtech"
+                      ><span v-if="currentSection === '#theming-frontendtech'" class="mr-1">#</span
+                      ><span>Frontend Technologies</span></a
+                    >
+                  </li>
+                  <li class="ml-2">
+                    <a
+                      :class="{
+                        'text-[var(--main-text-color)]': currentSection === '#theming-publishAssets'
+                      }"
+                      href="#theming-publishAssets"
+                      ><span v-if="currentSection === '#theming-publishAssets'" class="mr-1">#</span
+                      ><span>Publish Assets</span></a
+                    >
+                  </li>
+
+                  <li class="ml-2">
+                    <a
+                      :class="{
+                        'text-[var(--main-text-color)]': currentSection === '#theming-buildAssets'
+                      }"
+                      href="#theming-buildAssets"
+                      ><span v-if="currentSection === '#theming-buildAssets'" class="mr-1">#</span
+                      ><span>Build Assets</span></a
+                    >
+                  </li>
+                </ul>
+                <div class="ml-4 text-sm">
+                  <div class="ml-2">
+                    <a
+                      :class="{
+                        'text-[var(--main-text-color)]': currentSection === '#customization'
+                      }"
+                      href="#customization"
+                      ><span v-if="currentSection === '#customization'" class="mr-1">#</span
+                      ><span>Customization</span></a
+                    >
+                  </div>
+                  <ul class="ml-4 mt-2 space-y-2 text-sm">
+                    <li>
+                      <a
+                        :class="{
+                          'text-[var(--main-text-color)]':
+                            currentSection === '#customization-components'
+                        }"
+                        href="#customization-components"
+                        ><span v-if="currentSection === '#customization-components'" class="mr-1"
+                          >#</span
+                        ><span>Components</span></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        :class="{
+                          'text-[var(--main-text-color)]':
+                            currentSection === '#customization-presets'
+                        }"
+                        href="#customization-presets"
+                        ><span v-if="currentSection === '#customization-presets'" class="mr-1"
+                          >#</span
+                        ><span>Presets</span></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </ul>
             </div>
 
             <div class="flex flex-col">
@@ -641,5 +705,13 @@ a {
 
 a:hover {
   color: var(--main-text-color);
+}
+
+aside * a {
+  text-decoration: none !important;
+}
+
+.font-bold {
+  font-weight: bold !important;
 }
 </style>

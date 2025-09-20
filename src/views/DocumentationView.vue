@@ -25,10 +25,8 @@
         <OtherOptions />
 
         <!--Theming-->
-        <FrontendTechnologies />
-        <PublishAssets />
-        <BuildAssets />
-        <CustomizeComponent />
+        <BasicSection />
+        <AdvancedSection />
 
         <AIComponent />
 
@@ -51,10 +49,7 @@ import PublishConfigs from '@/components/documentation/config/PublishConfigs.vue
 import SubRating from '@/components/documentation/config/SubRating.vue'
 import InstallationSection from '@/components/documentation/InstallationSection.vue'
 import SideBar from '@/components/documentation/SideBar.vue'
-import BuildAssets from '@/components/documentation/theming/BuildAssets.vue'
-import CustomizeComponent from '@/components/documentation/theming/customzation/CustomizeComponent.vue'
-import FrontendTechnologies from '@/components/documentation/theming/FrontendTechnologies.vue'
-import PublishAssets from '@/components/documentation/theming/PublishAssets.vue'
+import AdvancedSection from '@/components/documentation/theming/AdvancedSection.vue'
 import HeaderNav from '@/components/home/sections/HeaderNav.vue'
 import MediaGallery from '@/components/documentation/config/MediaGallery.vue'
 import ReviewPagination from '@/components/documentation/config/ReviewPagination.vue'
@@ -66,6 +61,7 @@ import FooterComponent from '@/components/FooterComponent.vue'
 import { useMetaTags } from '@/composables/useMetaTags'
 import ScrollTopButton from '@/components/ScrollTopButton.vue'
 import RequirementsSection from '@/components/documentation/RequirementsSection.vue'
+import BasicSection from '@/components/documentation/theming/BasicSection.vue'
 
 useMetaTags({
   title: 'Documentation',

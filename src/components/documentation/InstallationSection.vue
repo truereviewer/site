@@ -369,16 +369,6 @@ const extendClass = `
   class Product implements ReviewableContract
   {
      use Reviewable;
-
-    // Optional
-    public function subRatingTypes(): array
-    {
-        return [
-            'quality' => ['title' => 'Quality'],
-            'value' => ['title' => 'Value for money'],
-            'durability' => ['title' => 'Durability'],
-        ];
-    }
   }
   `
 

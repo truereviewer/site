@@ -1,7 +1,7 @@
 <template>
-  <DocumentationSection id="customization">
-    <template #header><a href="#customization">Customization</a></template>
-    <template #content>
+  <div id="customization" class="!mt-8">
+    <h3><a href="#customization">Customization</a></h3>
+    <div>
       <AlertComponent class="mt-4" type="notice">
         You should've published the reviewer assets. You can refer the instruction
         <a class="font-bold" href="#theming-publishAssets"> here. </a>
@@ -16,9 +16,9 @@
 
       <div class="space-y-6">
         <div class="space-y-4">
-          <h3 id="customization-components">
+          <h4 id="customization-components">
             <a href="#customization-components">Components</a>
-          </h3>
+          </h4>
           <p>
             All the reviewer components are published at
             <code class="code-inline">/resources/reviewer/ts</code>
@@ -28,9 +28,9 @@
         </div>
 
         <div class="space-y-4">
-          <h3 id="customization-presets">
+          <h4 id="customization-presets">
             <a href="#customization-presets">Presets</a>
-          </h3>
+          </h4>
           <p>
             Reviewer support serveral
             <a class="font-bold" href="https://primevue.org/theming/styled/#presets" target="_blank"
@@ -44,9 +44,9 @@
         </div>
 
         <div class="space-y-4">
-          <h3 id="customization-presets">
+          <h4 id="customization-presets">
             <a href="#customization-presets">Customizing Presets</a>
-          </h3>
+          </h4>
           <p>
             With primevue, customizing presets are super easy. Let's imaging your site's main theme
             color indigo. You can change reviewer to match your main theme color(indigo) with below
@@ -79,17 +79,16 @@
           </div>
         </div>
       </div>
-    </template>
-  </DocumentationSection>
+    </div>
+  </div>
 </template>
 
 <script lang="ts" setup>
 import AlertComponent from '@/components/AlertComponent.vue'
-import DocumentationSection from '@/components/documentation/DocumentationSection.vue'
 import CodeBlock from '@/components/CodeBlock.vue'
 
 const defaultTheme = `
-  import Lara from '-primevue/themes/aura'
+  \import Lara from 'primevue/themes/aura'
 
   createApp({})
   ...
@@ -103,7 +102,7 @@ const defaultTheme = `
 `
 
 const customPreset = `
-  import Aura from '-primevue/themes/aura'
+  \import Aura from 'primevue/themes/aura'
 
   const MyPreset = definePreset(Aura, {
       semantic: {
@@ -127,7 +126,7 @@ const customPreset = `
     ...
     .use(PrimeVue, {
       theme: {
-        preset: Lara, // Changing to Lara preset
+        preset: MyPreset, // Changing to MyPreset
       },
     })
     ...
