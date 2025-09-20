@@ -23,8 +23,10 @@ import { Contact } from '@/enums/Contact'
           >, meaning only those who sponsor to the GitHub account gain access to this repository.
         </p>
 
-        <p class="text-red-500 font-semibold !mt-0">
-          * It can take up to 24 hours to get your subscription activated.
+        <p class="text-red-500 font-semibold !mt-0 max-w-[50rem] mx-auto">
+          It can take up to 24 hours to get your subscription activated since this is a manual
+          process. If you haven’t been granted access, please
+          <a :href="'mailto:' + Contact.EMAIL" class="text-red-500">contact us </a>.
         </p>
 
         <div class="flex flex-wrap items-center lg:flex-row justify-center gap-8 w-full">
@@ -175,7 +177,7 @@ import { Contact } from '@/enums/Contact'
                 >
                   <span>Monthly</span>
                   <span
-                    ><span>$15 (10 left)</span> &nbsp; <span class="line-through">$25</span></span
+                    ><span>$15 (9 left)</span> &nbsp; <span class="line-through">$25</span></span
                   >
                 </ButtonComponent>
               </a>

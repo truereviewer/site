@@ -270,7 +270,7 @@
         <h3 id="installation-production" class="mb-2 !text-3xl">
           <a href="#installation-production"> Production </a>
         </h3>
-        <p>This section will guide you for the production deployment</p>
+        <p>This section will guide you for the production deployment.</p>
       </div>
 
       <div class="space-y-2 !mt-6">
@@ -304,14 +304,14 @@
         </div>
 
         <p class="!mb-8">
-          After that, schedule the post-installation (one time after new deployment) command:
+          After that, schedule the post-installation (one time after a new deployment) command:
           <CodeBlock language="bash" code="php artisan reviewer:setup" />
         </p>
 
         <AlertComponent type="notice">
           <p>
             Scheduling above commands simillar to the way you schedule Laravel's, post installation
-            commands
+            commands like
             <code class="code-inline">php artisan migrate</code> etc.
           </p>
         </AlertComponent>
