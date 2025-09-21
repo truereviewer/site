@@ -1,6 +1,6 @@
 <template>
   <SectionComponent class="flex flex-col items-start justify-center">
-    <template #header>The Complete Product Review System </template>
+    <template #header>The Complete Product Review Package </template>
     <template #content>
       <p class="!mb-0">
         TrueReviewer is a powerful review and rating system featuring five thoughtfully crafted

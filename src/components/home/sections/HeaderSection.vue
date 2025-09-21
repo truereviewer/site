@@ -27,7 +27,7 @@
     >
       <div class="!mb-0">
         <transition appear enter-active-class="animate__animated animate__backInDown">
-          <img class="!m-0" src="/src/assets/img/h2.png" alt="Fantastic Review System" />
+          <img class="!m-0" src="/src/assets/img/title.png" alt="Fantastic Review System" />
         </transition>
       </div>
       <div class="flex justify-center">
