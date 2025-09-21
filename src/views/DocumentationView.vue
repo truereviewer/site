@@ -12,6 +12,8 @@
       <main class="w-full xl:w-[75%] mt-4 space-y-8">
         <RequirementsSection />
         <InstallationSection />
+        <TroubleShooting />
+
         <ComponentsSection />
 
         <!--Config-->
@@ -62,6 +64,7 @@ import { useMetaTags } from '@/composables/useMetaTags'
 import ScrollTopButton from '@/components/ScrollTopButton.vue'
 import RequirementsSection from '@/components/documentation/RequirementsSection.vue'
 import BasicSection from '@/components/documentation/theming/BasicSection.vue'
+import TroubleShooting from '@/components/documentation/TroubleShooting.vue'
 
 useMetaTags({
   title: 'Documentation',

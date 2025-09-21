@@ -142,6 +142,18 @@
                     </li>
                   </ul>
                 </ul>
+                <ul class="ml-2 mt-2 space-y-2">
+                  <li>
+                    <a
+                      :class="{
+                        'text-[var(--main-text-color)]': currentSection === '#troubleShooting'
+                      }"
+                      href="#troubleShooting"
+                      ><span v-if="currentSection === '#troubleShooting'" class="mr-1">#</span
+                      ><span>Troubleshooting</span></a
+                    >
+                  </li>
+                </ul>
               </div>
             </div>
 
