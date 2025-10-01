@@ -1,12 +1,21 @@
 <template>
   <div>
+    <div class="group mt-[12px] fixed inset-0 hidden md:block z-50 !m-0">
+      <router-link
+        class="no-underline !border-0 text-orange-400 inline-block"
+        :to="{ name: 'home' }"
+      >
+        <img class="!p-0 !m-0 w-16" src="/src/assets/img/logo.webp" alt="logo"
+      /></router-link>
+    </div>
+
     <nav class="flex text-base justify-end md:hidden relative left-4 z-[300]">
       <div v-if="!showMenu" class="mt-[8px]">
         <router-link
           class="no-underline !border-0 text-orange-400 inline-block pb-1"
           :to="{ name: 'home' }"
         >
-          <img class="!p-0 !m-0 w-12" src="/src/assets/img/logo.webp" alt="review distribution"
+          <img class="!p-0 !m-0 w-12" src="/src/assets/img/logo.webp" alt="logo"
         /></router-link>
       </div>
 
@@ -117,13 +126,13 @@
     <nav
       class="hidden md:flex flex-wrap items-center justify-center text-base gap-x-4 z-[200] relative cursor-pointer"
     >
-      <div class="group mt-[12px]">
-        <router-link
-          class="no-underline !border-0 text-orange-400 inline-block"
-          :to="{ name: 'home' }"
+      <div class="group">
+        <router-link class="no-underline text-orange-400 inline-block pb-1" :to="{ name: 'home' }"
+          >Home</router-link
         >
-          <img class="!p-0 !m-0 w-16" src="/src/assets/img/logo.webp" alt="review distribution"
-        /></router-link>
+        <hr
+          class="w-0 !my-0 transition-all ease-in-out duration-300 group-hover:w-full mx-auto h-px max-w-7xl border-none bg-gradient-to-r from-transparent via-white to-transparent"
+        />
       </div>
       <div class="group">
         <router-link
@@ -284,7 +293,7 @@ onBeforeUnmount(() => {
 
 .block {
   position: relative;
-  background: linear-gradient(0deg, #000000, #272727);
+  background: linear-gradient(0deg, #000, #272727);
   padding: 0 4px 0 4px;
 }
 </style>
