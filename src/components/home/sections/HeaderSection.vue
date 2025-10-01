@@ -20,10 +20,10 @@
       />
     </div>
     <div
-      class="z-20 w-full min-h-svh bg-gradient-to-br from-green-400 to-green-700 absolute top-0 left-0"
+      class="z-[70] w-full min-h-svh bg-gradient-to-br from-green-400 to-green-700 absolute top-0 left-0"
     ></div>
     <div
-      class="z-50 text-center boorder p-2 slhadow-2xl bg/-gradient-to-r from-green-600/[.6] to-green-600/[.8]"
+      class="z-[80] mt-12 text-center boorder p-2 slhadow-2xl bg/-gradient-to-r from-green-600/[.6] to-green-600/[.8]"
     >
       <div class="!mb-0 text-white">
         <h1 class="text-black !mb-4">TrueReviewer</h1>
@@ -39,14 +39,30 @@
           <RatingStars />
         </transition>
       </div>
+      <div class="p-4 mt-8 bg-black text-white">
+        <p class="!mb-2 text-2xl glitch-text !text-[#0bfb99] font-bold !mt-0">
+          Special Offer for first 10 customers 🎁
+        </p>
+        <p class="!mb-4 !mt-0 text-xl">
+          Remaining: <span class="font-bold !text-[#0bfb99]">{{ tweened.number.toFixed(0) }}</span>
+        </p>
+
+        <a class="hover:cursor-pointer" href="/#sponserware">
+          <button class="btn neon-pulse">
+            <span>Claim It</span>
+          </button>
+        </a>
+      </div>
     </div>
   </header>
 </template>
 
 <script lang="ts" setup>
-import { ref, onMounted } from 'vue'
+import { ref, reactive, onMounted } from 'vue'
 import RatingStars from '@/components/RatingStars.vue'
 import HeaderNav from './HeaderNav.vue'
+
+import gsap from 'gsap'
 
 const currentKeyWord = ref('')
 
@@ -59,6 +75,10 @@ const keyWords = [
   'Comprehensive documentation',
   'Easy theming'
 ]
+
+const tweened = reactive({
+  number: 0
+})
 
 onMounted(() => {
   let currentIndex = 0
@@ -77,6 +97,10 @@ onMounted(() => {
 
     currentIndex++
   }, 5000)
+})
+
+onMounted(() => {
+  gsap.to(tweened, { duration: 3, number: 9 })
 })
 </script>
 
@@ -107,6 +131,93 @@ onMounted(() => {
       0 0 40px #f8fa6f,
       0 0 80px #f8fa6f,
       0 0 160px #f8fa6f;
+  }
+}
+
+.glitch-text {
+  font-weight: bold;
+  position: relative;
+  color: #fff;
+  animation: glitch 2s infinite;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ff005e;
+  background: transparent;
+  clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%);
+  animation: glitch 2s infinite;
+}
+
+.glitch-text::after {
+  color: #00d4ff;
+  clip-path: polygon(0 70%, 100% 70%, 100% 100%, 0 100%);
+}
+
+@keyframes glitch {
+  0%,
+  100% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(2px, -2px);
+  }
+  60% {
+    transform: translate(-1px, 1px);
+  }
+  80% {
+    transform: translate(1px, -1px);
+  }
+}
+
+.btn {
+  position: relative;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  min-width: 200px;
+  z-index: 1;
+}
+
+.neon-pulse {
+  background: #000;
+  border: 2px solid #0ff;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+  overflow: visible;
+}
+
+.neon-pulse::before,
+.neon-pulse::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border: 2px solid #0ff;
+  border-radius: inherit;
+  animation: pulseOut 2s ease-out infinite;
+  opacity: 0;
+}
+
+.neon-pulse::after {
+  animation-delay: 1s;
+}
+
+@keyframes pulseOut {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
   }
 }
 
