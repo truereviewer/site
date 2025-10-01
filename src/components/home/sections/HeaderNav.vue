@@ -56,7 +56,7 @@
             class="w-0 !my-0 transition-all ease-in-out duration-300 group-hover:w-full mx-auto h-px max-w-7xl border-none bg-gradient-to-r from-transparent via-white to-transparent"
           />
         </li>
-        <li class="group">
+        <li class="group block">
           <a class="no-underline text-orange-400 inline-block pb-1" href="/#sponserware"
             >Claim | Sponserware</a
           >
@@ -143,7 +143,7 @@
         />
       </div>
 
-      <div class="group">
+      <div class="group block">
         <a class="no-underline text-orange-400 inline-block pb-1" href="/#sponserware"
           >Claim | Sponserware</a
         >
@@ -238,3 +238,53 @@ onBeforeUnmount(() => {
   document.removeEventListener('click', onClickOutside)
 })
 </script>
+
+<style scoped>
+.block:before,
+.block:after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000
+  );
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.block:after {
+  filter: blur(50px);
+}
+
+.block {
+  position: relative;
+  background: linear-gradient(0deg, #000000, #272727);
+  padding: 0 4px 0 4px;
+}
+</style>
