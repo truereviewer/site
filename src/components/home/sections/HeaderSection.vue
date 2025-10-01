@@ -23,7 +23,7 @@
       class="z-[70] w-full min-h-svh bg-gradient-to-br from-green-400 to-green-700 absolute top-0 left-0"
     ></div>
     <div
-      class="z-[80] mt-12 text-center boorder p-2 slhadow-2xl bg/-gradient-to-r from-green-600/[.6] to-green-600/[.8]"
+      class="z-[80] mt-16 text-center boorder p-2 slhadow-2xl bg/-gradient-to-r from-green-600/[.6] to-green-600/[.8]"
     >
       <div class="!mb-0 text-white">
         <h1 class="text-black !mb-4">TrueReviewer</h1>
@@ -39,7 +39,19 @@
           <RatingStars />
         </transition>
       </div>
-      <div class="p-4 mt-8 bg-black text-white">
+      <div class="flex justify-center mt-2">
+        <a
+          href="https://www.producthunt.com/products/truereviewer?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-truereviewer"
+          target="_blank"
+          ><img
+            class="!my-0"
+            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=952622&theme=light&t=1759346100986"
+            alt="TrueReviewer&#0032; - Sleek&#0032;and&#0032;Powerful&#0032;Review&#0032;&#0038;&#0032;Rating&#0032;System&#0032;for&#0032;Laravel | Product Hunt"
+            style="width: 200px"
+        /></a>
+      </div>
+
+      <div class="p-4 mt-6 bg-black text-white">
         <p class="!mb-2 text-2xl glitch-text !text-[#0bfb99] font-bold !mt-0">
           Special Offer for first 10 customers 🎁
         </p>
@@ -67,13 +79,13 @@ import gsap from 'gsap'
 const currentKeyWord = ref('')
 
 const keyWords = [
-  'Modern design',
-  'Five independent components',
-  'Advanced filters',
-  'AI support ',
-  'Lifetime support',
-  'Comprehensive documentation',
-  'Easy theming'
+  'Modern Design',
+  'Five Independent Components',
+  'Advanced Filters',
+  'AI Support ',
+  'Lifetime Support',
+  'Comprehensive Documentation',
+  'Easy Theming'
 ]
 
 const tweened = reactive({
@@ -190,7 +202,7 @@ onMounted(() => {
 
 .neon-pulse {
   background: #000;
-  border: 2px solid #0ff;
+  border: 2px solid #0bfb99;
   box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
   overflow: visible;
 }
@@ -200,7 +212,7 @@ onMounted(() => {
   content: '';
   position: absolute;
   inset: -4px;
-  border: 2px solid #0ff;
+  border: 2px solid #0bfb99;
   border-radius: inherit;
   animation: pulseOut 2s ease-out infinite;
   opacity: 0;
