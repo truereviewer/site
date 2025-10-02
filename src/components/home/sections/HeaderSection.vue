@@ -4,7 +4,7 @@
       <HeaderNav />
     </div>
 
-    <div class="z-[80] absolute">
+    <div class="z-[80] absolute top-40 md:top-auto">
       <img class="opacity-10" src="/src/assets/img/bg-2.jpeg" alt="header background" />
     </div>
 
@@ -17,7 +17,9 @@
         <h2 class="!my-0 !text-black neon-text">#1 Product Review Package for Laravel</h2>
         <div class="!h-8 self-start !mt-4 !mb-2">
           <Transition name="fade">
-            <p v-if="currentKeyWord" class="!m-0">{{ currentKeyWord }}</p>
+            <p v-if="currentKeyWord" class="!m-0 font-bold italic">
+              {{ currentKeyWord }}
+            </p>
           </Transition>
         </div>
       </div>
@@ -66,13 +68,13 @@ import gsap from 'gsap'
 const currentKeyWord = ref('')
 
 const keyWords = [
-  'Modern Design',
-  'Five Independent Components',
-  'Advanced Filters',
-  'AI Support ',
-  'Lifetime Support',
-  'Comprehensive Documentation',
-  'Easy Theming'
+  'Modern Design 🎨',
+  'Five Independent Components 🧩',
+  'Advanced Filters 🌪️',
+  'AI Support 🤖',
+  'Lifetime Support 🤝',
+  'Comprehensive Documentation 🗂️',
+  'Easy Theming 🎨'
 ]
 
 const tweened = reactive({
@@ -106,22 +108,22 @@ onMounted(() => {
 <style scoped>
 .neon-text {
   text-shadow:
-    0 0 5px #f7a03d,
-    0 0 10px #f7a03d,
-    0 0 20px #f7a03d,
-    0 0 40px #f7a03d,
-    0 0 80px #f7a03d;
+    0 0 5px #fd8904,
+    0 0 10px #fd8904,
+    0 0 20px #fd8904,
+    0 0 40px #fd8904,
+    0 0 80px #fd8904;
   animation: glow 2s infinite alternate;
 }
 
 @keyframes glow {
   0% {
     text-shadow:
-      0 0 5px #f7a03d,
-      0 0 10px #f7a03d,
-      0 0 20px #f7a03d,
-      0 0 40px #f7a03d,
-      0 0 80px #f7a03d;
+      0 0 5px #fd8904,
+      0 0 10px #fd8904,
+      0 0 20px #fd8904,
+      0 0 40px #fd8904,
+      0 0 80px #fd8904;
   }
   100% {
     text-shadow:
