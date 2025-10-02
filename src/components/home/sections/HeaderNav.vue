@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="mt-[12px] fixed inset-0 hidden md:block z-50 !m-0 w-16 h-16">
+    <div class="mt-[12px] fixed inset-0 hidden lg:block z-50 !m-0 w-16 h-16">
       <router-link
         class="no-underline !border-0 text-orange-400 inline-block"
         :to="{ name: 'home' }"

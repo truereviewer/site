@@ -4,27 +4,14 @@
       <HeaderNav />
     </div>
 
-    <div class="lg:hidden z-[80] absolute left-4 top-0">
-      <img
-        class="object-contain !opacity-10"
-        src="/src/assets/img/reviewer/lg/4-2.png"
-        alt="sub review distribution"
-      />
+    <div class="z-[80] absolute">
+      <img class="opacity-10" src="/src/assets/img/bg-2.jpeg" alt="header background" />
     </div>
 
-    <div class="z-[80] absolute right-4 bottom-0">
-      <img
-        class="object-contain opacity-10"
-        src="/src/assets/img/reviewer/lg/4-2.png"
-        alt="sub review distribution"
-      />
-    </div>
     <div
       class="z-[70] w-full min-h-svh bg-gradient-to-br from-green-400 to-green-700 absolute top-0 left-0"
     ></div>
-    <div
-      class="z-[80] mt-16 text-center boorder p-2 slhadow-2xl bg/-gradient-to-r from-green-600/[.6] to-green-600/[.8]"
-    >
+    <div class="z-[80] mt-16 text-center boorder p-2">
       <div class="!mb-0 text-white">
         <h1 class="text-black !mb-4">TrueReviewer</h1>
         <h2 class="!my-0 !text-black neon-text">#1 Product Review Package for Laravel</h2>
