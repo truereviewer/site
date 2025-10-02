@@ -4,7 +4,7 @@
       <HeaderNav />
     </div>
 
-    <div class="lg:hidden z-[60] absolute left-4 top-0">
+    <div class="lg:hidden z-[80] absolute left-4 top-0">
       <img
         class="object-contain !opacity-10"
         src="/src/assets/img/reviewer/lg/4-2.png"
@@ -12,7 +12,7 @@
       />
     </div>
 
-    <div class="z-[60] absolute right-4 bottom-0">
+    <div class="z-[80] absolute right-4 bottom-0">
       <img
         class="object-contain opacity-10"
         src="/src/assets/img/reviewer/lg/4-2.png"
@@ -99,7 +99,7 @@ onMounted(() => {
 
   setInterval(() => {
     currentKeyWord.value = ''
-  }, 4000)
+  }, 3000)
 
   setInterval(() => {
     if (currentIndex === keyWords.length - 1) {
@@ -108,7 +108,7 @@ onMounted(() => {
     currentKeyWord.value = keyWords[currentIndex + 1]
 
     currentIndex++
-  }, 5000)
+  }, 4000)
 })
 
 onMounted(() => {
