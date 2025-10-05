@@ -175,7 +175,7 @@ import { Contact } from '@/enums/Contact'
               </li>
             </ul>
 
-            <p class="font-bold text-red-800 mt-12 !mb-2">
+            <p class="font-bold text-blue-800 mt-12 !mb-2">
               * These special prices only valid for first 10 customers.
             </p>
             <div
@@ -212,13 +212,13 @@ import { Contact } from '@/enums/Contact'
               </a>
             </div>
             <div class="justify-self-start mt-4 text-base">
-              <a :href="'mailto:' + Contact.EMAIL" class="text-red-500"
+              <a :href="'mailto:' + Contact.EMAIL" class="text-blue-500"
                 >Contact us for team support</a
               >
             </div>
           </div>
-          <p class="text-red-500 font-semibold !mt-0 max-w-[50rem] mx-auto !mb-0">
-            It can take up to 24 hours to get your subscription activated since this is a manual
+          <p class="text-red-500 text-sm font-semibold !mt-0 max-w-[50rem] mx-auto !mb-0">
+            * It can take up to 24 hours to get your subscription activated since this is a manual
             process. If you haven’t been granted access, please
             <a :href="'mailto:' + Contact.EMAIL" class="text-red-500 italic">contact us </a>.
           </p>
