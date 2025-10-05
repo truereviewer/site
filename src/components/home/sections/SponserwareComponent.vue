@@ -23,15 +23,44 @@ import { Contact } from '@/enums/Contact'
           >, meaning only those who sponsor to the GitHub account gain access to this repository.
         </p>
 
-        <p class="text-red-500 font-semibold !mt-0 max-w-[50rem] mx-auto">
-          It can take up to 24 hours to get your subscription activated since this is a manual
-          process. If you haven’t been granted access, please
-          <a :href="'mailto:' + Contact.EMAIL" class="text-red-500">contact us </a>.
-        </p>
+        <div class="max-w-[50rem] mb-4 mx-auto text-start">
+          <div>
+            <h3 class="!my-0 !text-2xl">Perks of this approach</h3>
+            <ul>
+              <li class="!mb-0">
+                Clients get uninterrupted usage since we don’t check license validity during use.
+              </li>
+              <li class="!mt-0">
+                Grace periods and other flexible options
+                <a :href="'mailto:' + Contact.EMAIL" class="italic font-normal">(contact us) </a>.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="!my-0 !text-2xl">Drawbacks</h3>
+            <ul>
+              <li class="!mb-0">It can take a while to get your subscription activated.</li>
+              <li class="!mt-0">
+                You have to obtain a GitHub api key for the TrueReviewer package
+                <a class="font-normal italic" href="/documentation#installation-step1">(details)</a
+                >.
+              </li>
+            </ul>
+          </div>
+
+          <p class="font-bold italic">
+            If you can't afford following prices please don't hesitate to contact us
+            <a class="font-normal italic" href="/documentation#installation-step1">through</a>. As
+            mentioned above we provide flexible options and grace periods. That's why we call this a
+            <span class="text-[var(--main-text-color)]">sponserware</span>.
+          </p>
+
+          <p>Need a guarentee? refer <a href="/@developer">here</a></p>
+        </div>
 
         <div class="flex flex-wrap items-center lg:flex-row justify-center gap-8 w-full">
           <div
-            class="p-2 lg:p-4 shadow border rounded lg:w-[35rem] bg-gradient-to-r from-green-300/10 to-green-400 "
+            class="p-2 lg:p-4 shadow border rounded lg:w-[35rem] bg-gradient-to-r from-green-300/10 to-green-400"
           >
             <ul
               class="text-start leading-7 max-w-lg text-black list-inside dark:text-gray-400 !pl-0"
@@ -188,6 +217,11 @@ import { Contact } from '@/enums/Contact'
               >
             </div>
           </div>
+          <p class="text-red-500 font-semibold !mt-0 max-w-[50rem] mx-auto !mb-0">
+            It can take up to 24 hours to get your subscription activated since this is a manual
+            process. If you haven’t been granted access, please
+            <a :href="'mailto:' + Contact.EMAIL" class="text-red-500 italic">contact us </a>.
+          </p>
         </div>
       </div>
     </template>

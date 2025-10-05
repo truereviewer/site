@@ -46,10 +46,10 @@
         <template #content
           >Sponsorware has more benefis over self hosted Repositories. Transparency is the biggest
           perk. As repository is in the github you can take all the advantages it offers(issues,
-          discussions) plus you have leagal guarentee.Sponsorware offers more benefits than
-          self-hosted repositories. Transparency is one of the biggest advantages. Since the
-          repository is hosted on GitHub, you gain access to all its features—like issues and
-          discussions—along with the added benefit of legal assurance.
+          discussions) plus you have leagal guarentee.Sponsorware offers more benefits than self
+          hosted repositories. Transparency is one of the biggest advantages. Since the repository
+          is hosted on GitHub, you gain access to all its features like issues and discussions along
+          with the added benefit of legal assurance.
         </template>
       </AccordianComponent>
       <AccordianComponent>

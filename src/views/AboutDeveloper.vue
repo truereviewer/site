@@ -30,18 +30,18 @@
         <p>
           I've worked on many e-commerce and SaaS projects over the years. Most of them required two
           key reusable features: a commenting system and a review system. We often had to rely on
-          paid third-party plugins because there were no suitable open-source solutions that covered
-          both the front-end and back-end effectively. A few packages handled the back-end only.
-          Frankly, building the back-end isn't that time-consuming thanks to Laravel's powerful
-          capabilities. However, creating a polished, user-friendly front-end requires significant
-          time, effort, and creativity. So, I decided to tackle this problem for myself—and for
-          others. i'am a heavy user of open-souce technologies so I also wanted to give someting
+          paid third party plugins because there were no suitable open source solutions that covered
+          both the frontend and back-end effectively. A few packages handled the backend only.
+          Frankly, building the backend isn't that time consuming thanks to Laravel's powerful
+          capabilities. However, creating a polished, user friendly frontend requires significant
+          time, effort, and creativity. So, I decided to tackle this problem for myself and for
+          others. I'am a heavy user of open souce technologies so I also wanted to give someting
           back to the community. I started with the commenting system. After a huge effort, I was
           able to release
           <a href="https://github.com/Lakshan-Madushanka/laravel-comments" target="_blank"
             >Commenter</a
           >
-          to the community. With 400+ stars and over 5,000 downloads, it’s clear that the effort
+          to the community. With 350+ stars and over 10,000 downloads, it’s clear that the effort
           paid off.
           <a href="https://github.com/Lakshan-Madushanka/laravel-comments" target="_blank"
             >Commenter</a
@@ -50,12 +50,12 @@
         </p>
         <p>
           Then I began developing a review system. Commenter was built with Livewire, which made it
-          cumbersome to use outside Livewire-based projects. So, this time, I wanted to build
-          something that works with any Laravel project—regardless of the technologies used. The
+          cumbersome to use outside Livewire based projects. So, this time, I wanted to build
+          something that works with any Laravel projects regardless of the technologies used. The
           plan was to make it open source from the start, but I ended up spending far more time and
           effort than I had anticipated. I had to sacrifice a lot of my personal and professional
           work to get it done. Because of that, I made the difficult decision to release it as
-          sponsorware. I hope you find it fair to charge a small fee for the effort involved—and I
+          sponsorware. I hope you find it fair to charge a small fee for the effort involved and I
           still hope to make it fully open source in the future, based on community feedback. I
           believe Reviewer is one of the most advanced review systems available for Laravel. I hope
           you enjoy using it and that it meets your needs. Reviewer will be actively maintained, and
@@ -71,10 +71,13 @@
         </ul>
       </div>
       <div>
-        <h2>Still doubting ?</h2>
+        <div>
+          <h2 class="!mb-">Still doubting ?</h2>
+          <p>Contact me through <a href="/contacts">@contacts</a></p>
+        </div>
         <p>
           You can browse my
-          <a href="https://github.com/Lakshan-Madushanka" target="_blank">gitHub repo</a> track my
+          <a href="https://github.com/Lakshan-Madushanka" target="_blank">GitHub repo</a> track my
           contributions to open source.
         </p>
       </div>
