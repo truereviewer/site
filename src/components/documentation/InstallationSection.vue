@@ -396,7 +396,7 @@ const setupFrontend = `
   \import App from './App.vue'
   \import { TrueReviewer } from '@truereviewer/vue-front'
 
-  import '@truereviewer/vue-front/style.css'
+  \import '@truereviewer/vue-front/style.css'
 
   const app = createApp(App)
   /*
