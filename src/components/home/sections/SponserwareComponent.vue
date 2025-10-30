@@ -62,13 +62,11 @@ import { Contact } from '@/enums/Contact'
           <div
             class="p-2 lg:p-4 shadow border rounded lg:w-[35rem] bg-gradient-to-r from-green-300/10 to-green-400"
           >
-            <ul
-              class="text-start leading-7 max-w-lg text-black list-inside dark:text-gray-400 !pl-0"
-            >
+            <ul class="text-start leading-7 max-w-lg text-black list-inside !pl-0">
               <li class="flex flex-col justify-center !pl-0">
                 <span class="flex items-center">
                   <svg
-                    class="w-3.5 h-3.5 me-4 text-green-500 dark:text-green-400 flex-shrink-0"
+                    class="w-3.5 h-3.5 me-4 text-green-500 flex-shrink-0"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -90,7 +88,7 @@ import { Contact } from '@/enums/Contact'
               </li>
               <li class="flex items-center !pl-0">
                 <svg
-                  class="w-3.5 h-3.5 me-4 text-green-500 dark:text-green-400 flex-shrink-0"
+                  class="w-3.5 h-3.5 me-4 text-green-500 flex-shrink-0"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -104,7 +102,7 @@ import { Contact } from '@/enums/Contact'
               </li>
               <li class="flex items-center !pl-0">
                 <svg
-                  class="w-3.5 h-3.5 me-4 text-green-500 dark:text-green-400 flex-shrink-0"
+                  class="w-3.5 h-3.5 me-4 text-green-500 flex-shrink-0"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -118,7 +116,7 @@ import { Contact } from '@/enums/Contact'
               </li>
               <li class="flex items-center !pl-0">
                 <svg
-                  class="w-3.5 h-3.5 me-4 text-green-500 dark:text-green-400 flex-shrink-0"
+                  class="w-3.5 h-3.5 me-4 text-green-500 flex-shrink-0"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -133,7 +131,7 @@ import { Contact } from '@/enums/Contact'
 
               <li class="flex items-center !pl-0">
                 <svg
-                  class="w-3.5 h-3.5 me-4 text-green-500 dark:text-green-400 flex-shrink-0"
+                  class="w-3.5 h-3.5 me-4 text-green-500 flex-shrink-0"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -147,7 +145,7 @@ import { Contact } from '@/enums/Contact'
               </li>
               <li class="flex items-center !pl-0">
                 <svg
-                  class="w-3.5 h-3.5 me-4 text-green-500 dark:text-green-400 flex-shrink-0"
+                  class="w-3.5 h-3.5 me-4 text-green-500 flex-shrink-0"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -161,7 +159,7 @@ import { Contact } from '@/enums/Contact'
               </li>
               <li class="flex items-center !pl-0">
                 <svg
-                  class="w-3.5 h-3.5 me-4 text-green-500 dark:text-green-400 flex-shrink-0"
+                  class="w-3.5 h-3.5 me-4 text-green-500 flex-shrink-0"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"

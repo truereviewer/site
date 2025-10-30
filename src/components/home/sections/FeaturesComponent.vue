@@ -3,11 +3,11 @@
     <template #header>Features </template>
     <template #content>
       <ul
-        class="text-gray-500 !pl-0 lg:grid gap-x-12 lg:grid-cols-2 list-inside dark:text-gray-400"
+        class=" !pl-0 lg:grid gap-x-12 lg:grid-cols-2 list-inside "
       >
         <li v-for="point in list" :key="point" class="flex items-center">
           <svg
-            class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0"
+            class="w-3.5 h-3.5 me-2 text-green-500  flex-shrink-0"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"

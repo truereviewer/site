@@ -13,7 +13,7 @@
               <img class="w-24 !my-0" src="/src/assets/svg/trust.svg" alt="trust" />
             </div>
 
-            <ul class="text-gray-600 list-inside dark:text-gray-400 z-100 relative">
+            <ul class="text-gray-900 list-inside z-100 relative">
               <li class="flex items-center text-start leading-normal px-2">
                 Positive reviews act as social proof, reassuring potential customers of your product
                 or service quality.
@@ -35,7 +35,7 @@
               <img class="w-24 !my-0" src="/src/assets/svg/customers.svg" alt="trust" />
             </div>
 
-            <ul class="text-gray-600 list-inside dark:text-gray-400 z-100 relative">
+            <ul class="text-gray-900 list-inside z-100 relative">
               <li class="flex items-center text-start leading-normal px-2">
                 Encourages customers to interact with your business.
               </li>
@@ -57,7 +57,7 @@
               <img class="w-24 !my-0" src="/src/assets/svg/visibility.svg" alt="trust" />
             </div>
 
-            <ul class="text-gray-600 list-inside dark:text-gray-400 z-100 relative">
+            <ul class="text-gray-900 list-inside z-100 relative">
               <li class="flex items-center text-start leading-normal px-2">
                 Search engines often prioritize businesses with more frequent and higher-quality
                 reviews, improving SEO rankings.
@@ -79,7 +79,7 @@
               <img class="w-24 !my-0" src="/src/assets/svg/feedback.svg" alt="trust" />
             </div>
 
-            <ul class="text-gray-600 list-inside dark:text-gray-400 z-100 relative">
+            <ul class="text-gray-900 list-inside z-100 relative">
               <li class="flex items-center text-start leading-normal px-2">
                 Insights from reviews help identify strengths and areas for improvement in your
                 product or service.
@@ -101,7 +101,7 @@
               <img class="w-24 !my-0" src="/src/assets/svg/sales-up.svg" alt="trust" />
             </div>
 
-            <ul class="text-gray-600 list-inside dark:text-gray-400 z-100 relative">
+            <ul class="text-gray-900 list-inside z-100 relative">
               <li class="flex items-center text-start leading-normal px-2">
                 Engaging with reviews creates a positive experience that can inspire customer
                 loyalty.
@@ -123,7 +123,7 @@
               <img class="w-24 !my-0" src="/src/assets/svg/repeat.svg" alt="trust" />
             </div>
 
-            <ul class="text-gray-600 list-inside dark:text-gray-400 z-100 relative">
+            <ul class="text-gray-900 list-inside z-100 relative">
               <li class="flex items-center text-start leading-normal px-2">
                 Engaging with reviews creates a positive experience that can inspire customer
                 loyalty.
@@ -145,7 +145,7 @@
               <img class="w-24 !my-0" src="/src/assets/svg/unique.svg" alt="trust" />
             </div>
 
-            <ul class="text-gray-600 list-inside dark:text-gray-400 z-100 relative">
+            <ul class="text-gray-900 list-inside z-100 relative">
               <li class="flex items-center text-start leading-normal px-2">
                 A strong review system sets your business apart from competitors, especially if you
                 have a higher rating or more testimonials.
