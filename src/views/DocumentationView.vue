@@ -1,8 +1,6 @@
 <template>
   <div class="max-w-none overflow-hidden font-serif text-lg antialiased documentation">
-    <header
-      class="relative px-6 bg-gradient-to-r from-green-600 via-green-600/60 via-[20%] to-green-600"
-    >
+    <header class="relative px-6 bg-gradient-to-r bg-gradient-to-r from-green-600 to-green-700">
       <div class="flex justify-end">
         <HeaderNav />
       </div>
