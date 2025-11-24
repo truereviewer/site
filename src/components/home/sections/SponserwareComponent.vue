@@ -189,7 +189,7 @@ import { Contact } from '@/enums/Contact'
                 >
                   <span>Forever</span>
                   <span>
-                    <span>$199 (10 left)</span> &nbsp; <span class="line-through"> $499</span></span
+                    <span>$199 (9 left)</span> &nbsp; <span class="line-through"> $499</span></span
                   >
                 </ButtonComponent>
               </a>
@@ -204,7 +204,7 @@ import { Contact } from '@/enums/Contact'
                 >
                   <span>Monthly</span>
                   <span
-                    ><span>$15 (9 left)</span> &nbsp; <span class="line-through">$25</span></span
+                    ><span>$15 (7 left)</span> &nbsp; <span class="line-through">$25</span></span
                   >
                 </ButtonComponent>
               </a>
