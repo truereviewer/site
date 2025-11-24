@@ -13,7 +13,11 @@
     ></div>
     <div class="z-[80] mt-16 text-center p-2">
       <div class="!mb-0 text-white">
-        <h1 class="bg-gradient-to-r from-orange-400 to-orange-500 bg-clip-text text-transparent !mb-4">TrueReviewer</h1>
+        <h1
+          class="bg-gradient-to-r from-orange-400 to-orange-500 bg-clip-text text-transparent !mb-4"
+        >
+          TrueReviewer
+        </h1>
         <h2 class="!my-0 !text-black neon-text">#1 Product Review Package for Laravel</h2>
         <div class="!h-8 self-start !mt-4 !mb-2">
           <Transition name="fade">
@@ -42,7 +46,7 @@
 
       <div class="p-4 mt-6 bg-black text-white">
         <p class="!mb-2 text-2xl glitch-text !text-[#0bfb99] font-bold !mt-0">
-          Special Offer for first 10 customers 🎁
+          Special Offer for first 20 customers 🎁
         </p>
         <p class="!mb-4 !mt-0 text-xl">
           Remaining: <span class="font-bold !text-[#0bfb99]">{{ tweened.number.toFixed(0) }}</span>
@@ -101,7 +105,7 @@ onMounted(() => {
 })
 
 onMounted(() => {
-  gsap.to(tweened, { duration: 3, number: 9 })
+  gsap.to(tweened, { duration: 4, number: 17 })
 })
 </script>
 
