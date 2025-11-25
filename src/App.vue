@@ -1,8 +1,11 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
+
+import BlackFridayComponent from '@/components/BlackFridayComponent.vue'
 </script>
 
 <template>
+  <BlackFridayComponent />
   <RouterView />
 </template>
 

@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import ButtonComponent from '@/components/ButtonComponent.vue'
 import SectionComponent from '@/components/SectionComponent.vue'
+
+import { Countdown } from 'vue3-flip-countdown'
+
 import { Contact } from '@/enums/Contact'
 </script>
 
@@ -173,7 +176,7 @@ import { Contact } from '@/enums/Contact'
               </li>
             </ul>
 
-            <p class="font-bold text-blue-800 mt-12 !mb-2">
+            <!-- <p class="font-bold text-blue-800 mt-12 !mb-2">
               * These special prices only valid for first 10 customers.
             </p>
             <div
@@ -208,7 +211,62 @@ import { Contact } from '@/enums/Contact'
                   >
                 </ButtonComponent>
               </a>
+            </div> -->
+
+            <div class="flex flex-col gap-y-2 my-4">
+              <p class="font-bold text-xl !my-0">Black Friday offers end in:</p>
+              <Countdown
+                class="shadow-lg p-2"
+                deadline="2025-12-01 24:00:00"
+                :showLabels="true"
+                mainColor="white"
+                secondFlipColor="red"
+                labelColor="black"
+                labelSize="0.9rem"
+                countdownSize="1.5rem"
+              />
             </div>
+
+            <div
+              class="flex flex-col md:flex-row justify-between gap-4 items-center text-start overflow-hidden"
+            >
+              <a
+                class="no-underline w-full"
+                href="https://github.com/sponsors/Lakshan-Madushanka/sponsorships?sponsor=Lakshan-Madushanka&frequency=one-time&amount=100"
+                target="_blank"
+              >
+                <ButtonComponent
+                  class="flex flex-col w-full overflow-hidden justify-between items-center gap-x-4 lg:gap-x-8 !py-[0.6rem] !text-lg !from-green-500 !to-green-800 hover:!to-green-600"
+                >
+                  <span class="space-x-4">
+                    <span>Forever</span>
+                    <span class="font-bold text-xl"
+                      >$100 <span class="line-through text-base"> $499</span></span
+                    >
+                  </span>
+                  <span> (80% off) </span>
+                </ButtonComponent>
+              </a>
+
+              <a
+                class="no-underline w-full"
+                href="https://github.com/sponsors/Lakshan-Madushanka/sponsorships?sponsor=Lakshan-Madushanka&frequency=recurring&amount=10"
+                target="_blank"
+              >
+                <ButtonComponent
+                  class="flex justify-between items-center flex-col w-full gap-x-4 lg:gap-x-8 !py-[0.6rem] !text-lg !from-green-500 !to-green-800 hover:!to-green-600"
+                >
+                  <span class="space-x-4">
+                    <span>Monthly</span>
+                    <span class="font-bold text-xl"
+                      >$10 <span class="line-through text-base"> $15</span></span
+                    >
+                  </span>
+                  <span> (35% off) </span>
+                </ButtonComponent>
+              </a>
+            </div>
+
             <div class="justify-self-start mt-4 text-base">
               <a :href="'mailto:' + Contact.EMAIL" class="text-blue-500"
                 >Contact us for team support</a
