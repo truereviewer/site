@@ -24,7 +24,7 @@ onMounted(() => {
         <p class="text-white font-bold text-5xl text-center">Up to 80% off</p>
         <Countdown
           class="shadow-xl p-2"
-          deadline="2025-12-01 24:00:00"
+          deadline="2025-12-12 24:00:00"
           :showLabels="true"
           mainColor="white"
           secondFlipColor="red"

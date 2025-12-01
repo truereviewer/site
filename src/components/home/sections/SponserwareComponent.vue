@@ -217,7 +217,7 @@ import { Contact } from '@/enums/Contact'
               <p class="font-bold text-xl !my-0">Black Friday offers end in:</p>
               <Countdown
                 class="shadow-lg p-2"
-                deadline="2025-12-01 24:00:00"
+                deadline="2025-12-12 24:00:00"
                 :showLabels="true"
                 mainColor="white"
                 secondFlipColor="red"
