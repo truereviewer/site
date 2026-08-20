@@ -8,13 +8,13 @@ html {
 }
 
 :root {
-  --main-text-color: rgb(6, 114, 54);
-  --primary-bg-color: rgb(4, 211, 4);
-  --secondary-bg-color: rgb(71, 245, 71);
-  --primary-border-color: rgb(8, 204, 8);
-  --secondary-border-color: rgb(30, 240, 30);
-  --primary-shadow-color: rgb(13, 253, 13);
-  --secondary-shadow-color: rgb(30, 240, 30);
+  --main-text-color: oklch(70.5% 0.213 47.604);
+  --primary-bg-color: oklch(80% 0.183 55.934);
+  --secondary-bg-color: oklch(85.7% 0.128 66.29);
+  --primary-border-color: oklch(75% 0.128 66.29);
+  --secondary-border-color: oklch(82% 0.128 66.29);
+  --primary-shadow-color: oklch(83% 0.128 66.29);
+  --secondary-shadow-color: oklch(84% 0.128 66.29);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;

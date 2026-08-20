@@ -288,7 +288,7 @@ onBeforeUnmount(() => {
 }
 
 .block:after {
-  filter: blur(50px);
+  filter: blur(0px);
 }
 
 .block {

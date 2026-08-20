@@ -1,9 +1,9 @@
 <template>
   <SectionComponent
-    class="flex flex-col items-start justify-center bg-gradient-to-br from-green-600 to-green-700"
+    class="flex flex-col items-start justify-center"
   >
     <template #content>
-      <h3 class="!mt-4 !text-black italic">Add Review Functionality in Minutes</h3>
+      <h3 class="!mt-4 italic">Add Review Functionality in Minutes</h3>
       <div class="w-full">
         <iframe
           class="w-full lg:w-2/3 aspect-video p-1"

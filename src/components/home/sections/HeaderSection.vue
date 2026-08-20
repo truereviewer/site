@@ -9,19 +9,19 @@
     </div>
 
     <div
-      class="z-[70] w-full min-h-svh bg-gradient-to-r from-green-600 to-green-700 absolute top-0 left-0"
+      class="z-[70] w-full min-h-svh  absolute top-0 left-0"
     ></div>
     <div class="z-[80] mt-16 text-center p-2">
       <div class="!mb-0 text-white">
         <h1
-          class="bg-gradient-to-r from-orange-400 to-orange-500 bg-clip-text text-transparent !mb-4"
+          class=" text-orange-500 bg-clip-text text-transparent !mb-4"
         >
           TrueReviewer
         </h1>
         <h2 class="!my-0 !text-black neon-text">#1 Product Review Package for Laravel</h2>
         <div class="!h-8 self-start !mt-4 !mb-2">
           <Transition name="fade">
-            <p v-if="currentKeyWord" class="!m-0 font-bold italic">
+            <p v-if="currentKeyWord" class="!m-0 font-bold italic text-orange-500">
               {{ currentKeyWord }}
             </p>
           </Transition>
@@ -44,7 +44,7 @@
         /></a>
       </div>
 
-      <div class="p-4 mt-6 bg-black text-white">
+<!--      <div class="p-4 mt-6 bg-black text-white">
         <p class="!mb-2 text-2xl glitch-text !text-[#0bfb99] font-bold !mt-0">
           Special Offer for first 20 customers 🎁
         </p>
@@ -57,7 +57,7 @@
             <span>Claim It</span>
           </button>
         </a>
-      </div>
+      </div>-->
     </div>
   </header>
 </template>
