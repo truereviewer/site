@@ -1,9 +1,7 @@
 <template>
-  <SectionComponent
-    class="flex flex-col items-start justify-center"
-  >
+  <SectionComponent class="flex flex-col items-start justify-center">
     <template #content>
-      <h3 class="!mt-4 italic">Add Review Functionality in Minutes</h3>
+      <h2 class="!mt-4">Add Review Functionality in Minutes</h2>
       <div class="w-full">
         <iframe
           class="w-full lg:w-2/3 aspect-video p-1"

@@ -1,27 +1,23 @@
 <template>
   <header class="z-10 relative flex flex-col justify-center items-center min-h-svh">
     <div class="absolute right-8 top-4">
-      <HeaderNav />
+      <HeaderNav class="main-text-color" />
     </div>
 
     <div class="z-[80] absolute top-40 md:top-auto">
       <img class="opacity-10" src="/src/assets/img/bg-2.jpeg" alt="header background" />
     </div>
 
-    <div
-      class="z-[70] w-full min-h-svh  absolute top-0 left-0"
-    ></div>
+    <div class="z-[70] w-full min-h-svh absolute top-0 left-0"></div>
     <div class="z-[80] mt-16 text-center p-2">
       <div class="!mb-0 text-white">
-        <h1
-          class=" text-orange-500 bg-clip-text text-transparent !mb-4"
-        >
-          TrueReviewer
-        </h1>
-        <h2 class="!my-0 !text-black neon-text">#1 Product Review Package for Laravel</h2>
+        <h1 class="main-text-color bg-clip-text text-transparent !mb-4">TrueReviewer</h1>
+        <h3 class="!my-0 secondary-text secondary-text-colo font-bold">
+          #1 Product Review Package for Laravel
+        </h3>
         <div class="!h-8 self-start !mt-4 !mb-2">
           <Transition name="fade">
-            <p v-if="currentKeyWord" class="!m-0 font-bold italic text-orange-500">
+            <p v-if="currentKeyWord" class="!m-0 font-bold italic secondary-text-color">
               {{ currentKeyWord }}
             </p>
           </Transition>
@@ -44,7 +40,7 @@
         /></a>
       </div>
 
-<!--      <div class="p-4 mt-6 bg-black text-white">
+      <!--      <div class="p-4 mt-6 bg-black text-white">
         <p class="!mb-2 text-2xl glitch-text !text-[#0bfb99] font-bold !mt-0">
           Special Offer for first 20 customers 🎁
         </p>
@@ -110,14 +106,36 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.neon-text {
-  text-shadow:
-    0 0 5px #fd8904,
-    0 0 10px #fd8904,
-    0 0 20px #fd8904,
-    0 0 40px #fd8904,
-    0 0 80px #fd8904;
-  animation: glow 2s infinite alternate;
+@keyframes textHighlight {
+  0%,
+  65% {
+    background-position: 100% 0;
+  }
+
+  100% {
+    background-position: -150% 0;
+  }
+}
+
+.secondary-text {
+  position: relative;
+  display: inline-block;
+  color: oklch(75% 0.183 55.934);
+  background: linear-gradient(
+    110deg,
+    oklch(75% 0.183 55.934) 0%,
+    oklch(75% 0.183 55.934) 40%,
+    oklch(95% 0.08 55.934) 50%,
+    oklch(75% 0.183 55.934) 60%,
+    oklch(75% 0.183 55.934) 100%
+  );
+  background-size: 250% 100%;
+  background-position: 100% 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: textHighlight 3.5s ease-in-out infinite;
 }
 
 @keyframes glow {
@@ -136,93 +154,6 @@ onMounted(() => {
       0 0 40px #f8fa6f,
       0 0 80px #f8fa6f,
       0 0 160px #f8fa6f;
-  }
-}
-
-.glitch-text {
-  font-weight: bold;
-  position: relative;
-  color: #fff;
-  animation: glitch 2s infinite;
-}
-
-.glitch-text::before,
-.glitch-text::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #ff005e;
-  background: transparent;
-  clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%);
-  animation: glitch 2s infinite;
-}
-
-.glitch-text::after {
-  color: #00d4ff;
-  clip-path: polygon(0 70%, 100% 70%, 100% 100%, 0 100%);
-}
-
-@keyframes glitch {
-  0%,
-  100% {
-    transform: translate(0);
-  }
-  20% {
-    transform: translate(-2px, 2px);
-  }
-  40% {
-    transform: translate(2px, -2px);
-  }
-  60% {
-    transform: translate(-1px, 1px);
-  }
-  80% {
-    transform: translate(1px, -1px);
-  }
-}
-
-.btn {
-  position: relative;
-  color: #fff;
-  background: none;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-  transition: all 0.4s ease;
-  min-width: 200px;
-  z-index: 1;
-}
-
-.neon-pulse {
-  background: #000;
-  border: 2px solid #0bfb99;
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
-  overflow: visible;
-}
-
-.neon-pulse::before,
-.neon-pulse::after {
-  content: '';
-  position: absolute;
-  inset: -4px;
-  border: 2px solid #0bfb99;
-  border-radius: inherit;
-  animation: pulseOut 2s ease-out infinite;
-  opacity: 0;
-}
-
-.neon-pulse::after {
-  animation-delay: 1s;
-}
-
-@keyframes pulseOut {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.2);
-    opacity: 0;
   }
 }
 

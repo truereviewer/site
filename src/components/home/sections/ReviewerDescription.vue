@@ -30,7 +30,7 @@
       <div class="flex items-center justify-center">
         <Carousel
           v-bind="carouselConfig"
-          class="lg:w-[75%] border rounded p-4 bg-gradient-to-br from-green-400/10 to-green-500/80"
+          class="lg:w-[75%] border rounded p-4 bg-gray-950"
         >
           <Slide v-for="slide in images" :key="slide">
             <div class="lg:h-[70vh]">

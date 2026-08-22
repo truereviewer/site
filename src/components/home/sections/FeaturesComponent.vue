@@ -7,7 +7,7 @@
       >
         <li v-for="point in list" :key="point" class="flex items-center">
           <svg
-            class="w-3.5 h-3.5 me-2 text-green-500  flex-shrink-0"
+            class="w-3.5 h-3.5 me-2 main-text-color flex-shrink-0"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"

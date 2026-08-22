@@ -1,8 +1,8 @@
 <template>
   <div
-    class="text-white flex flex-col justify-center gap-4 md:gap-0 items-center text-base bg-gradient-to-r from-green-800 to-green-600 px-4 py-8"
+    class="text-white flex flex-col justify-center gap-4 md:gap-0 items-center text-base primary-bg-color px-4 py-8"
   >
-    <HeaderNav :keepOpen="alwaysShowMenu" class="relative -start-4" />
+    <HeaderNav :keepOpen="alwaysShowMenu" class="relative -start-4 !text-white" />
     <span class="">@ {{ new Date().getFullYear() }} Truereviewer</span>
   </div>
 </template>

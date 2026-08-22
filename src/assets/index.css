@@ -9,7 +9,8 @@ html {
 
 :root {
   --main-text-color: oklch(70.5% 0.213 47.604);
-  --primary-bg-color: oklch(80% 0.183 55.934);
+  --secondary-text-color: oklch(75% 0.183 55.934);
+  --primary-bg-color: oklch(72.5% 0.213 47.604);
   --secondary-bg-color: oklch(85.7% 0.128 66.29);
   --primary-border-color: oklch(75% 0.128 66.29);
   --secondary-border-color: oklch(82% 0.128 66.29);
@@ -28,8 +29,17 @@ body {
   h2,
   h3,
   h4 {
-    color: var(--main-text-color) !important;
+
     font-family: 'Inter', Arial, sans-serif;
+    }
+
+  h2 {
+    color: var(--main-text-color) !important;
+  }
+
+  h3,
+  h4 {
+    color: var(--secondary-text-color) !important;
   }
 
   section {
@@ -40,6 +50,10 @@ body {
 @layer utilities {
   .main-text-color {
     color: var(--main-text-color);
+  }
+
+  .secondary-text-color {
+    color: var(--secondary-text-color);
   }
 
   .primary-bg-color {
