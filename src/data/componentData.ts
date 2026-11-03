@@ -61,11 +61,32 @@ const bigPictureComponentData: ReviewerComponentData = {
   ]
 }
 
+const filterComponentData: ReviewerComponentData = {
+  title: 'Filters',
+  description: 'Easily narrow down results with advanced filters.',
+  images: []
+}
+
+const formComponentData: ReviewerComponentData = {
+  title: 'Forms',
+  description: 'Create and manage forms with ease.',
+  images: []
+}
+
+const modalComponentData: ReviewerComponentData = {
+  title: 'Modal',
+  description: 'Flexible modals.',
+  images: []
+}
+
 export {
   widgetComponentData,
   RatingDistributionComponentData,
   subRatingDistributionComponentData,
   mediaGalleryComponentData,
   reviewListComponentData,
-  bigPictureComponentData
+  bigPictureComponentData,
+  filterComponentData,
+  formComponentData,
+  modalComponentData
 }

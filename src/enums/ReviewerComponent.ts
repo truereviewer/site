@@ -4,5 +4,8 @@ export enum ReviewerComponent {
   SUB_RATING_DISTRIBUTION = 'sub rating destribution',
   MEDIA_GALLERY = 'media gallery',
   REVIEW_LIST = 'review list',
-  BIG_PICTURE = 'big picture'
+  BIG_PICTURE = 'big picture',
+  Filters = 'filters',
+  Forms = 'forms',
+  Modal = 'modal'
 }

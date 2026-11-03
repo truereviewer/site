@@ -5,7 +5,10 @@ import {
   RatingDistributionComponentData,
   reviewListComponentData,
   subRatingDistributionComponentData,
-  widgetComponentData
+  widgetComponentData,
+  filterComponentData,
+  formComponentData,
+  modalComponentData
 } from '@/data/componentData'
 import type { ReviewerComponentData } from '@/interfaces'
 
@@ -53,6 +56,18 @@ export class ReviewerComponentService {
 
     if (this.type === ReviewerComponent.BIG_PICTURE) {
       return (this.data = bigPictureComponentData)
+    }
+
+    if (this.type === ReviewerComponent.Filters) {
+      return (this.data = filterComponentData)
+    }
+
+    if (this.type === ReviewerComponent.Forms) {
+      return (this.data = formComponentData)
+    }
+
+    if (this.type === ReviewerComponent.Modal) {
+      return (this.data = modalComponentData)
     }
   }
 }

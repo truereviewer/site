@@ -51,6 +51,7 @@
 
 <script setup lang="ts">
 import { ref, useTemplateRef, shallowRef } from 'vue'
+import type { Component } from 'vue'
 import SectionComponent from '@/components/SectionComponent.vue'
 import WidgetImg from '@/assets/img/reviewer/full-widget.png'
 import StatsImg from '@/assets/img/reviewer/lg/1.png'
@@ -66,8 +67,22 @@ import RatingDistributionInfo from '@/components/informations/RatingDistribution
 import SubRatingDistributionInfo from '@/components/informations/SubRatingDistributionInfo.vue'
 import MediaGalleryInfo from '@/components/informations/MediaGalleryInfo.vue'
 import ReviewListInfo from '@/components/informations/ReviewListInfo.vue'
+import FiltersInfo from '@/components/informations/FiltersInfo.vue'
+import FormInfo from '@/components/informations/FormInfo.vue'
+import ModalInfo from '@/components/informations/ModalInfo.vue'
 
-const components = {
+interface ImgComponent {
+  name?: string
+  component: Component
+  src: string
+  alt: string
+  title: string
+  objectFit: string
+  id: string
+  width: string
+}
+
+const components: Record<string, ImgComponent> = {
   widget: {
     name: 'widget',
     component: WidgetInfo,
@@ -115,6 +130,7 @@ const components = {
     width: '25rem'
   },
   modal: {
+    component: ModalInfo,
     src: ModalImg,
     alt: 'review modal',
     title: 'Review Modal',
@@ -132,6 +148,7 @@ const components = {
     width: '18rem'
   },
   filters: {
+    component: FiltersInfo,
     src: FiltersImg,
     alt: 'advanced filters',
     title: 'Advanced Filters',
@@ -140,6 +157,7 @@ const components = {
     width: '18rem'
   },
   forms: {
+    component: FormInfo,
     src: FormImg,
     alt: 'forms',
     title: 'Elegant Forms',
@@ -156,7 +174,7 @@ const showDialog = ref(false)
 
 const activeInfoComponent = shallowRef()
 
-function showInfoDialog(component: Element, index: number) {
+function showInfoDialog(component: Component, index: number) {
   dialogActivator.value = infoRefs.value![index]
   activeInfoComponent.value = component
   showDialog.value = true
