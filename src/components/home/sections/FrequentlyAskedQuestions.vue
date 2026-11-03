@@ -3,7 +3,11 @@
     <template #header>Frequently Asked Questions</template>
     <template #content>
       <AccordianComponent>
-        <template #header>What is reviewer and why do I need it ?</template>
+        <template #header
+          ><span class="font-normal secondary-text-color"
+            >What is reviewer and why do I need it ?</span
+          ></template
+        >
         <template #content
           >Reviewer is a top-tier review system specifically designed for Laravel projects. Its
           modern responsive design, rich feature set, high configurability, and ongoing maintenance
@@ -12,12 +16,16 @@
       </AccordianComponent>
 
       <AccordianComponent>
-        <template #header>Is there demo available ?</template>
+        <template #header
+          ><span class="font-normal secondary-text-color">Is there demo available ?</span></template
+        >
         <template #content>Yes. A playground has been setup for you here. </template>
       </AccordianComponent>
 
       <AccordianComponent>
-        <template #header>How do I have it ?</template>
+        <template #header>
+          <span class="font-normal secondary-text-color">How do I have it ?</span>
+        </template>
         <template #content
           >You must
           <a class="no-underline text-orange-400 inline-block pb-1" href="/#sponserware">sponsor</a>
@@ -30,7 +38,9 @@
         </template>
       </AccordianComponent>
       <AccordianComponent>
-        <template #header>What is sponsorware ?</template>
+        <template #header
+          ><span class="font-normal secondary-text-color">What is sponsorware ?</span></template
+        >
         <template #content
           >Sponsorware is simillar to github public repo but only the people who sponsored can
           access it. For more information refer this github repo about
@@ -42,7 +52,9 @@
         </template>
       </AccordianComponent>
       <AccordianComponent>
-        <template #header>Why is sponsorware ?</template>
+        <template #header
+          ><span class="font-normal secondary-text-color">Why is sponsorware ?</span></template
+        >
         <template #content
           >Sponsorware has more benefis over self hosted Repositories. Transparency is the biggest
           perk. As repository is in the github you can take all the advantages it offers(issues,
@@ -53,7 +65,11 @@
         </template>
       </AccordianComponent>
       <AccordianComponent>
-        <template #header>How long will it take to my subscription get activated ?</template>
+        <template #header
+          ><span class="font-normal secondary-text-color"
+            >How long will it take to my subscription get activated ?</span
+          ></template
+        >
         <template #content
           >Monthly subscription will be activated within few minutes. One time subscription can take
           up to 24 hours (You should send a email after sponsored to the one time plan).
@@ -65,7 +81,9 @@
         </template>
       </AccordianComponent>
       <AccordianComponent>
-        <template #header>Can I get a refund ?</template>
+        <template #header
+          ><span class="font-normal secondary-text-color">Can I get a refund ?</span></template
+        >
         <template #content>
           Due to the digital nature of the sponserware, we are unable to offer refunds once
           subscribed. We encourage you to carefully review the features and functionalities of

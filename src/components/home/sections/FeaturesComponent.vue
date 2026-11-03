@@ -2,12 +2,10 @@
   <SectionComponent class="flex flex-col items-start justify-center">
     <template #header>Features </template>
     <template #content>
-      <ul
-        class=" !pl-0 lg:grid gap-x-12 lg:grid-cols-2 list-inside "
-      >
+      <ul class="!pl-0 lg:grid gap-x-12 lg:grid-cols-2 list-inside">
         <li v-for="point in list" :key="point" class="flex items-center">
           <svg
-            class="w-3.5 h-3.5 me-2 main-text-color flex-shrink-0"
+            class="w-3.5 h-3.5 me-2 secondary-text-color flex-shrink-0"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"

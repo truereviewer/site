@@ -4,10 +4,10 @@
     <template #content>
       <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <div
-          class="text-center pb-4 border rounded bg-gradient-to-br from-orange-400/10 to-orange-500/80"
+          class="text-center pb-4 border rounded bg-gradient-to-br from-[oklch(from_var(--secondary-bg-color)_l_c_h_/_10%)] to-[oklch(from_var(--primary-bg-color)_l_c_h_/_70%)]"
         >
           <div class="relative w-full h-full overflow-hidden">
-            <h3 class="!text-black !m-4">Builds Trust and Credibility</h3>
+            <h3 class="!m-4">Builds Trust and Credibility</h3>
 
             <div class="w-full flex justify-center items-center">
               <img class="w-24 !my-0" src="/src/assets/svg/trust.svg" alt="trust" />
@@ -26,10 +26,10 @@
         </div>
 
         <div
-          class="text-center pb-4 border rounded bg-gradient-to-br from-orange-400/10 to-orange-500/80"
+          class="text-center pb-4 border rounded bg-gradient-to-br from-[oklch(from_var(--secondary-bg-color)_l_c_h_/_10%)] to-[oklch(from_var(--primary-bg-color)_l_c_h_/_70%)]"
         >
           <div class="relative w-full h-full overflow-hidden">
-            <h3 class="!text-black !m-4">Boosts Customer Engagement</h3>
+            <h3 class="!m-4">Boosts Customer Engagement</h3>
 
             <div class="w-full flex justify-center items-center">
               <img class="w-24 !my-0" src="/src/assets/svg/customers.svg" alt="trust" />
@@ -48,10 +48,10 @@
         </div>
 
         <div
-          class="text-center pb-4 border rounded bg-gradient-to-br from-orange-400/10 to-orange-500/80"
+          class="text-center pb-4 border rounded bg-gradient-to-br from-[oklch(from_var(--secondary-bg-color)_l_c_h_/_10%)] to-[oklch(from_var(--primary-bg-color)_l_c_h_/_70%)]"
         >
           <div class="relative w-full h-full overflow-hidden">
-            <h3 class="!text-black !m-4">Improves Online Visibility</h3>
+            <h3 class="!m-4">Improves Online Visibility</h3>
 
             <div class="w-full flex justify-center items-center">
               <img class="w-24 !my-0" src="/src/assets/svg/visibility.svg" alt="trust" />
@@ -70,10 +70,10 @@
         </div>
 
         <div
-          class="text-center pb-4 border rounded bg-gradient-to-br from-orange-400/10 to-orange-500/80"
+          class="text-center pb-4 border rounded bg-gradient-to-br from-[oklch(from_var(--secondary-bg-color)_l_c_h_/_10%)] to-[oklch(from_var(--primary-bg-color)_l_c_h_/_70%)]"
         >
           <div class="relative w-full h-full overflow-hidden">
-            <h3 class="!text-black !m-4">Provides Valuable Feedback</h3>
+            <h3 class="!m-4">Provides Valuable Feedback</h3>
 
             <div class="w-full flex justify-center items-center">
               <img class="w-24 !my-0" src="/src/assets/svg/feedback.svg" alt="trust" />
@@ -92,10 +92,10 @@
         </div>
 
         <div
-          class="text-center pb-4 border rounded bg-gradient-to-br from-orange-400/10 to-orange-500/80"
+          class="text-center pb-4 border rounded bg-gradient-to-br from-[oklch(from_var(--secondary-bg-color)_l_c_h_/_10%)] to-[oklch(from_var(--primary-bg-color)_l_c_h_/_70%)]"
         >
           <div class="relative w-full h-full overflow-hidden">
-            <h3 class="!text-black !m-4">Drives Sales Drives Sales</h3>
+            <h3 class="!m-4">Drives Sales Drives Sales</h3>
 
             <div class="w-full flex justify-center items-center">
               <img class="w-24 !my-0" src="/src/assets/svg/sales-up.svg" alt="trust" />
@@ -114,10 +114,10 @@
         </div>
 
         <div
-          class="text-center pb-4 border rounded bg-gradient-to-br from-orange-400/10 to-orange-500/80"
+          class="text-center pb-4 border rounded bg-gradient-to-br from-[oklch(from_var(--secondary-bg-color)_l_c_h_/_10%)] to-[oklch(from_var(--primary-bg-color)_l_c_h_/_70%)]"
         >
           <div class="relative w-full h-full overflow-hidden">
-            <h3 class="!text-black !m-4">Encourages Repeat Business</h3>
+            <h3 class="!m-4">Encourages Repeat Business</h3>
 
             <div class="w-full flex justify-center items-center">
               <img class="w-24 !my-0" src="/src/assets/svg/repeat.svg" alt="trust" />
@@ -136,10 +136,10 @@
         </div>
 
         <div
-          class="text-center pb-4 border rounded bg-gradient-to-br from-orange-400/10 to-orange-500/80"
+          class="text-center pb-4 border rounded bg-gradient-to-br from-[oklch(from_var(--secondary-bg-color)_l_c_h_/_10%)] to-[oklch(from_var(--primary-bg-color)_l_c_h_/_70%)]"
         >
           <div class="relative w-full h-full overflow-hidden">
-            <h3 class="!text-black !m-4">Differentiates Your Business</h3>
+            <h3 class="!m-4">Differentiates Your Business</h3>
 
             <div class="w-full flex justify-center items-center">
               <img class="w-24 !my-0" src="/src/assets/svg/unique.svg" alt="trust" />
@@ -161,3 +161,11 @@
 <script setup lang="ts">
 import SectionComponent from '@/components/SectionComponent.vue'
 </script>
+
+<style scoped>
+h3 {
+  font-size: 1.6rem !important;
+  font-weight: normal !important;
+  color: #000000 !important;
+}
+</style>

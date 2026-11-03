@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav class="flex text-base justify-end md:hidden relative left-4 z-[300]">
-      <div v-if="!showMenu" class="mt-[8px]">
+      <div v-if="!showMenu" class="mt-[8px] mr-2">
         <router-link
           class="no-underline !border-0 text-inherit inline-block pb-1"
           :to="{ name: 'home' }"
@@ -38,6 +38,7 @@
           >
           <hr
             class="w-0 !my-0 transition-all ease-in-out duration-300 group-hover:w-full mx-auto h-px max-w-7xl border-none secondary-bg-color"
+            :style="`background: ${props.mobileHoverColor}`"
           />
         </li>
         <li class="group">
@@ -48,12 +49,14 @@
           >
           <hr
             class="w-0 !my-0 transition-all ease-in-out duration-300 group-hover:w-full mx-auto h-px max-w-7xl border-none secondary-bg-color"
+            :style="`background: ${props.mobileHoverColor}`"
           />
         </li>
         <li class="group">
           <a class="no-underline text-inherit inline-block pb-1" href="/#faq">FAQ</a>
           <hr
             class="w-0 !my-0 transition-all ease-in-out duration-300 group-hover:w-full mx-auto h-px max-w-7xl border-none secondary-bg-color"
+            :style="`background: ${props.mobileHoverColor}`"
           />
         </li>
         <li class="group block">
@@ -62,6 +65,7 @@
           >
           <hr
             class="w-0 !my-0 transition-all ease-in-out duration-300 group-hover:w-full mx-auto h-px max-w-7xl border-none secondary-bg-color"
+            :style="`background: ${props.mobileHoverColor}`"
           />
         </li>
         <li class="group">
@@ -70,6 +74,7 @@
           >
           <hr
             class="w-0 !my-0 transition-all ease-in-out duration-300 group-hover:w-full mx-auto h-px max-w-7xl border-none secondary-bg-color"
+            :style="`background: ${props.mobileHoverColor}`"
           />
         </li>
         <div class="group">
@@ -78,6 +83,7 @@
           </a>
           <hr
             class="w-0 !my-0 transition-all ease-in-out duration-300 group-hover:w-full mx-auto h-px max-w-7xl border-none secondary-bg-color"
+            :style="`background: ${props.mobileHoverColor}`"
           />
         </div>
         <li class="group">
@@ -88,6 +94,7 @@
           >
           <hr
             class="w-0 !my-0 transition-all ease-in-out duration-300 group-hover:w-full mx-auto h-px max-w-7xl border-none secondary-bg-color"
+            :style="`background: ${props.mobileHoverColor}`"
           />
         </li>
         <li class="group">
@@ -98,6 +105,7 @@
           >
           <hr
             class="w-0 !my-0 transition-all ease-in-out duration-300 group-hover:w-full mx-auto h-px max-w-7xl border-none secondary-bg-color"
+            :style="`background: ${props.mobileHoverColor}`"
           />
         </li>
         <li class="group">
@@ -109,6 +117,7 @@
           >
           <hr
             class="w-0 !my-0 transition-all ease-in-out duration-300 group-hover:w-full mx-auto h-px max-w-7xl border-none secondary-bg-color"
+            :style="`background: ${props.mobileHoverColor}`"
           />
         </li>
       </ul>
@@ -131,7 +140,8 @@
           >Home</router-link
         >
         <hr
-          class="w-0 !my-0 transition-all ease-in-out duration-300 group-hover:w-full mx-auto h-px max-w-7xl border-none secondary-bg-color"
+          class="w-0 !my-0 transition-all ease-in-out duration-300 group-hover:w-full mx-auto h-px max-w-7xl border-none"
+          :style="`background: ${props.hoverColor}`"
         />
       </div>
       <div class="group">
@@ -141,14 +151,16 @@
           >Documentation</router-link
         >
         <hr
-          class="w-0 !my-0 transition-all ease-in-out duration-300 group-hover:w-full mx-auto h-px max-w-7xl border-none secondary-bg-color"
+          class="w-0 !my-0 transition-all ease-in-out duration-300 group-hover:w-full mx-auto h-px max-w-7xl border-none"
+          :style="`background: ${props.hoverColor}`"
         />
       </div>
 
       <div class="group">
         <a class="no-underline text-inherit inline-block pb-1" href="/#faq">FAQ</a>
         <hr
-          class="w-0 !my-0 transition-all ease-in-out duration-300 group-hover:w-full mx-auto h-px max-w-7xl border-none secondary-bg-color"
+          class="w-0 !my-0 transition-all ease-in-out duration-300 group-hover:w-full mx-auto h-px max-w-7xl border-none"
+          :style="`background: ${props.hoverColor}`"
         />
       </div>
 
@@ -157,7 +169,8 @@
           >Claim | Sponserware</a
         >
         <hr
-          class="w-0 !my-0 transition-all ease-in-out duration-300 group-hover:w-full mx-auto h-px max-w-7xl border-none secondary-bg-color"
+          class="w-0 !my-0 transition-all ease-in-out duration-300 group-hover:w-full mx-auto h-px max-w-7xl border-none"
+          :style="`background: ${props.hoverColor}`"
         />
       </div>
       <div class="group">
@@ -165,7 +178,8 @@
           >Technologies</a
         >
         <hr
-          class="w-0 !my-0 transition-all ease-in-out duration-300 group-hover:w-full mx-auto h-px max-w-7xl border-none secondary-bg-color"
+          class="w-0 !my-0 transition-all ease-in-out duration-300 group-hover:w-full mx-auto h-px max-w-7xl border-none"
+          :style="`background: ${props.hoverColor}`"
         />
       </div>
 
@@ -174,7 +188,8 @@
           <img class="w-12 !my-0" src="/src/assets/img/ai.png" alt="AI" />
         </a>
         <hr
-          class="w-0 !my-0 transition-all ease-in-out duration-300 group-hover:w-full mx-auto h-px max-w-7xl border-none secondary-bg-color"
+          class="w-0 !my-0 transition-all ease-in-out duration-300 group-hover:w-full mx-auto h-px max-w-7xl border-none"
+          :style="`background: ${props.hoverColor}`"
         />
       </div>
       <div class="group">
@@ -184,7 +199,8 @@
           >@developer</router-link
         >
         <hr
-          class="w-0 !my-0 transition-all ease-in-out duration-300 group-hover:w-full mx-auto h-px max-w-7xl border-none secondary-bg-color"
+          class="w-0 !my-0 transition-all ease-in-out duration-300 group-hover:w-full mx-auto h-px max-w-7xl border-none"
+          :style="`background: ${props.hoverColor}`"
         />
       </div>
       <div class="group">
@@ -192,7 +208,8 @@
           >Contacts</router-link
         >
         <hr
-          class="w-0 !my-0 transition-all ease-in-out duration-300 group-hover:w-full mx-auto h-px max-w-7xl border-none secondary-bg-color"
+          class="w-0 !my-0 transition-all ease-in-out duration-300 group-hover:w-full mx-auto h-px max-w-7xl border-none"
+          :style="`background: ${props.hoverColor}`"
         />
       </div>
       <div class="group">
@@ -203,7 +220,8 @@
           >Demo</a
         >
         <hr
-          class="w-0 !my-0 transition-all ease-in-out duration-300 group-hover:w-full mx-auto h-px max-w-7xl border-none secondary-bg-color"
+          class="w-0 !my-0 transition-all ease-in-out duration-300 group-hover:w-full mx-auto h-px max-w-7xl border-none"
+          :style="`background: ${props.hoverColor}`"
         />
       </div>
     </nav>
@@ -211,7 +229,11 @@
 </template>
 
 <script setup lang="ts">
-const props = defineProps({ keepOpen: { type: Boolean, required: false, defaul: false } })
+const props = defineProps({
+  keepOpen: { type: Boolean, required: false, default: false },
+  hoverColor: { type: String, default: 'var(--secondary-bg-color)' },
+  mobileHoverColor: { type: String, default: 'rgb(239 68 68)' }
+})
 
 import { onBeforeMount, onBeforeUnmount, ref } from 'vue'
 

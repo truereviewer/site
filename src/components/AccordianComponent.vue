@@ -6,7 +6,7 @@
       class="cursor-pointer flex gap-x-4 items-center justify-between p-2 border"
     >
       <h3 class="!my-0 !text-lg !text-black"><slot name="header" /></h3>
-      <span class="text-4xl">+</span>
+      <span class="text-4xl secondary-text-color">+</span>
     </div>
     <div
       v-else
@@ -16,11 +16,11 @@
       <h3 :class="['!my-0 !text-black  text-xs', { '!text-xl': expand }]">
         <slot name="header" />
       </h3>
-      <span class="text-4xl">-</span>
+      <span class="text-4xl secondary-text-color">-</span>
     </div>
     <p
       :class="[
-        'transition-all ease-in-out duration-700 border !mt-0 p-8',
+        'transition-all text-base ease-in-out duration-700 border !mt-0 p-8',
         { 'overflow-hidden !h-0 !p-0': !expand, ' h-full': expand }
       ]"
     >

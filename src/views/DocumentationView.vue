@@ -35,7 +35,7 @@
 
         <FooterComponent />
 
-        <ScrollTopButton />
+        <TopButtonNavigation />
       </main>
     </div>
   </div>
@@ -59,7 +59,7 @@ import AIComponent from '@/components/documentation/AIComponent.vue'
 import TraitComponent from '@/components/documentation/api/TraitComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 import { useMetaTags } from '@/composables/useMetaTags'
-import ScrollTopButton from '@/components/ScrollTopButton.vue'
+import TopButtonNavigation from '@/components/TopButtonNavigation.vue'
 import RequirementsSection from '@/components/documentation/RequirementsSection.vue'
 import BasicSection from '@/components/documentation/theming/BasicSection.vue'
 import TroubleShooting from '@/components/documentation/TroubleShooting.vue'

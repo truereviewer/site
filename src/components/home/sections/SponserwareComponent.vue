@@ -5,18 +5,40 @@ import SectionComponent from '@/components/SectionComponent.vue'
 import { Countdown } from 'vue3-flip-countdown'
 
 import { Contact } from '@/enums/Contact'
+import { ref } from 'vue'
+
+const dialogActivator = ref()
+const shouldShowInfoDialog = ref(false)
+
+function showInfoDialog() {
+  shouldShowInfoDialog.value = true
+}
+
+function onDialogLeave() {
+  shouldShowInfoDialog.value = false
+}
 </script>
 
 <template>
-  <SectionComponent id="sponserware" class="mt-12">
+  <SectionComponent id="sponserware" class="mt-16">
     <template #content>
       <div class="text-center w-full">
-        <div class="flex items-center justify-center w-full">
-          <h2 class="!m-0 !mr-4">Sponsorware</h2>
+        <div class="flex items-center justify-center w-full mb-12">
+          <h2 class="relative inline !m-0 !mr-8">
+            <span>Sponsorware</span>
+            <v-icon
+              @cick="showInfoDialog"
+              ref="dialogActivator"
+              class="absolute hover:cursor-pointer -top-1 -right-4"
+              icon="$information"
+              size="1.4rem"
+              color="black"
+            />
+          </h2>
           <img class="w-8 !m-0" src="/src/assets/img/give-love.png" alt="sponserware" />
         </div>
 
-        <p class="!mb-4 w-full">
+        <!--        <p class="!mb-4 w-full">
           This is a
           <a
             class="no-underline text-orange-400 inline-block pb-1"
@@ -55,31 +77,31 @@ import { Contact } from '@/enums/Contact'
             If you can't afford following prices please don't hesitate to contact us
             <a class="font-normal italic" href="/documentation#installation-step1">through</a>. As
             mentioned above we provide flexible options and grace periods. That's why we call this a
-            <span class="text-[var(--main-text-color)]">sponserware</span>.
+            <span class="text-[var(&#45;&#45;main-text-color)]">sponserware</span>.
           </p>
 
           <p>Need a guarentee? refer <a href="/@developer">here</a></p>
-        </div>
+        </div>-->
 
         <div class="flex flex-wrap items-center lg:flex-row justify-center gap-8 w-full">
           <div
-            class="p-2 lg:p-4 shadow border rounded lg:w-[35rem] bg-gradient-to-r from-green-300/10 to-green-400"
+            class="p-2 lg:p-4 shadow border rounded lg:w-[35rem] bg-gradient-to-r from-[oklch(from_var(--secondary-bg-color)_l_c_h_/_10%)] to-[oklch(from_var(--primary-bg-color)_l_c_h_/_70%)]"
           >
-            <ul class="text-start leading-7 max-w-lg text-black list-inside !pl-0">
+            <ul class="text-start max-w-lg text-gray-800 list-inside !pl-0">
               <li class="flex flex-col justify-center !pl-0">
                 <span class="flex items-center">
                   <svg
-                    class="w-3.5 h-3.5 me-4 text-green-500 flex-shrink-0"
+                    class="w-3.5 h-3.5 me-4 flex-shrink-0"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
+                    fill="var(--main-text-color)"
                     viewBox="0 0 20 20"
                   >
                     <path
                       d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
                     />
                   </svg>
-                  Read-Only Access to the Following Repositories (issues and discussions are
+                  Read-Only Access to the Following Repositories (Issues and discussions are
                   granted)
                 </span>
 
@@ -91,10 +113,10 @@ import { Contact } from '@/enums/Contact'
               </li>
               <li class="flex items-center !pl-0">
                 <svg
-                  class="w-3.5 h-3.5 me-4 text-green-500 flex-shrink-0"
+                  class="w-3.5 h-3.5 me-4 flex-shrink-0"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
+                  fill="var(--main-text-color)"
                   viewBox="0 0 20 20"
                 >
                   <path
@@ -105,10 +127,10 @@ import { Contact } from '@/enums/Contact'
               </li>
               <li class="flex items-center !pl-0">
                 <svg
-                  class="w-3.5 h-3.5 me-4 text-green-500 flex-shrink-0"
+                  class="w-3.5 h-3.5 me-4 flex-shrink-0"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
+                  fill="var(--main-text-color)"
                   viewBox="0 0 20 20"
                 >
                   <path
@@ -119,10 +141,10 @@ import { Contact } from '@/enums/Contact'
               </li>
               <li class="flex items-center !pl-0">
                 <svg
-                  class="w-3.5 h-3.5 me-4 text-green-500 flex-shrink-0"
+                  class="w-3.5 h-3.5 me-4 flex-shrink-0"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
+                  fill="var(--main-text-color)"
                   viewBox="0 0 20 20"
                 >
                   <path
@@ -134,10 +156,10 @@ import { Contact } from '@/enums/Contact'
 
               <li class="flex items-center !pl-0">
                 <svg
-                  class="w-3.5 h-3.5 me-4 text-green-500 flex-shrink-0"
+                  class="w-3.5 h-3.5 me-4 flex-shrink-0"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
+                  fill="var(--main-text-color)"
                   viewBox="0 0 20 20"
                 >
                   <path
@@ -148,24 +170,24 @@ import { Contact } from '@/enums/Contact'
               </li>
               <li class="flex items-center !pl-0">
                 <svg
-                  class="w-3.5 h-3.5 me-4 text-green-500 flex-shrink-0"
+                  class="w-3.5 h-3.5 me-4 flex-shrink-0"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
+                  fill="var(--main-text-color)"
                   viewBox="0 0 20 20"
                 >
                   <path
                     d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
                   />
                 </svg>
-                <span>Only personnal accounts, Not support organization</span>
+                <span>Only personal accounts, Not support organization</span>
               </li>
               <li class="flex items-center !pl-0">
                 <svg
-                  class="w-3.5 h-3.5 me-4 text-green-500 flex-shrink-0"
+                  class="w-3.5 h-3.5 me-4 flex-shrink-0"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
+                  fill="var(--main-text-color)"
                   viewBox="0 0 20 20"
                 >
                   <path
@@ -213,7 +235,7 @@ import { Contact } from '@/enums/Contact'
               </a>
             </div> -->
 
-            <div class="flex flex-col gap-y-2 my-4">
+            <!--            <div class="flex flex-col gap-y-2 my-4">
               <p class="font-bold text-xl !my-0">Black Friday offers end in:</p>
               <Countdown
                 class="shadow-lg p-2"
@@ -225,10 +247,10 @@ import { Contact } from '@/enums/Contact'
                 labelSize="0.9rem"
                 countdownSize="1.5rem"
               />
-            </div>
+            </div>-->
 
             <div
-              class="flex flex-col md:flex-row justify-between gap-4 items-center text-start overflow-hidden"
+              class="flex flex-col md:flex-row justify-between gap-4 items-center text-start overflow-hidden my-8"
             >
               <a
                 class="no-underline w-full"
@@ -236,7 +258,7 @@ import { Contact } from '@/enums/Contact'
                 target="_blank"
               >
                 <ButtonComponent
-                  class="flex flex-col w-full overflow-hidden justify-between items-center gap-x-4 lg:gap-x-8 !py-[0.6rem] !text-lg !from-green-500 !to-green-800 hover:!to-green-600"
+                  class="flex flex-col w-full overflow-hidden justify-between items-center gap-x-4 lg:gap-x-8 !py-[0.6rem] !text-lg !from-[oklch(from_var(--primary-bg-color)_l_c_h_/_100%)] !to-[oklch(from_var(--primary-bg-color)_l_c_h_/_100%)] hover:!to-[var(--hover-bg-color)]"
                 >
                   <span class="space-x-4">
                     <span>Forever</span>
@@ -254,7 +276,7 @@ import { Contact } from '@/enums/Contact'
                 target="_blank"
               >
                 <ButtonComponent
-                  class="flex justify-between items-center flex-col w-full gap-x-4 lg:gap-x-8 !py-[0.6rem] !text-lg !from-green-500 !to-green-800 hover:!to-green-600"
+                  class="flex justify-between items-center border primary-border-color flex-col w-full gap-x-4 lg:gap-x-8 !py-[0.6rem] !text-lg !from-[oklch(from_var(--primary-bg-color)_l_c_h_/_100%)] !to-[oklch(from_var(--primary-bg-color)_l_c_h_/_100%)] hover:!to-[var(--hover-bg-color)]"
                 >
                   <span class="space-x-4">
                     <span>Monthly</span>
@@ -267,19 +289,94 @@ import { Contact } from '@/enums/Contact'
               </a>
             </div>
 
-            <div class="justify-self-start mt-4 text-base">
-              <a :href="'mailto:' + Contact.EMAIL" class="text-blue-500"
+            <div class="justify-self-start mt-4">
+              <a :href="'mailto:' + Contact.EMAIL" class="main-text-color"
                 >Contact us for team support</a
               >
             </div>
           </div>
-          <p class="text-red-500 text-sm font-semibold !mt-0 max-w-[50rem] mx-auto !mb-0">
+          <p class="text-red-500 text-base font-semibold !mt-0 max-w-[50rem] mx-auto !mb-0">
             * It can take up to 24 hours to get your subscription activated since this is a manual
             process. If you haven’t been granted access, please
             <a :href="'mailto:' + Contact.EMAIL" class="text-red-500 italic">contact us </a>.
           </p>
         </div>
       </div>
+
+      <v-dialog
+        @afterLeave="onDialogLeave"
+        v-model="shouldShowInfoDialog"
+        :activator="dialogActivator"
+        class="max-w-4xl"
+      >
+        <template v-slot:default="{ isActive }">
+          <v-card title="Dialog">
+            <template #title>
+              <h2 class="!text-3xl font-bold flex gap-4">
+                <span>Sponserware</span>
+                <img class="w-8 !m-0" src="/src/assets/img/give-love.png" alt="sponserware" />
+              </h2>
+            </template>
+
+            <div class="prose lg:prose-lg p-4">
+              <p class="!mb-4 w-full">
+                This is a
+                <a
+                  class="no-underline secondary-text-color inline-block pb-1"
+                  href="https://github.com/sponsorware/docs"
+                  target="_blank"
+                  >sponserware</a
+                >, meaning only those who sponsor to the GitHub account gain access to this
+                repository.
+              </p>
+
+              <div class="max-w-[50rem] mb-4 mx-auto text-start">
+                <div>
+                  <h3 class="!my-0 font-normal !text-2xl">Perks of this approach</h3>
+                  <ul>
+                    <li class="!mb-0">
+                      Clients get uninterrupted usage since we don’t check license validity during
+                      use.
+                    </li>
+                    <li class="!mt-0">
+                      Grace periods and other flexible options
+                      <a :href="'mailto:' + Contact.EMAIL" class="italic font-normal"
+                        >(contact us) </a
+                      >.
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="!my-0 font-normal !text-2xl">Drawbacks</h3>
+                  <ul>
+                    <li class="!mb-0">It can take a while to get your subscription activated.</li>
+                    <li class="!mt-0">
+                      You have to obtain a GitHub api key for the TrueReviewer package
+                      <a class="font-normal italic" href="/documentation#installation-step1"
+                        >(details)</a
+                      >.
+                    </li>
+                  </ul>
+                </div>
+
+                <p class="font-bold italic">
+                  If you can't afford following prices please don't hesitate to contact us
+                  <a class="font-normal italic" href="/documentation#installation-step1">through</a
+                  >. As mentioned above we provide flexible options and grace periods. That's why we
+                  call this a <span class="text-[var(--main-text-color)]">sponserware</span>.
+                </p>
+
+                <p>Need a guarentee? refer <a href="/@developer">here</a></p>
+              </div>
+            </div>
+
+            <v-card-actions>
+              <v-spacer></v-spacer>
+              <v-btn @click="isActive.value = false" variant="tonal">Close</v-btn>
+            </v-card-actions>
+          </v-card>
+        </template>
+      </v-dialog>
     </template>
   </SectionComponent>
 </template>

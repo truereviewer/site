@@ -15,7 +15,7 @@
           can also be misleading. To address this, you can take certain measures. Leveraging AI to
           perform the following tests can help ensure the integrity of reviews.
         </p>
-        <ul>
+        <ul class="list-none">
           <li>
             <h4>Profanity Check</h4>
             <p>
